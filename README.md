@@ -11,6 +11,7 @@ Need to have at least two sets of contestant ratings to evaluate for correlation
 - https://en.wikipedia.org/wiki/Idol_School_(2017_TV_series)
 - https://en.wikipedia.org/wiki/List_of_Idol_School_contestants
 - [Chinese Version](https://bit.ly/4gtJGml)
+- [Videos with subtitles in Simplified Chinese](https://www.bilibili.com/video/BV1554y1C7wj/)
 
 ### Produce 101 (2016)
 - Female contestants

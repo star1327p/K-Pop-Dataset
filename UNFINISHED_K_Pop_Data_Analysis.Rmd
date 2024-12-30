@@ -14,13 +14,31 @@ output:
   pdf_document:
     latex_engine: xelatex
     number_sections: true
+    citation_package: natbib
+bibliography: references.bib
+biblio-style: apalike
+link-citations: true    
 ---
+
+\renewcommand{\cite}{\citep}
+
+```{r latex-cite-command, include=FALSE}
+# %\let\cite\citep
+# % from \citep to \cite to cite in author style, e.g. [Mule, 2008]
+
+# % \bibliographystyle{plainnat}
+# %\citep: citation in parentheses, e.g. [Mule, 2008]
+# %\citet: citation as author, e.g. Mule [2008]
+# %\cite: citation as author, \citet by default 
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Starting in 2024.
+Starting in 2024.  
+
+Test citation \cite{chai2024statistical}
 
 # Executive Summary
 
@@ -49,6 +67,15 @@ library(readxl)
 idol_school = read_excel("UNFINISHED_Idol_School_Dataset.xlsx")
 idol_school[,-3]
 ```
+
+## Idol School: Additional Resources
+
+Students who were eliminated from the show:  
+https://www.ptt.cc/bbs/fromis_9/M.1555819461.A.C73.html
+
+Someone else used random forests to predict the final ranking:  
+https://shavid.pixnet.net/blog/post/331691281
+
 
 ## Test for Non-English Characters
 
@@ -82,3 +109,5 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+\addcontentsline{toc}{section}{References} 

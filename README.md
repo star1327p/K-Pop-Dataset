@@ -7,7 +7,7 @@ Need to have at least two sets of contestant ratings to evaluate for correlation
 
 ### Idol School (2017)
 - Female contestants
-- Basic Strength Ratings: Vocal, Dance, Physical
+- Basic Strength Ratings: Vocal, Dance, Physical, Overall
 - https://en.wikipedia.org/wiki/Idol_School_(2017_TV_series)
 - https://en.wikipedia.org/wiki/List_of_Idol_School_contestants
 - [Chinese Version](https://bit.ly/4gtJGml)

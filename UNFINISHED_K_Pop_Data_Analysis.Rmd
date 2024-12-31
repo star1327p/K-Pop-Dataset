@@ -62,10 +62,19 @@ summary(cars)
 
 Idol School (偶像學校)
 
+Motivation: One of the contestants, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] is originally from Taiwan.
+
 ```{r idol-school-data}
 library(readxl)
 idol_school = read_excel("UNFINISHED_Idol_School_Dataset.xlsx")
-idol_school[,-3]
+
+columns_to_show = c("Chinese_Name", "English_Name",
+                    "Vocal", "Dance", "Physical", 
+                    "Overall", "Basic_Strength_Ranking")
+
+# UNFINISHED: Prevent columns from truncating!
+
+idol_school[1:10, columns_to_show]
 ```
 
 ## Idol School: Additional Resources
@@ -109,5 +118,9 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# Acknowledgments {.unnumbered}
+
+Write something here
 
 \addcontentsline{toc}{section}{References} 

@@ -48,25 +48,27 @@ Write something here
 
 The opinions and views expressed in this manuscript are those of the author, and do not necessarily state or reflect those of any institution or government entity.
 
-# R Markdown
+# Introduction
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+How the author got interested in K-Pop music (Korean popular music):  
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+Tzuyu (Chou Tzu-Yu, 周子瑜)^[<https://en.wikipedia.org/wiki/Tzuyu>]  
 
-```{r cars}
-summary(cars)
-```
+(a lot more content here)  
 
-## Read in the Dataset
+\textcolor{red}{Important: Write about the K-Pop scandal revealed in 2019 and later.}  
 
-Idol School (偶像學校)
+
+## Read in the Idol School Dataset
+
+Idol School (偶像學校) (2017)
 
 Motivation: One of the contestants, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] is originally from Taiwan.
 
 ```{r idol-school-data}
 library(readxl)
-idol_school = read_excel("UNFINISHED_Idol_School_Dataset.xlsx")
+idol_school = read_excel("UNFINISHED_Idol_School_Dataset.xlsx",
+                         sheet="Idol_School_Dataset")
 
 columns_to_show = c("Chinese_Name", "English_Name",
                     "Vocal", "Dance", "Physical", 
@@ -85,6 +87,22 @@ https://www.ptt.cc/bbs/fromis_9/M.1555819461.A.C73.html
 Someone else used random forests to predict the final ranking:  
 https://shavid.pixnet.net/blog/post/331691281
 
+
+## Read in the Produce 48 Dataset
+
+Produce 48 dataset (2018)
+
+```{r produce-48-data}
+produce_48_data = read_excel("UNFINISHED_Idol_School_Dataset.xlsx",
+                             sheet="Produce_48_Dataset")
+
+# UNFINISHED HERE
+produce_48_data
+```
+
+# Tentative Placeholders
+
+Write something here
 
 ## Test for Non-English Characters
 
@@ -108,6 +126,16 @@ print("宮脇 咲良")
 ```
 
 This template does not support Korean characters yet.
+
+## R Markdown Narrative
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
 
 ## Including Plots
 

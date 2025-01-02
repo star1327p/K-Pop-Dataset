@@ -65,16 +65,22 @@ Idol School (偶像學校) (2017)
 
 Motivation: One of the contestants, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] is originally from Taiwan.
 
+```{r options-setup, include=FALSE}
+# Prevent tibble columns from truncating
+options(dplyr.width = Inf)
+```
+
 ```{r idol-school-data}
 library(readxl)
 idol_school = read_excel("UNFINISHED_Idol_School_Dataset.xlsx",
                          sheet="Idol_School_Dataset")
 
-columns_to_show = c("Chinese_Name", "English_Name",
-                    "Vocal", "Dance", "Physical", 
-                    "Overall", "Basic_Strength_Ranking")
+# Date of birth (DOB) should be date only, not a full timestamp.
+idol_school$DOB = as.Date(idol_school$DOB)
 
-# UNFINISHED: Prevent columns from truncating!
+columns_to_show = c("Name_Chn", "Name_Eng", "DOB", 
+                    "Vocal", "Dance", "Physical", 
+                    "Overall", "Ability_Rank")
 
 idol_school[1:10, columns_to_show]
 ```
@@ -96,7 +102,12 @@ Produce 48 dataset (2018)
 produce_48_data = read_excel("UNFINISHED_Idol_School_Dataset.xlsx",
                              sheet="Produce_48_Dataset")
 
-# UNFINISHED HERE
+# Date of birth (DOB) should be date only, not a full timestamp.
+produce_48_data$DOB = as.Date(produce_48_data$DOB)
+
+# UNFINISHED:
+# Decide on which columns and rows to show here.
+
 produce_48_data
 ```
 

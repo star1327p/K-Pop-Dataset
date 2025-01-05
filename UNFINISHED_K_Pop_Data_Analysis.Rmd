@@ -13,6 +13,7 @@ header-includes:
 output: 
   pdf_document:
     latex_engine: xelatex
+    extra_dependencies: float
     number_sections: true
     citation_package: natbib
 bibliography: references.bib
@@ -34,6 +35,14 @@ link-citations: true
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+def.chunk.hook <- knitr::knit_hooks$get("chunk")
+knitr::knit_hooks$set(chunk = function(x, options) {
+  x <- def.chunk.hook(x, options)
+  ifelse(options$size != "normalsize", paste0("\n \\", options$size,"\n\n", x, "\n\n \\normalsize"), x)
+})
+
+knitr::opts_chunk$set(fig.width=6, fig.align = 'center', fig.pos = "H", out.extra = "")
 ```
 
 Starting in 2024.  
@@ -163,10 +172,13 @@ produce_48_data = read_excel("UNFINISHED_Idol_School_Dataset.xlsx",
 # Date of birth (DOB) should be date only, not a full timestamp.
 produce_48_data$DOB = as.Date(produce_48_data$DOB)
 
-# UNFINISHED:
+# UNFINISHED HERE:
 # Decide on which columns and rows to show here.
 
-produce_48_data
+columns_to_show = c("Name_Chn", "Name_Eng", "DOB", 
+                    "First_Eval", "Second_Eval", "Final_Rank")
+
+produce_48_data[1:20, columns_to_show]
 ```
 
 # Tentative Placeholders
@@ -208,9 +220,9 @@ summary(cars)
 
 ## Including Plots
 
-You can also embed plots, for example:
+You can also embed plots, for example in Figure \ref{fig:pressure}:
 
-```{r pressure, echo=FALSE}
+```{r pressure, fig.cap="Test Plot", echo=FALSE}
 plot(pressure)
 ```
 

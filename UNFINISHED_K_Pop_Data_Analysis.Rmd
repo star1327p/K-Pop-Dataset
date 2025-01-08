@@ -49,7 +49,7 @@ Starting in 2024.
 
 Test citation \cite{chai2024statistical}
 
-# Executive Summary
+# Executive Summary {.unnumbered}
 
 Write something here
 
@@ -72,11 +72,13 @@ Tzuyu (Chou Tzu-Yu, 周子瑜)^[<https://en.wikipedia.org/wiki/Tzuyu>]
 
 Idol School (偶像學校) (2017)
 
-Motivation: One of the contestants, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] is originally from Taiwan.  
+Motivation: One of the contestants, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] is originally from Taiwan. In fact, Snowbaby^[<https://bit.ly/424u3gv>] graduated from Taipei First Girls' High School,^[<https://www.fg.tp.edu.tw/>] the same high school as the author did.   
 
 \textcolor{red}{Need to write the data description}  
 
 Wikipedia data: <https://en.wikipedia.org/wiki/List_of_Idol_School_contestants>
+
+Why did we include the date of birth (DOB) of each contestant? 
 
 ```{r options-setup, include=FALSE}
 # Prevent tibble columns from truncating
@@ -112,7 +114,7 @@ Physical testing contains a group exercise and an individual exercise.
 
 In the video clip, Park Ji Won (朴池原) and her partner were the first runner-up in the group exercise.^[Screenshot of the group physical exercise: <https://bit.ly/4a7QT9m>] We are surprised that Ji Won's physical score was only 3.5. According to the video's score table for contestants ranked 11th to 20th,^[<https://bit.ly/400KUhH>] Ji Won's physical score should be 6.2.   
 
-The Wikipedia table contains some inconsistency in the overall score, i.e., the average across the three categories.  
+The Wikipedia table shows an inconsistency in the overall score, i.e., the average across the three categories.  
 
 Ji Won's vocal score was 7.9, and her dance was 5. These scores seem to be reasonable for Ji Won, because she is known for excellent singing and decent dancing as a performer.^[Park Ji Won is the main vocalist in Fromis 9. <https://bit.ly/402yCFI>] Therefore, we assume both scores to be correct.  
 
@@ -139,7 +141,7 @@ https://www.bilibili.com/video/BV1554y1C7wj/
 Screenshots saved:  
 https://github.com/star1327p/K-Pop-Dataset/tree/main/Idol_School_Rating_Screenshots 
 
-\textcolor{red}{Check for the mean and median of each category score}  
+\textcolor{red}{Still need to write the description}  
 
 ```{r idol-school-eda}
 
@@ -148,9 +150,29 @@ dance_sorted = sort(idol_school$Dance, decreasing = TRUE)
 physical_sorted = sort(idol_school$Physical, decreasing = TRUE)
 
 # UNFINISHED HERE
-# Make the cbind object a data.frame!
-# cbind(vocal_sorted, dance_sorted, physical_sorted)
+combined_all_three = cbind(vocal_sorted, dance_sorted, physical_sorted)
+sorted_scores_df = as.data.frame(combined_all_three)
+
+sorted_scores_df[1:10,]
 ```
+
+\textcolor{red}{Check for the mean and median of each category score}  
+
+```{r idol-mean-and-median}
+# UNFINISHED HERE
+
+# Output a table for the mean and median for (vocal, dance, physical)
+
+# Columns: Vocal, Dance, Physical
+# Rows: Mean, Median
+
+# Examples:
+# mean(idol_school$Dance) # 5.35122
+# median(idol_school$Dance) # 5.5
+
+# Rounding to two decimal places?!
+```
+
 
 ## Idol School: Additional Resources
 
@@ -210,9 +232,9 @@ This template does not support Korean characters yet.
 
 ## R Markdown Narrative
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This is an $\mathsf{R}$ Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using $\mathsf{R}$ Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded $\mathsf{R}$ code chunks within the document. You can embed an $\mathsf{R}$ code chunk like this:
 
 ```{r cars}
 summary(cars)
@@ -226,7 +248,7 @@ You can also embed plots, for example in Figure \ref{fig:pressure}:
 plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the $\mathsf{R}$ code that generated the plot.
 
 # Acknowledgments {.unnumbered}
 

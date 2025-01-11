@@ -79,11 +79,13 @@ Describe the flag controversy incident.^[<https://bit.ly/3DOcNlP>]
 
 Motivation: One of the contestants, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] is also from Taiwan. In fact, Snowbaby^[<https://bit.ly/424u3gv>] graduated from Taipei First Girls' High School,^[<https://www.fg.tp.edu.tw/>] the same high school as the author did.   
 
+In the live reality show *Idol School*, nine winners were selected to form the girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This girl group debuted in 2018 and remained active until the contract ended in 2024.  
+
 \textcolor{red}{Need to write the data description}  
 
-Wikipedia data: <https://en.wikipedia.org/wiki/List_of_Idol_School_contestants>
+Wikipedia data: <https://en.wikipedia.org/wiki/List_of_Idol_School_contestants>  
 
-Why did we include the date of birth (DOB) of each contestant? 
+Since the English translation of Korean names look similar to each other \cite{kim2020linguistics}, we also include the date of birth (DOB) to make it easier to uniquely identify each contestant.   
 
 ```{r options-setup, include=FALSE}
 # Prevent tibble columns from truncating
@@ -121,7 +123,7 @@ In the video clip, Park Ji Won (朴池原) and her partner were the first runner
 
 The Wikipedia table shows an inconsistency in the overall score, i.e., the average across the three categories.  
 
-Ji Won's vocal score was 7.9, and her dance was 5. These scores seem to be reasonable for Ji Won, because she is known for excellent singing and decent dancing as a performer.^[Park Ji Won is the main vocalist in Fromis 9. <https://bit.ly/402yCFI>] Therefore, we assume both scores to be correct.  
+Ji Won's vocal score was 7.9, and her dance score was 5. These numbers seem to be reasonable for Ji Won, because she is known for excellent singing and decent dancing as a performer.^[Park Ji Won was the main vocalist in *fromis_9*. <https://bit.ly/402yCFI>] Therefore, we assume both scores to be correct.  
 
 - If the physical score had really been 3.5, then Ji Won's overall score would be 5.47, dropping her from 13th place to the 18th.  
 
@@ -195,6 +197,8 @@ Someone else used random forests to predict the final ranking:
 Wikipedia data: <https://en.wikipedia.org/wiki/Produce_48>
 
 Some former contestants in *Idol School* tried again in the *Produce 48* reality show in 2018.   
+
+A total of 12 contestants were eventually selected from *Produce 48* to create the time-limited girl group \textit{IZ*ONE},^[<https://en.wikipedia.org/wiki/Iz*One>] which was active during 2018-2021 in both Korea and Japan.  
 
 ```{r produce-48-data}
 produce_48_data = read_excel("UNFINISHED_Idol_School_Dataset.xlsx",

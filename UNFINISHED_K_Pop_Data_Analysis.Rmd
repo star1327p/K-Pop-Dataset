@@ -85,7 +85,7 @@ In the live reality show *Idol School*, nine winners were selected to form the g
 
 Wikipedia data: <https://en.wikipedia.org/wiki/List_of_Idol_School_contestants>  
 
-Since the English translation of Korean names look similar to each other \cite{kim2020linguistics}, we also include the date of birth (DOB) to make it easier to uniquely identify each contestant.   
+Since the English translation of Korean names look similar to each other \cite{kim2020linguistics}, we also include the date of birth (DOB) to make it easier to uniquely identify each contestant. For those who are able to read Chinese, we put each contestant's name in Chinese characters as well.  
 
 ```{r options-setup, include=FALSE}
 # Prevent tibble columns from truncating
@@ -101,10 +101,9 @@ idol_school = read_excel("UNFINISHED_Idol_School_Dataset.xlsx",
 idol_school$DOB = as.Date(idol_school$DOB)
 
 columns_to_show = c("Name_Chn", "Name_Eng", "DOB", 
-                    "Vocal", "Dance", "Physical", 
-                    "Overall", "Ability_Rank")
+                    "Vocal", "Dance", "Physical", "Overall")
 
-idol_school[1:10, columns_to_show]
+idol_school[1:20, columns_to_show]
 ```
 
 ## *Idol School*: Exploratory Data Analysis
@@ -180,6 +179,30 @@ sorted_scores_df[1:10,]
 # Rounding to two decimal places?!
 ```
 
+Correlation matrix  
+
+\textcolor{red}{Need to explain the correlation coefficients and the K-Pop context.}  
+
+Diagonal elements are always exactly 1.  
+
+Create the scatterplots and/or correlation plots!   
+
+```{r idol-scores-correlation}
+# UNFINISHED HERE
+cor(idol_school[,c("Vocal","Dance","Physical")])
+```
+
+Alternatively, we can also obtain the pairwise correlation of each category.  
+
+```{r idol-scores-pairwise}
+# UNFINISHED HERE
+cor(idol_school$Vocal, idol_school$Dance)
+
+# UNFINISHED HERE
+# Need to print all three pairs.
+# cor(idol_school$Dance, idol_school$Physical)
+# cor(idol_school$Vocal, idol_school$Physical)
+```
 
 ## Idol School: Additional Resources
 

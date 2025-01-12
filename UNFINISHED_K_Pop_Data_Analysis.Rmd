@@ -85,6 +85,11 @@ In the live reality show *Idol School*, nine winners were selected to form the g
 
 Wikipedia data: <https://en.wikipedia.org/wiki/List_of_Idol_School_contestants>  
 
+We manually copy-pasted the contestant data from Wikipedia into an Excel workbook (`.xlsx`), and used the `R` package `readxl` \cite{r-read-xl} to load the dataset.    
+
+\textcolor{red}{Why didn't we store the dataset in \texttt{.csv} format?}   
+For Chinese characters and having multiple data sheets in the same Excel file for consolidation.  
+
 Since the English translation of Korean names look similar to each other \cite{kim2020linguistics}, we also include the date of birth (DOB) to make it easier to uniquely identify each contestant. For those who are able to read Chinese, we put each contestant's name in Chinese characters as well.  
 
 ```{r options-setup, include=FALSE}
@@ -110,11 +115,11 @@ idol_school[1:20, columns_to_show]
 
 What changes did we make from the Wikipedia data?  
 
-Our presumption: In each category, no two contestants should have the same score.  
+Our presumption is that in each category, no two contestants should have the same score.  
 
 \textcolor{red}{Physical: We found two 3.5's and two 1.2's after sorting the scores.}  
 
-The two 3.5 scores belong to adjacent cells in the Wikipedia data.   
+Before sorting by the physical scores: We noticed that the two 3.5 scores belong to adjacent cells in the Wikipedia data.   
 
 Physical testing contains a group exercise and an individual exercise.  
 
@@ -132,13 +137,11 @@ The second scenario is more likely.
 Evidence we found in the video clip.  
 
 
-The two 1.2 scores are more difficult to check for the underlying values.   
-
-Especially that they occurred in two contestants with lower ranking.^[Physical scores of all contestants in *Idol School*: <https://bit.ly/3DRNK0Z>]  
+The two 1.2 scores are more difficult to check for the underlying values, probably because they occurred in two contestants of lower ranking.^[Physical scores of all contestants in *Idol School*: <https://bit.ly/3DRNK0Z>] The two contestants, Jessica Lee (李瑟) and Michelle White (懷特·米雪兒), ranked in the lower half of all 41 contestants in terms of the overall ability test. Both of them got eliminated in the first round, so they did not receive much attention in the show.  
 
 With the help of Google Translate:^[<https://translate.google.com/>]   
-Can translate Korean text in an image back to English text.   
-Finally, we discovered that Michelle White (懷特·米雪兒)'s physical score should be 1.3, not 1.2.  
+We can translate Korean text in an image back to English text.   
+Finally, we discovered that Michelle White's physical score should be 1.3, not 1.2.  
 
 
 *Idol School* (2017): Videos with subtitles in Simplified Chinese  
@@ -186,6 +189,15 @@ Correlation matrix
 Diagonal elements are always exactly 1.  
 
 Create the scatterplots and/or correlation plots!   
+\textcolor{red}{Use \texttt{ggplot} or not} ?!    
+
+Why is the correlation so low between dance and physical scores?   
+
+Dance is mainly about technique, not always about the person's physical ability. (citation needed)   
+
+Contestants with a remarkably high score in dance but a low score in physical:  
+e.g. Bae Eun Yeong (裴恩英)   
+e.g. Lee Hae In (李海印)   
 
 ```{r idol-scores-correlation}
 # UNFINISHED HERE
@@ -274,9 +286,9 @@ This template does not support Korean characters yet.
 
 ## R Markdown Narrative
 
-This is an $\mathsf{R}$ Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using $\mathsf{R}$ Markdown see <http://rmarkdown.rstudio.com>.
+This is an `R` Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using `R` Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded $\mathsf{R}$ code chunks within the document. You can embed an $\mathsf{R}$ code chunk like this:
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded `R` code chunks within the document. You can embed an `R` code chunk like this:
 
 ```{r cars}
 summary(cars)
@@ -290,7 +302,7 @@ You can also embed plots, for example in Figure \ref{fig:pressure}:
 plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the $\mathsf{R}$ code that generated the plot.
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the `R` code that generated the plot.
 
 # Acknowledgments {.unnumbered}
 

@@ -47,15 +47,13 @@ knitr::opts_chunk$set(fig.width=6, fig.align = 'center', fig.pos = "H", out.extr
 
 Starting in 2024.  
 
-Test citation \cite{chai2024statistical}
-
 # Executive Summary {.unnumbered}
 
 Write something here
 
 # Disclaimer {.unnumbered}
 
-This manuscript is written solely by the author using `R` Markdown \cite{r-markdown}.^[<https://rmarkdown.rstudio.com/>] It is not created by ChatGPT or any other Generative AI. The opinions and views expressed in this manuscript are those of the author, and do not necessarily state or reflect those of any institution or government entity.    
+This manuscript is written solely by the author, not by ChatGPT or any other generative AI. The opinions and views expressed in this manuscript are those of the author, and do not necessarily state or reflect those of any institution or government entity.    
 
 # Introduction
 
@@ -86,11 +84,21 @@ Mnet admitted to manipulating the votes in the *Produce 101* series and the subs
 *Idol School*: Vote Manipulation Investigation (2019)   
 <https://www.ptt.cc/bbs/KoreaStar/M.1624467107.A.D7F.html>  
 
+## Technical Narrative
+
+This manuscript is created using `R` Markdown \cite{r-markdown}^[<https://rmarkdown.rstudio.com/>] for reproducible data analysis, just like our earlier technical report about the education in Taiwan \cite{chai2024statistical}. We have posted our code and data on GitHub,^[<https://github.com/star1327p/K-Pop-Dataset>], so readers can download the GitHub repository and play with the script themselves.    
+
+\textcolor{red}{The rest of this manuscript is organized as follows.}   
+
+e.g. Chapter 23 does something.   
+
 ## Read in the *Idol School* Dataset
 
 *Idol School* (偶像學校) (2017)
 
 Motivation: One of the contestants, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] is also from Taiwan. In fact, Snowbaby^[<https://bit.ly/424u3gv>] graduated from Taipei First Girls' High School,^[<https://www.fg.tp.edu.tw/>] the same high school as the author did.   
+
+\textcolor{red}{Emphasize that \textit{Idol School} did not require vocal or dance experience and was willing to train the participants from scratch. Despite the low barrier to entry, many participants in the reality show had previously trained under other entertainment companies.}   
 
 In the live reality show *Idol School*, nine winners were selected to form the girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This girl group debuted in 2018 and remained active until the contract ended in 2024.  
 
@@ -250,11 +258,11 @@ produce_48_data[1:20, columns_to_show]
 ```
 
 
-Still working on the data entry.
+Data entry complete for all contestants in *Produce 48*, including those who left in the middle of the show.  
 
-```{r produce-48-ranking-31to40}
+```{r produce-48-ranking-lowest}
 # UNFINISHED HERE
-produce_48_data[51:60, columns_to_show]
+produce_48_data[81:96, columns_to_show]
 ```
 
 

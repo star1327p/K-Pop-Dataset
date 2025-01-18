@@ -55,7 +55,7 @@ Write something here
 
 # Disclaimer {.unnumbered}
 
-The opinions and views expressed in this manuscript are those of the author, and do not necessarily state or reflect those of any institution or government entity.
+This manuscript is written solely by the author using `R` Markdown \cite{r-markdown}.^[<https://rmarkdown.rstudio.com/>] It is not created by ChatGPT or any other Generative AI. The opinions and views expressed in this manuscript are those of the author, and do not necessarily state or reflect those of any institution or government entity.    
 
 # Introduction
 
@@ -70,8 +70,21 @@ Describe the flag controversy incident.^[<https://bit.ly/3DOcNlP>]
 (a lot more content here)  
 
 
-\textcolor{red}{Important: Write about the K-Pop scandal revealed in 2019 and later.}  
+\textcolor{red}{Important: Write about the K-Pop scandal revealed in 2019 and later.} 
 
+<https://en.wikipedia.org/wiki/Mnet_vote_manipulation_investigation>  
+
+Started with the *Produce X 101* (2019)  
+<https://en.wikipedia.org/wiki/Produce_X_101>  
+
+The mysterious 29978 number in *Produce X 101*:  
+<https://www.koreaboo.com/news/produce-x-101-rigged-votes-final-members/>  
+
+Mnet admitted to manipulating the votes in the *Produce 101* series and the subsequent reality shows, including *Idol School*.   
+<https://www.popdaily.com.tw/korea/846603>  
+
+*Idol School*: Vote Manipulation Investigation (2019)   
+<https://www.ptt.cc/bbs/KoreaStar/M.1624467107.A.D7F.html>  
 
 ## Read in the *Idol School* Dataset
 
@@ -115,27 +128,19 @@ idol_school[1:20, columns_to_show]
 
 \textcolor{red}{Context: Write about how the vocal, dance, and physical scores were evaluated.}   
 
-What changes did we make from the Wikipedia data?  
+Physical testing contains a group exercise and an individual exercise.   
 
-Our presumption is that in each category, no two contestants should have the same score.  
+Also mention the top performers in each category.  
 
-\textcolor{red}{Physical: We found two 3.5's and two 1.2's after sorting the scores.}  
 
-Before sorting by the physical scores: We noticed that the two 3.5 scores belong to adjacent cells in the Wikipedia data.   
+\textcolor{red}{What changes did we make from the Wikipedia data?}   
 
-Physical testing contains a group exercise and an individual exercise.  
+Our presumption is that in each category, no two contestants should have the same score. However, after sorting the *Idol School* data by the physical scores, we found two 3.5's and two 1.2's. Especially that the two 3.5's belong to top-ranked contestants Bae Eun Yeong (裴恩英) and Park Ji Won (朴池原), this issue quickly caught our attention to make corrections to the data.   
 
-In the video clip, Park Ji Won (朴池原) and her partner were the first runner-up in the group physical exercise.^[Screenshot of the group physical exercise: <https://bit.ly/4a7QT9m>] We are surprised that Ji Won's physical score was only 3.5. According to the video's score table for contestants ranked 11th to 20th,^[<https://bit.ly/400KUhH>] Ji Won's physical score should be 6.2.   
 
-The Wikipedia table shows an inconsistency in the overall score, i.e., the average across the three categories.  
+\textcolor{red}{Physical: We found two 3.5's and two 1.2's after sorting the scores.}   
 
-Ji Won's vocal score was 7.9, and her dance score was 5. These numbers seem to be reasonable for Ji Won, because she is known for excellent singing and good dancing as a performer.^[Park Ji Won was the main vocalist in *fromis_9*. <https://bit.ly/402yCFI>] Therefore, we assume both scores to be correct.  
-
-- If the physical score had really been 3.5, then Ji Won's overall score would be 5.47, dropping her from 13th place to the 18th.  
-
-- If the overall score of 6.37 had been correct, then Ji Won's physical score should be 6.2.  
-
-The second scenario is more likely to be true, given the evidence we found in the video clip.   
+In the video clip, Park Ji Won (朴池原) and her partner were the first runner-up in the group physical exercise.^[Screenshot of the group physical exercise: <https://bit.ly/4a7QT9m>] We are surprised that Ji Won's physical score was only 3.5. According to the video's score table for contestants ranked 11th to 20th,^[<https://bit.ly/400KUhH>] Ji Won's physical score should be 6.2. The Wikipedia table shows an inconsistency in Ji Won's overall score, i.e., the average across the three categories. Ji Won's vocal score was 7.9, and her dance score was 5. These numbers seem to be reasonable for Ji Won, because she is known for excellent singing and good dancing as a performer.^[Park Ji Won was the main vocalist in *fromis_9*. <https://bit.ly/402yCFI>] Therefore, we assume both scores to be correct. If the physical score had really been 3.5, then Ji Won's overall score would be 5.47, dropping her from 13th place to the 18th. If the overall score of 6.37 had been correct, then Ji Won's physical score should be 6.2. The second scenario is more likely to be true, given the evidence we found in the video clip. Hence we corrected Ji Won's physical score to 6.2.      
 
 \textcolor{red}{Physical: We found additional two 1.2's after sorting the scores.}   
 
@@ -249,7 +254,7 @@ Still working on the data entry.
 
 ```{r produce-48-ranking-31to40}
 # UNFINISHED HERE
-produce_48_data[31:40, columns_to_show]
+produce_48_data[51:60, columns_to_show]
 ```
 
 

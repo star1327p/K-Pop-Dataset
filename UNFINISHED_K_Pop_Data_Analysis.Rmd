@@ -57,7 +57,13 @@ This manuscript is written solely by the author, not by ChatGPT or any other gen
 
 # Introduction
 
-The author became interested in K-Pop music (Korean popular music) from the debut of Tzuyu (Chou Tzu-Yu, 周子瑜).^[<https://en.wikipedia.org/wiki/Tzuyu>]  
+\textcolor{red}{Important: Write about why K-Pop music is so popular across the globe.}   
+
+K-Pop music has emerged popularity worldwide since the early 2010's \cite{khiun2013k-pop, sun2022identifying}.   
+
+\textcolor{red}{Then write about the author's motivation}   
+
+The author became interested in K-Pop music (Korean pop music) from the debut of Tzuyu (Chou Tzu-Yu, 周子瑜).^[<https://en.wikipedia.org/wiki/Tzuyu>]  
 
 Tzuyu is originally from Taiwan, the country in which the author grew up. In 2015, Tzuyu participated in the South Korean reality television show *SIXTEEN*,^[<https://en.wikipedia.org/wiki/Sixteen_(TV_program)>] and eventually got added to the newly-formed girl group *TWICE*.^[<https://en.wikipedia.org/wiki/Twice>]   
 
@@ -86,7 +92,7 @@ Mnet admitted to manipulating the votes in the *Produce 101* series and the subs
 
 ## Technical Narrative
 
-This manuscript is created using `R` Markdown \cite{r-markdown}^[<https://rmarkdown.rstudio.com/>] for reproducible data analysis, just like our earlier technical report about the education in Taiwan \cite{chai2024statistical}. We have posted our code and data on GitHub,^[<https://github.com/star1327p/K-Pop-Dataset>], so readers can download the GitHub repository and play with the script themselves.    
+This manuscript is created using `R` Markdown \cite{r-markdown}^[<https://rmarkdown.rstudio.com/>] for reproducible data analysis, just like our earlier technical report about the education in Taiwan \cite{chai2024statistical}. We have posted our code and data on GitHub,^[<https://github.com/star1327p/K-Pop-Dataset>] so readers can download the GitHub repository and play with the script themselves.    
 
 \textcolor{red}{The rest of this manuscript is organized as follows.}   
 
@@ -98,7 +104,7 @@ e.g. Chapter 23 does something.
 
 Motivation: One of the contestants, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] is also from Taiwan. In fact, Snowbaby^[<https://bit.ly/424u3gv>] graduated from Taipei First Girls' High School,^[<https://www.fg.tp.edu.tw/>] the same high school as the author did.   
 
-\textcolor{red}{Emphasize that \textit{Idol School} did not require vocal or dance experience and was willing to train the participants from scratch. Despite the low barrier to entry, many participants in the reality show had previously trained under other entertainment companies.}   
+\textcolor{red}{Emphasize that \textit{Idol School} did not require vocal or dance experience and was willing to train the participants from scratch. Despite the low barrier to entry, many participants in the reality show had previously trained under various entertainment companies.}   
 
 In the live reality show *Idol School*, nine winners were selected to form the girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This girl group debuted in 2018 and remained active until the contract ended in 2024.  
 
@@ -200,13 +206,24 @@ Diagonal elements are always exactly 1.
 Create the scatterplots and/or correlation plots!   
 \textcolor{red}{Use \texttt{ggplot} or not} ?!    
 
-Why is the correlation so low between dance and physical scores?   
+- Correlation between vocal and dance scores: 0.68
+- Correlation between vocal and physical scores: 0.68
+- Correlation between dance and physical scores: 0.54
+
+Trainee at an entertainment company in Korea:  
+Focus on vocal and dance skills, but not specific physical training. ?! (citation needed)  
+
+Theoretically dance and physical should be highly correlated.  
+
+Why is the correlation lower between dance and physical scores?   
 
 Dance is mainly about technique, not always about the person's physical ability. (citation needed)   
 
 Contestants with a remarkably high score in dance but a low score in physical:  
 e.g. Bae Eun Yeong (裴恩英)   
 e.g. Lee Hae In (李海印)   
+
+Or because too many contestants did not do well in the physical part ?!  
 
 ```{r idol-scores-correlation}
 # UNFINISHED HERE
@@ -259,6 +276,14 @@ produce_48_data[1:20, columns_to_show]
 
 
 Data entry complete for all contestants in *Produce 48*, including those who left in the middle of the show.  
+
+Create a matrix for the two sets of ratings.  
+
+For each rating, also check how many contestants are from Korea and how many are from Japan.  
+
+Jo Yuri (曹柔理): A $\rightarrow$ F   
+
+What about other participants?  
 
 ```{r produce-48-ranking-lowest}
 # UNFINISHED HERE

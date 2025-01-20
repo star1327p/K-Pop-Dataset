@@ -112,12 +112,13 @@ In the live reality show *Idol School*, nine winners were selected to form the g
 
 Wikipedia data: <https://en.wikipedia.org/wiki/List_of_Idol_School_contestants>  
 
-We manually copy-pasted the contestant data from Wikipedia into an Excel workbook (`.xlsx`), and used the `R` package `readxl` \cite{r-read-xl} to load the dataset.    
+We manually copy-pasted the contestant data from Wikipedia into a Microsoft Excel workbook (`.xlsx`), and used the `R` package `readxl` \cite{r-read-xl} to load the dataset. A main advantage of `.xlsx` over `.csv` is that we can have multiple data sheets in the same Excel file for consolidation. Moreover, Excel supports Chinese characters, so we can also include the Chinese names of each contestant. Since the English translation of Korean names look similar to each other \cite{kim2020linguistics}, we also include the date of birth (DOB) to make it easier to uniquely identify each contestant. For those who are able to read Chinese, we put each contestant's name in Chinese characters as well.  
 
-\textcolor{red}{Why didn't we store the dataset in \texttt{.csv} format?}   
-For Chinese characters and having multiple data sheets in the same Excel file for consolidation.  
+\textcolor{red}{Specify the column names we included, also the column names we printed here.}   
 
-Since the English translation of Korean names look similar to each other \cite{kim2020linguistics}, we also include the date of birth (DOB) to make it easier to uniquely identify each contestant. For those who are able to read Chinese, we put each contestant's name in Chinese characters as well.  
+Add the metadata in the Excel file or the Appendix ?! 
+
+Currently I prefer adding the metadata in the Excel file for proximity to the data itself.  
 
 ```{r options-setup, include=FALSE}
 # Prevent tibble columns from truncating
@@ -187,14 +188,18 @@ sorted_scores_df[1:10,]
 
 # Output a table for the mean and median for (vocal, dance, physical)
 
-# Columns: Vocal, Dance, Physical
-# Rows: Mean, Median
+metrics = c("Mean","Median")
+vocal_stats = c(mean(idol_school$Vocal), median(idol_school$Vocal))
+dance_stats = c(mean(idol_school$Dance), median(idol_school$Dance))
+physical_stats = c(mean(idol_school$Physical), median(idol_school$Physical))
 
-# Examples:
-# mean(idol_school$Dance) # 5.35122
-# median(idol_school$Dance) # 5.5
+idol_stats_df = data.frame(metrics, vocal_stats, dance_stats, physical_stats)
+names(idol_stats_df) = c("Metrics", "Vocal", "Dance", "Physical")
 
+# UNFINISHED HERE
 # Rounding to two decimal places?!
+
+idol_stats_df
 ```
 
 Correlation matrix  
@@ -255,7 +260,12 @@ Someone else used random forests to predict the final ranking:
 
 *Produce 48* dataset (2018)   
 
-Wikipedia data: <https://en.wikipedia.org/wiki/Produce_48>
+Wikipedia data: <https://en.wikipedia.org/wiki/Produce_48>  
+
+\textcolor{red}{Need to write the data description}  
+
+*Produce 48* featured 96 contestants primarily from South Korea and Japan.  
+Footnote: Korea may include other countries, and the Korea-Japan split is not 1-1.  
 
 Some former contestants in *Idol School* tried again in the *Produce 48* reality show in 2018.   
 
@@ -290,6 +300,13 @@ What about other participants?
 produce_48_data[81:96, columns_to_show]
 ```
 
+
+Nationality
+
+```{r produce-48-country}
+# UNFINISHED HERE
+table(produce_48_data$Country)
+```
 
 # Tentative Placeholders
 

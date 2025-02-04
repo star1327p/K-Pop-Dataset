@@ -211,20 +211,20 @@ Diagonal elements are always exactly 1.
 Create the scatterplots and/or correlation plots!   
 \textcolor{red}{Use \texttt{ggplot} or not} ?!    
 
-- Correlation between vocal and dance scores: 0.68
-- Correlation between vocal and physical scores: 0.68
-- Correlation between dance and physical scores: 0.54
+- Correlation between vocal and dance scores: 0.682
+- Correlation between vocal and physical scores: 0.683
+- Correlation between dance and physical scores: 0.543
 
-Trainee at an entertainment company in Korea:  
-Focus on vocal and dance skills, but not specific physical training. ?! (citation needed)  
+The training at a K-Pop entertainment company in Korea usually includes vocal and dance lessons \cite{padget2017difficulties}, so it is reasonable to see a high correlation between vocal and dance scores.   
 
-Theoretically dance and physical should be highly correlated.  
+
+Theoretically dance and physical should be highly correlated \cite{dance2024strength}.  
 
 Why is the correlation lower between dance and physical scores?   
 
-Dance is mainly about technique, not always about the person's physical ability. (citation needed)   
+Physical strength is essential to dancing, but dance also includes other critical elements such as technique and aesthetic expression \cite{geukes2023mirror}.   
 
-Contestants with a remarkably high score in dance but a low score in physical:  
+Note that some contestants with a remarkably high score in dance but a low score in physical:  
 e.g. Bae Eun Yeong (裴恩英)   
 e.g. Lee Hae In (李海印)   
 

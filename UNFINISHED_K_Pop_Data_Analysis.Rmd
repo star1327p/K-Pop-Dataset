@@ -181,10 +181,16 @@ sorted_scores_df = as.data.frame(combined_all_three)
 sorted_scores_df[1:10,]
 ```
 
+\textcolor{red}{Explain why we removed the 41st contestant whose scores were all zeros.}   
+
+Som Hye In (慎惠仁) left the *Idol School* show due to health reasons. She was unable to complete the basic test, so her score was zero in all three categories (vocal, dance, and physical).   
+
+
 \textcolor{red}{Check for the mean and median of each category score}  
 
 ```{r idol-mean-and-median}
 # UNFINISHED HERE
+# We MUST remove the 41st contestant's scores (all zeros)!!
 
 # Output a table for the mean and median for (vocal, dance, physical)
 
@@ -202,6 +208,32 @@ names(idol_stats_df) = c("Metrics", "Vocal", "Dance", "Physical")
 idol_stats_df
 ```
 
+Do we need to look at the five-number summary?!   
+http://en.wikipedia.org/wiki/Five-number_summary   
+
+Five numbers = min, 1st quartile, median, 3rd quartile, max.  
+Add: mean
+
+\textcolor{red}{Explain why we removed the 41st contestant whose scores were all zeros.}
+
+```{r idol-summary-stats}
+# UNFINISHED HERE
+# Convert to data.frame format like the median and mean above
+
+print("Summary Statistics")
+print("Vocal:")
+print(summary(idol_school$Vocal[1:40]))
+print("Dance:")
+print(summary(idol_school$Dance[1:40]))
+print("Physical:")
+print(summary(idol_school$Physical[1:40]))
+```
+
+
+Shall we create a **box plot** using ggplot2 to compare the three sets of scores?   
+https://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization
+
+
 Correlation matrix  
 
 \textcolor{red}{Need to explain the correlation coefficients and the K-Pop context.}  
@@ -215,20 +247,14 @@ Create the scatterplots and/or correlation plots!
 - Correlation between vocal and physical scores: 0.683
 - Correlation between dance and physical scores: 0.543
 
-The training at a K-Pop entertainment company in Korea usually includes vocal and dance lessons \cite{padget2017difficulties}, so it is reasonable to see a high correlation between vocal and dance scores.   
-
-
-Theoretically dance and physical should be highly correlated \cite{dance2024strength}.  
-
-Why is the correlation lower between dance and physical scores?   
-
-Physical strength is essential to dancing, but dance also includes other critical elements such as technique and aesthetic expression \cite{geukes2023mirror}.   
+The training at a K-Pop entertainment company in Korea usually includes vocal and dance lessons \cite{padget2017difficulties}, so it is reasonable to see a high correlation between vocal and dance scores. Theoretically dance and physical should be highly correlated \cite{dance2024strength}, but in the Idol School dataset, we observed a slightly lower correlation in dance vs physical than in dance vs vocal. Physical strength is essential to dancing, but dance also includes other critical elements such as technique and aesthetic expression \cite{geukes2023mirror}.   
 
 Note that some contestants with a remarkably high score in dance but a low score in physical:  
 e.g. Bae Eun Yeong (裴恩英)   
 e.g. Lee Hae In (李海印)   
 
 Or because too many contestants did not do well in the physical part ?!  
+Evidence: Median in physical score is lower than the median in vocal or dance.  
 
 ```{r idol-scores-correlation}
 # UNFINISHED HERE

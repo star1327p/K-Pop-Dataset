@@ -100,7 +100,7 @@ This manuscript is created using `R` Markdown \cite{r-markdown}^[<https://rmarkd
 
 e.g. Chapter 23 does something.   
 
-## Read in the *Idol School* Dataset
+# *Idol School* Dataset (2017)
 
 *Idol School* (偶像學校) (2017)
 
@@ -115,6 +115,8 @@ Wikipedia: "In January 2025, five members of the group signed with ASND."
 \textcolor{red}{Need to write the data description}  
 
 Wikipedia data: <https://en.wikipedia.org/wiki/List_of_Idol_School_contestants>  
+
+## Read in the *Idol School* Dataset
 
 We manually copy-pasted the contestant data from Wikipedia into a Microsoft Excel workbook (`.xlsx`), and used the `R` package `readxl` \cite{r-read-xl} to load the dataset. A main advantage of `.xlsx` over `.csv` is that we can have multiple data sheets in the same Excel file for consolidation. Moreover, Excel supports Chinese characters, so we can also include the Chinese names of each contestant. Since the English translation of Korean names look similar to each other \cite{kim2020linguistics}, we also include the date of birth (DOB) to make it easier to uniquely identify each contestant. For those who are able to read Chinese, we put each contestant's name in Chinese characters as well.  
 
@@ -181,8 +183,17 @@ physical_sorted = sort(idol_school$Physical, decreasing = TRUE)
 # UNFINISHED HERE
 combined_all_three = cbind(vocal_sorted, dance_sorted, physical_sorted)
 sorted_scores_df = as.data.frame(combined_all_three)
+```
+Test
 
+```{r top-10-sorted-scores}
 sorted_scores_df[1:10,]
+```
+
+Test
+
+```{r bottom-10-sorted-scores}
+sorted_scores_df[31:41,]
 ```
 
 \textcolor{red}{Explain why we removed the 41st contestant whose scores were all zeros.}   
@@ -195,6 +206,7 @@ Som Hye In (慎惠仁) left the *Idol School* show due to health reasons. She wa
 ```{r idol-mean-and-median}
 # UNFINISHED HERE
 # We MUST remove the 41st contestant's scores (all zeros)!!
+idol_school = idol_school[1:40,]
 
 # Output a table for the mean and median for (vocal, dance, physical)
 
@@ -224,18 +236,20 @@ Add: mean
 # UNFINISHED HERE
 # Convert to data.frame format like the median and mean above
 
+# Combine all three summary tables into one data.frame
+
 print("Summary Statistics")
 print("Vocal:")
-print(summary(idol_school$Vocal[1:40]))
+print(summary(idol_school$Vocal))
 print("Dance:")
-print(summary(idol_school$Dance[1:40]))
+print(summary(idol_school$Dance))
 print("Physical:")
-print(summary(idol_school$Physical[1:40]))
+print(summary(idol_school$Physical))
 ```
 
 
 Shall we create a **box plot** using ggplot2 to compare the three sets of scores?   
-https://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization
+<https://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization>
 
 
 Correlation matrix  
@@ -247,9 +261,9 @@ Diagonal elements are always exactly 1.
 Create the scatterplots and/or correlation plots!   
 \textcolor{red}{Use \texttt{ggplot} or not} ?!    
 
-- Correlation between vocal and dance scores: 0.682
-- Correlation between vocal and physical scores: 0.683
-- Correlation between dance and physical scores: 0.543
+- Correlation between vocal and dance scores: 0.645
+- Correlation between vocal and physical scores: 0.663
+- Correlation between dance and physical scores: 0.509
 
 The training at a K-Pop entertainment company in Korea usually includes vocal and dance lessons \cite{padget2017difficulties}, so it is reasonable to see a high correlation between vocal and dance scores. Theoretically dance and physical should be highly correlated \cite{dance2024strength}, but in the Idol School dataset, we observed a slightly lower correlation in dance vs physical than in dance vs vocal. Physical strength is essential to dancing, but dance also includes other critical elements such as technique and aesthetic expression \cite{geukes2023mirror}.   
 
@@ -286,7 +300,7 @@ Someone else used random forests to predict the final ranking:
 <https://shavid.pixnet.net/blog/post/331691281>
 
 
-## Read in the *Produce 48* Dataset
+# Read in the *Produce 48* Dataset
 
 *Produce 48* dataset (2018)   
 

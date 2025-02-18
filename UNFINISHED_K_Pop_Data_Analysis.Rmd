@@ -63,15 +63,17 @@ K-Pop music has emerged popularity worldwide since the early 2010's \cite{khiun2
 
 \textcolor{red}{Then write about the author's motivation}   
 
-The author became interested in K-Pop music (Korean pop music) from the debut of Tzuyu (Chou Tzu-Yu, 周子瑜).^[<https://en.wikipedia.org/wiki/Tzuyu>]  
+The author became interested in K-Pop music (Korean pop music) from the debut of Tzuyu (Chou Tzu-Yu, 周子瑜).^[<https://en.wikipedia.org/wiki/Tzuyu>] Tzuyu is originally from Taiwan, the country in which the author grew up. In 2015, Tzuyu participated in the South Korean reality television show *SIXTEEN*,^[<https://en.wikipedia.org/wiki/Sixteen_(TV_program)>] and eventually got added to the newly-formed girl group *TWICE*.^[<https://en.wikipedia.org/wiki/Twice>] In early 2016, Tzuyu was forced to apologize after she raised the Taiwan flag in a Korean entertainment show.^[<https://bit.ly/3DOcNlP>] The flag controversy incident made headline news in Taiwan,^[<https://bit.ly/4k5j7ps>] and it was estimated to bring in 500,000 votes for the 2016 Taiwan presidential election.^[<https://bit.ly/3CUQWsK>]   
 
-Tzuyu is originally from Taiwan, the country in which the author grew up. In 2015, Tzuyu participated in the South Korean reality television show *SIXTEEN*,^[<https://en.wikipedia.org/wiki/Sixteen_(TV_program)>] and eventually got added to the newly-formed girl group *TWICE*.^[<https://en.wikipedia.org/wiki/Twice>]   
+Then in 2017, ...
 
-Later that year, ...       
+Snowbaby (蔡瑞雪)  
 
-Describe the flag controversy incident.^[<https://bit.ly/3DOcNlP>]   
+*Idol School* (偶像學校) (2017)   
 
-(a lot more content here)  
+Motivation: One of the contestants, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] is also from Taiwan. In fact, Snowbaby^[<https://bit.ly/424u3gv>] graduated from Taipei First Girls' High School,^[<https://www.fg.tp.edu.tw/>] the same high school as the author did.   
+
+(a lot more content here)   
 
 
 \textcolor{red}{Important: Write about the K-Pop scandal revealed in 2019 and later.} 
@@ -102,11 +104,13 @@ e.g. Chapter 23 does something.
 
 *Idol School* (偶像學校) (2017)
 
-Motivation: One of the contestants, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] is also from Taiwan. In fact, Snowbaby^[<https://bit.ly/424u3gv>] graduated from Taipei First Girls' High School,^[<https://www.fg.tp.edu.tw/>] the same high school as the author did.   
-
 \textcolor{red}{Emphasize that \textit{Idol School} did not require vocal or dance experience and was willing to train the participants from scratch. Despite the low barrier to entry, many participants in the reality show had previously trained under various entertainment companies.}   
 
 In the live reality show *Idol School*, nine winners were selected to form the girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This girl group debuted in 2018 and remained active until the contract ended in 2024.  
+
+\textcolor{red}{What happened to the group in January 2025?}   
+
+Wikipedia: "In January 2025, five members of the group signed with ASND."   
 
 \textcolor{red}{Need to write the data description}  
 

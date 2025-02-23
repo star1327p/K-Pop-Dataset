@@ -154,6 +154,29 @@ columns_to_show = c("Name_Chn", "Name_Eng", "DOB",
 idol_school[1:20, columns_to_show]
 ```
 
+Test
+
+```{r idol-school-data-part-2}
+idol_school[21:30, columns_to_show]
+```
+
+Test
+
+```{r idol-school-data-part-final}
+idol_school[31:41, columns_to_show]
+```
+
+\textcolor{red}{Explain why we removed the 41st contestant whose scores were all zeros.}   
+
+Som Hye In (慎惠仁) left the *Idol School* show due to health reasons. She was unable to complete the basic test, so her score was zero in all three categories (vocal, dance, and physical).   
+
+
+```{r idol-remove-zero-scores}
+# UNFINISHED HERE
+# We MUST remove the 41st contestant's scores (all zeros)!!
+idol_school = idol_school[1:40,]
+```
+
 ## *Idol School*: Exploratory Data Analysis
 
 \textcolor{red}{Context: Write about how the vocal, dance, and physical scores were evaluated.}   
@@ -202,58 +225,26 @@ sorted_scores_df[1:10,]
 Test
 
 ```{r bottom-10-sorted-scores}
-sorted_scores_df[31:41,]
+sorted_scores_df[31:40,]
 ```
-
-\textcolor{red}{Explain why we removed the 41st contestant whose scores were all zeros.}   
-
-Som Hye In (慎惠仁) left the *Idol School* show due to health reasons. She was unable to complete the basic test, so her score was zero in all three categories (vocal, dance, and physical).   
-
 
 \textcolor{red}{Check for the mean and median of each category score}  
 
-```{r idol-mean-and-median}
-# UNFINISHED HERE
-# We MUST remove the 41st contestant's scores (all zeros)!!
-idol_school = idol_school[1:40,]
-
-# Output a table for the mean and median for (vocal, dance, physical)
-
-metrics = c("Mean","Median")
-vocal_stats = c(mean(idol_school$Vocal), median(idol_school$Vocal))
-dance_stats = c(mean(idol_school$Dance), median(idol_school$Dance))
-physical_stats = c(mean(idol_school$Physical), median(idol_school$Physical))
-
-idol_stats_df = data.frame(metrics, vocal_stats, dance_stats, physical_stats)
-names(idol_stats_df) = c("Metrics", "Vocal", "Dance", "Physical")
-
-# UNFINISHED HERE
-# Rounding to two decimal places?!
-
-idol_stats_df
-```
-
-Do we need to look at the five-number summary?!   
+Look at the five-number summary ?!   
 http://en.wikipedia.org/wiki/Five-number_summary   
 
 Five numbers = min, 1st quartile, median, 3rd quartile, max.  
 Add: mean
 
-\textcolor{red}{Explain why we removed the 41st contestant whose scores were all zeros.}
-
 ```{r idol-summary-stats}
-# UNFINISHED HERE
-# Convert to data.frame format like the median and mean above
+# Combine all three summary tables
+vocal_summary = summary(idol_school$Vocal)
+dance_summary = summary(idol_school$Dance)
+physical_summary = summary(idol_school$Physical)
 
-# Combine all three summary tables into one data.frame
-
-print("Summary Statistics")
-print("Vocal:")
-print(summary(idol_school$Vocal))
-print("Dance:")
-print(summary(idol_school$Dance))
-print("Physical:")
-print(summary(idol_school$Physical))
+score_summary = rbind(vocal_summary, dance_summary, physical_summary)
+row.names(score_summary) = c("Vocal","Dance","Physical")
+print(score_summary)
 ```
 
 
@@ -305,8 +296,13 @@ cor(idol_school$Vocal, idol_school$Dance)
 Students who were eliminated from the show:  
 <https://www.ptt.cc/bbs/fromis_9/M.1555819461.A.C73.html>
 
-Someone else used random forests to predict the final ranking:  
+In 2017, someone else used random forests to predict the final ranking:  
 <https://shavid.pixnet.net/blog/post/331691281>
+
+But this task turned out to be meaningless because the participant rankings were manipulated by the organizers.  
+
+*Idol School*: Vote Manipulation Investigation (2019)   
+<https://www.ptt.cc/bbs/KoreaStar/M.1624467107.A.D7F.html>  
 
 
 # Read in the *Produce 48* Dataset

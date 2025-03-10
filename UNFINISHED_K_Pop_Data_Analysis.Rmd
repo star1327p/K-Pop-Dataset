@@ -70,15 +70,22 @@ The author became interested in K-Pop music (Korean pop music) from the debut of
 
 Then in 2017, another Taiwanese girl, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] joined the Korean live reality show *Idol School* (偶像學校).^[<https://en.wikipedia.org/wiki/Idol_School_(2017_TV_series)>] At the end, the show would select nine winners to form the girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This also generated lots of discussion in the Mandarin-speaking community.^[<https://www.epochtimes.com/b5/17/7/2/n9346573.htm>] Although Snowbaby was eliminated in the middle of the show, she still deserves praise for her courage to participate as an international contestant.^[<https://bit.ly/41p3pym>] Since Snowbaby graduated from the same high school as the author did,^[<https://bit.ly/424u3gv>] her experience motivated the author to learn more the K-Pop entertainment industry.    
 
-To become a K-Pop idol in Korea, aspiring kids usually start as a trainee at an entertainment company in their early teens. (citation needed)   
+To become a K-Pop idol in Korea, aspiring kids usually start as a trainee at an entertainment company in their early teens \cite{lee2019k-pop}. The trainees take vocal and dance lessons, and the training process is intense and extremely competitive \cite{kang2017rediscovering, lee2024establishment}.      
 
-vocal and dance lessons  
-Intense competition   
-Very few trainees can eventually get selected to debut and perform on stage as the company's official group.  
+Few trainees can eventually get selected to debut and perform on stage as the company's official group. (citation needed)  
+
+And very few K-pop performers can achieve iconic status. (citation needed)   
+https://www.tandfonline.com/doi/abs/10.1080/10286632.2024.2366979   
+
+Note about survivorship bias. (citation needed)  
 
 (No wonder the K-Pop artist performances are always beautiful and well-rehearsed!)   
 
 While a performing group enjoys the spotlight and fame, the group typically lasts only a few years before the contract ends. (citation needed)   
+
+K-Pop overcrowded market  (citation needed)  
+https://www.paradigmpress.org/le/article/view/1544   
+
 
 (a lot more content here)   
 

@@ -59,12 +59,14 @@ This manuscript is written solely by the author, not by ChatGPT or any other gen
 
 \textcolor{red}{Important: Write about why K-pop music is so popular across the globe.}   
 
-K-pop music has emerged popularity worldwide since the early 2010's \cite{khiun2013k-pop, sun2022identifying}.   
+K-pop music (Korean popular music) has emerged popularity worldwide since the early 2010's \cite{khiun2013k-pop, sun2022identifying}. K-pop's international popularity stems from its appealing music, eye-catching performances, and the strategic use of social media, fostering a global community of dedicated fans who actively promote the artists and genre \cite{kim2022global, chen2023expansion}. Therefore, K-pop enjoys fame not only across East Asian countries like China and Thailand \cite{malik2023korea-east-asia}, but also in the United States^[<https://bit.ly/4iIHpor>] and Western Europe^[<https://nolae.eu/blogs/news/diese-k-pop-konzerte-werden-2025-in-europa-stattfinden>] \cite{miroudot2024common}.      
+
+The paragraph above is too short. Need to add more content.   
+
 
 \textcolor{red}{Then write about the author's motivation}   
 
-The author became interested in K-pop music (Korean pop music) from the debut of Tzuyu (Chou Tzu-Yu, 周子瑜).^[<https://en.wikipedia.org/wiki/Tzuyu>] Tzuyu is originally from Taiwan, the country in which the author grew up. In 2015, Tzuyu participated in the South Korean reality television show *SIXTEEN*,^[<https://en.wikipedia.org/wiki/Sixteen_(TV_program)>] and eventually got added to the newly-formed girl group *TWICE*.^[<https://en.wikipedia.org/wiki/Twice>] In early 2016, Tzuyu was forced to apologize after she raised the Taiwan flag in a Korean entertainment show.^[<https://bit.ly/3DOcNlP>] The flag controversy incident made headline news in Taiwan,^[<https://bit.ly/4k5j7ps>] and it was estimated to bring in 500,000 votes for the 2016 Taiwan presidential election.^[<https://bit.ly/3CUQWsK>]   
-\newpage
+The author became interested in K-pop music from the debut of Tzuyu (Chou Tzu-Yu, 周子瑜).^[<https://en.wikipedia.org/wiki/Tzuyu>] Tzuyu is originally from Taiwan, the country in which the author grew up. In 2015, Tzuyu participated in the South Korean reality television show *SIXTEEN*,^[<https://en.wikipedia.org/wiki/Sixteen_(TV_program)>] and eventually got added to the newly-formed girl group *TWICE*.^[<https://en.wikipedia.org/wiki/Twice>] In early 2016, Tzuyu was forced to apologize after she raised the Taiwan flag in a Korean entertainment show.^[<https://bit.ly/3DOcNlP>] The flag controversy incident made headline news in Taiwan,^[<https://bit.ly/4k5j7ps>] and it was estimated to bring in 500,000 votes for the 2016 Taiwan presidential election.^[<https://bit.ly/3CUQWsK>]    
 
 \section*{\textcolor{red}{Unfinished below}}
 

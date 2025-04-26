@@ -270,11 +270,19 @@ Create the scatterplots and/or correlation plots!
 The training at a K-pop entertainment company in Korea usually includes vocal and dance lessons \cite{padget2017difficulties}, so it is reasonable to see a high correlation between vocal and dance scores. Theoretically dance and physical should be highly correlated \cite{dance2024strength}, but in the Idol School dataset, we observed a slightly lower correlation in dance vs physical than in dance vs vocal. Physical strength is essential to dancing, but dance also includes other critical elements such as technique and aesthetic expression \cite{geukes2023mirror}.   
 
 Note that some contestants with a remarkably high score in dance but a low score in physical:  
-e.g. Bae Eun Yeong (裴恩英)   
-e.g. Lee Hae In (李海印)   
+e.g. Bae Eun Yeong (裴恩英): Dance 9.3 (second place) and Physical 3.5   
+e.g. Lee Hae In (李海印): Dance 8.4 and Physical 1.8      
 
 Or because too many contestants did not do well in the physical part ?!  
 Evidence: Median in physical score is lower than the median in vocal or dance.  
+
+With a few exceptions:  
+
+e.g. Jo Yuri (曹柔理): Dance 2.2 and Physical 5.9  
+Jo Yuri was a long jump athlete during her school years.  
+
+e.g. Song Ha Young (宋河英): Dance 5.9 and Physical 9.8 (second place)   
+Song Ha Young was a certified aerial yoga instructor prior to her debut.  
 
 ```{r idol-scores-correlation}
 # UNFINISHED HERE
@@ -285,12 +293,15 @@ Alternatively, we can also obtain the pairwise correlation of each category.
 
 ```{r idol-scores-pairwise}
 # UNFINISHED HERE
-cor(idol_school$Vocal, idol_school$Dance)
-
-# UNFINISHED HERE
 # Need to print all three pairs.
-# cor(idol_school$Dance, idol_school$Physical)
-# cor(idol_school$Vocal, idol_school$Physical)
+vocal_vs_dance = cor(idol_school$Vocal, idol_school$Dance)
+dance_vs_physical = cor(idol_school$Dance, idol_school$Physical)
+vocal_vs_physical = cor(idol_school$Vocal, idol_school$Physical)
+
+# Use the cat function to output multiple lines at a time
+cat(paste0("Correlation of vocal and dance:    ", vocal_vs_dance, "\n",
+           "Correlation of dance and physical: ", dance_vs_physical, "\n",
+           "Correlation of vocal and physical: ", vocal_vs_physical))
 ```
 
 ## Idol School: Additional Resources
@@ -298,7 +309,7 @@ cor(idol_school$Vocal, idol_school$Dance)
 Students who were eliminated from the show:  
 <https://www.ptt.cc/bbs/fromis_9/M.1555819461.A.C73.html>
 
-In 2017, someone else used random forests to predict the final ranking:  
+In 2017, a Taiwanese blogger used random forests to predict the *Idol School* final ranking:  
 <https://shavid.pixnet.net/blog/post/331691281>
 
 But this task turned out to be meaningless because the participant rankings were manipulated by the organizers.  
@@ -430,6 +441,6 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 The author is immensely grateful to her significant other, Hugh Hendrickson, for providing his support in the author's professional development.   
 
-Technical discussions: Cheng-Shun (Adson) Liu and Chih-Kuang (Kevin) Lee.
+Technical discussions: Cheng-Shun Liu (劉承順) and Chih-Kuang Lee (李治廣, Kevin).
 
 \addcontentsline{toc}{section}{References} 

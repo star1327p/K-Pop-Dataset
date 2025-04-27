@@ -185,8 +185,15 @@ idol_school = idol_school[1:40,]
 
 Physical testing contains a group exercise and an individual exercise.   
 
-Also mention the top performers in each category.  
+Also mention the top performers in overall scores and in each category.  
 
+Most of the top performers had experience as a trainee under an entertainment company, and some even had debuted before.  
+
+\textcolor{red}{Then why did they join the Idol School reality show?}  
+
+Unfortunately, Snowbaby (蔡瑞雪) did not do well.  
+
+Snowbaby had not received any vocal or dance training in K-pop, so she was a complete beginner in the show.  
 
 \textcolor{red}{What changes did we make from the Wikipedia data?}   
 
@@ -230,6 +237,8 @@ Test
 sorted_scores_df[31:40,]
 ```
 
+### Summary Statistics
+
 \textcolor{red}{Check for the mean and median of each category score}  
 
 Look at the five-number summary ?!   
@@ -249,23 +258,34 @@ row.names(score_summary) = c("Vocal","Dance","Physical")
 print(score_summary)
 ```
 
-
 Shall we create a **box plot** using ggplot2 to compare the three sets of scores?   
 <https://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization>
 
+### Correlation between Vocal, Dance, and Physical Scores
 
-Correlation matrix  
+We can obtain the pairwise correlation coefficients of each category. There is a positive association between the vocal, dance, and physical scores. We round each number to three decimal places.     
 
-\textcolor{red}{Need to explain the correlation coefficients and the K-pop context.}  
+```{r idol-scores-correlation-pairwise}
+vocal_vs_dance = round(cor(idol_school$Vocal, idol_school$Dance), 3)
+dance_vs_physical = round(cor(idol_school$Dance, idol_school$Physical), 3)
+vocal_vs_physical = round(cor(idol_school$Vocal, idol_school$Physical), 3)
 
-Diagonal elements are always exactly 1.  
+# Use the cat function to output multiple lines at a time
+cat(paste0("Correlation of vocal and dance:    ", vocal_vs_dance, "\n",
+           "Correlation of dance and physical: ", dance_vs_physical, "\n",
+           "Correlation of vocal and physical: ", vocal_vs_physical))
+```
+
+Alternatively, we can also compute the correlation matrix for the three score categories (variables). The diagonal elements are always exactly 1 -- because they represent the correlation of a variable with itself, which is a perfect positive correlation. The off-diagonal elements indicate the correlation coefficient between different categories.     
+
+```{r idol-scores-correlation-matrix}
+round(cor(idol_school[,c("Vocal","Dance","Physical")]), 3)
+```
 
 Create the scatterplots and/or correlation plots!   
 \textcolor{red}{Use \texttt{ggplot} or not} ?!    
 
-- Correlation between vocal and dance scores: 0.645
-- Correlation between vocal and physical scores: 0.663
-- Correlation between dance and physical scores: 0.509
+\textcolor{red}{Need to explain the correlation coefficients and the K-pop context.}   
 
 The training at a K-pop entertainment company in Korea usually includes vocal and dance lessons \cite{padget2017difficulties}, so it is reasonable to see a high correlation between vocal and dance scores. Theoretically dance and physical should be highly correlated \cite{dance2024strength}, but in the Idol School dataset, we observed a slightly lower correlation in dance vs physical than in dance vs vocal. Physical strength is essential to dancing, but dance also includes other critical elements such as technique and aesthetic expression \cite{geukes2023mirror}.   
 
@@ -282,27 +302,9 @@ e.g. Jo Yuri (曹柔理): Dance 2.2 and Physical 5.9
 Jo Yuri was a long jump athlete during her school years.  
 
 e.g. Song Ha Young (宋河英): Dance 5.9 and Physical 9.8 (second place)   
-Song Ha Young was a certified aerial yoga instructor prior to her debut.  
+Song Ha Young was a certified aerial yoga instructor before she first appeared in the *Idol School* reality show.  
 
-```{r idol-scores-correlation}
-# UNFINISHED HERE
-cor(idol_school[,c("Vocal","Dance","Physical")])
-```
-
-Alternatively, we can also obtain the pairwise correlation of each category.  
-
-```{r idol-scores-pairwise}
-# UNFINISHED HERE
-# Need to print all three pairs.
-vocal_vs_dance = cor(idol_school$Vocal, idol_school$Dance)
-dance_vs_physical = cor(idol_school$Dance, idol_school$Physical)
-vocal_vs_physical = cor(idol_school$Vocal, idol_school$Physical)
-
-# Use the cat function to output multiple lines at a time
-cat(paste0("Correlation of vocal and dance:    ", vocal_vs_dance, "\n",
-           "Correlation of dance and physical: ", dance_vs_physical, "\n",
-           "Correlation of vocal and physical: ", vocal_vs_physical))
-```
+\textcolor{red}{Do more analysis to the Idol School data!}   
 
 ## Idol School: Additional Resources
 

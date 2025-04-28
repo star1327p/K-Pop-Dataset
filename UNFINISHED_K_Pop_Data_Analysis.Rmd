@@ -241,11 +241,7 @@ sorted_scores_df[31:40,]
 
 \textcolor{red}{Check for the mean and median of each category score}  
 
-Look at the five-number summary ?!   
-http://en.wikipedia.org/wiki/Five-number_summary   
-
-Five numbers = min, 1st quartile, median, 3rd quartile, max.  
-Add: mean
+The five-number summary refers to the five most important percentiles in the data sample -- minimum, 1st quartile, median, 3rd quartile, and maximum.^[<http://en.wikipedia.org/wiki/Five-number_summary>] The `summary` function in `R` outputs the five-number summary along with the arithmetic mean for the data.   
 
 ```{r idol-summary-stats}
 # Combine all three summary tables
@@ -257,6 +253,30 @@ score_summary = rbind(vocal_summary, dance_summary, physical_summary)
 row.names(score_summary) = c("Vocal","Dance","Physical")
 print(score_summary)
 ```
+
+Observation:  
+
+Vocal and dance scores have min = 1 (who participated but made a blunder while performing), and the max is below 10 (full mark).   
+
+Natty's vocal was 9.8, which the instructor said her singing performance was perfect.  
+Dance: The median score of dance is the highest among the three categories.   
+
+In K-pop, dance is an essential element for performers. (citation needed)   
+In the live band, everyone must dance!
+
+c.f. Vocal roles are divided into main vocal, lead vocal, and sub-vocal (i.e., everyone else, or simply "vocal").^[<https://bit.ly/3RFAHDL>]    
+
+Generally the most challenging lines are assigned to the main vocal and the lead vocal, while the other vocals receive easier parts. (citation needed)   
+
+Physical: Min = 0.4, and a total of five students had a score below 1.   
+
+Max = 10 for the first place, while the second place received 9.8.   
+
+Lowest median score among all three categories.   
+
+The show did not reveal how the physical scores were calculated from the raw time each participant were able to sustain the exercises.    
+
+\textcolor{red}{Remark: That's why it is important to remove the record with all zeros, otherwise the minimum score would be zero in every single category. Then we would not have noticed that the vocal and dance scores start from 1 with mere partipation, but the physical scores have a different scale.}    
 
 Shall we create a **box plot** using `ggplot2` \cite{ggplot2} to compare the three sets of scores?   
 <https://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization>

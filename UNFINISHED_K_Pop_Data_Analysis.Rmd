@@ -258,11 +258,16 @@ Observation:
 
 Vocal and dance scores have min = 1 (who participated but made a blunder while performing), and the max is below 10 (full mark).   
 
-Natty's vocal was 9.8, which the instructor said her singing performance was perfect.  
-Dance: The median score of dance is the highest among the three categories.   
+NATTY's vocal was 9.8, and the instructor said her singing performance was perfect (considering that NATTY^[NATTY's birth name is Anatchaya Suputhipong. <https://en.wikipedia.org/wiki/Natty_(Thai_singer)>] is originally from Thailand and hence not a native speaker in Korean).    
+
+Lee Hae In (李海印) received a score of 1 in vocal, because she lost her voice during the singing part (which was unfortunate).  
+
+Dance: Although the best score was only 9.5 (given to Tasha (劉怡伶)), the median score of dance is the highest among the three categories.   
 
 In K-pop, dance is an essential element for performers. (citation needed)   
-In the live band, everyone must dance!
+In the live band, everyone must dance!  
+
+The video clip showed that Lee Si An (李詩安) and Yoo Ji Na (柳知娜) struggled in the dance exercise, but it was Jung So Mi (鄭昭彌) who got the lowest score of 1.  
 
 c.f. Vocal roles are divided into main vocal, lead vocal, and sub-vocal (i.e., everyone else, or simply "vocal").^[<https://bit.ly/3RFAHDL>]    
 
@@ -270,11 +275,18 @@ Generally the most challenging lines are assigned to the main vocal and the lead
 
 Physical: Min = 0.4, and a total of five students had a score below 1.   
 
+\textcolor{red}{Also state the names of the top scorers in physical.}   
+
 Max = 10 for the first place, while the second place received 9.8.   
 
 Lowest median score among all three categories.   
 
-The show did not reveal how the physical scores were calculated from the raw time each participant were able to sustain the exercises.    
+The show did not reveal how the physical scores were calculated from the raw time sustained by each participant the exercises.    
+
+\textcolor{red}{Physical: group physical exercise vs individual exercise}   
+
+We suspect that the individual exercise accounted for a larger proportion of the physical score.     
+Also explain the reasoning.   
 
 \textcolor{red}{Remark: That's why it is important to remove the record with all zeros, otherwise the minimum score would be zero in every single category. Then we would not have noticed that the vocal and dance scores start from 1 with mere partipation, but the physical scores have a different scale.}    
 

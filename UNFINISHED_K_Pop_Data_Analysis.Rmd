@@ -275,9 +275,7 @@ Generally the most challenging lines are assigned to the main vocal and the lead
 
 Physical: Min = 0.4, and a total of five students had a score below 1.   
 
-\textcolor{red}{Also state the names of the top scorers in physical.}   
-
-Max = 10 for the first place, while the second place received 9.8.   
+Kim Eun Suh (金恩書) came in first and received the full mark of 10, while Song Ha Young (宋河英) got 9.8 as the second place.   
 
 Lowest median score among all three categories.   
 
@@ -285,8 +283,7 @@ The show did not reveal how the physical scores were calculated from the raw tim
 
 \textcolor{red}{Physical: group physical exercise vs individual exercise}   
 
-We suspect that the individual exercise accounted for a larger proportion of the physical score.     
-Also explain the reasoning.   
+We suspect that the individual exercise accounted for a larger proportion of the physical score. We saw in the video that Lee Da Hee (李多熙) and Kim Na Yeon (金娜妍) came in first in the group physical exercise. However, Lee Da Hee's physical score was only 4.9, and Kim Na Yeon got 6.4 (which is good but not one of the best).^[Screenshot of the first place team in the group physical exercise: <https://bit.ly/3EDBhz5>]    
 
 \textcolor{red}{Remark: That's why it is important to remove the record with all zeros, otherwise the minimum score would be zero in every single category. Then we would not have noticed that the vocal and dance scores start from 1 with mere partipation, but the physical scores have a different scale.}    
 

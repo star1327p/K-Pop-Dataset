@@ -197,16 +197,11 @@ Snowbaby had not received any vocal or dance training in K-pop, so she was a com
 
 \textcolor{red}{What changes did we make from the Wikipedia data?}   
 
-Our presumption is that in each category, no two contestants should have the same score. However, after sorting the *Idol School* data by the physical scores, we found two 3.5's and two 1.2's. Especially that the two 3.5's belong to top-ranked contestants Bae Eun Yeong (裴恩英) and Park Ji Won (朴池原), this issue quickly caught our attention to make corrections to the data.   
-
-
-\textcolor{red}{Physical: We found two 3.5's and two 1.2's after sorting the scores.}   
+Our presumption is that in each category, no two contestants should have the same score. However, after sorting the *Idol School* data, we found two 3.5's and two 1.2's in the physical scores. Especially that the two 3.5's belong to top-ranked contestants Bae Eun Yeong (裴恩英) and Park Ji Won (朴池原), this issue quickly caught our attention to make corrections to the data.   
 
 In the video clip, Park Ji Won (朴池原) and her partner were the first runner-up in the group physical exercise.^[Screenshot of the group physical exercise: <https://bit.ly/4a7QT9m>] We are surprised that Ji Won's physical score was only 3.5. According to the video's score table for contestants ranked 11th to 20th,^[<https://bit.ly/400KUhH>] Ji Won's physical score should be 6.2. The Wikipedia table shows an inconsistency in Ji Won's overall score, i.e., the average across the three categories. Ji Won's vocal score was 7.9, and her dance score was 5. These numbers seem to be reasonable for Ji Won, because she is known for excellent singing and good dancing as a performer.^[Park Ji Won was the main vocalist in *fromis_9*. <https://bit.ly/402yCFI>] Therefore, we assume both scores to be correct. If the physical score had really been 3.5, then Ji Won's overall score would be 5.47, dropping her from 13th place to the 18th. If the overall score of 6.37 had been correct, then Ji Won's physical score should be 6.2. The second scenario is more likely to be true, given the evidence we found in the video clip. Hence we corrected Ji Won's physical score to 6.2.      
 
-\textcolor{red}{Physical: We found additional two 1.2's after sorting the scores.}   
-
-The two 1.2 scores are more difficult to check for the underlying values, probably because they occurred in two contestants of lower ranking.^[Physical scores of all contestants in *Idol School*: <https://bit.ly/3DRNK0Z>] The two contestants, Jessica Lee (李瑟) and Michelle White (懷特·米雪兒), ranked in the lower half of all 41 contestants in terms of the overall ability test. Both of them got eliminated in the first round, so they did not receive much attention in the show. With the help of Google Translate,^[<https://translate.google.com/>] we were able to translate the image of Korean text to (readable) English. Finally, we discovered that Michelle White's physical score should be 1.3, not 1.2.    
+The two 1.2 physical scores are more difficult to check for the underlying values, probably because they occurred in two contestants of lower ranking.^[Physical scores of all contestants in *Idol School*: <https://bit.ly/3DRNK0Z>] The two contestants, Jessica Lee (李瑟) and Michelle White (懷特·米雪兒), ranked in the lower half of all 41 contestants in terms of the overall ability test. Both of them got eliminated in the first round, so they did not receive much attention in the show. With the help of Google Translate,^[<https://translate.google.com/>] we were able to translate the image of Korean text to (readable) English. Finally, we discovered that Michelle White's physical score should be 1.3, not 1.2.    
 
 *Idol School* (2017): Videos with subtitles in Simplified Chinese are available on the Bilibili platform.^[<https://www.bilibili.com/video/BV1554y1C7wj/>]
 
@@ -214,6 +209,8 @@ Screenshots saved:
 <https://github.com/star1327p/K-Pop-Dataset/tree/main/Idol_School_Rating_Screenshots> 
 
 \textcolor{red}{Still need to write the description}  
+
+\textcolor{red}{Consider hiding the sorted scores}   
 
 ```{r idol-school-eda}
 
@@ -256,13 +253,17 @@ print(score_summary)
 
 Observation:  
 
-Vocal and dance scores have min = 1 (who participated but made a blunder while performing), and the max is below 10 (full mark).   
+Vocal and dance scores have 1 as the minimum score (who participated but made a blunder while performing), and the maximum score is below 10 (full mark). Physical scores have a wider range because the first place is automatically given a 10, and the other contestants' scores are calculated using the best performer as the baseline. Hence it is possible to receive a physical score below 1.   
 
-NATTY's vocal was 9.8, and the instructor said her singing performance was perfect (considering that NATTY^[NATTY's birth name is Anatchaya Suputhipong. <https://en.wikipedia.org/wiki/Natty_(Thai_singer)>] is originally from Thailand and hence not a native speaker in Korean).    
+Vocal:   
 
-Lee Hae In (李海印) received a score of 1 in vocal, because she lost her voice during the singing part (which was unfortunate).  
+NATTY received 9.8 as the highest vocal score, and the instructor said her singing performance was perfect (considering that NATTY is originally from Thailand and hence not a native speaker in Korean).^[NATTY's birth name is Anatchaya Suputhipong. <https://en.wikipedia.org/wiki/Natty_(Thai_singer)>]         
 
-Dance: Although the best score was only 9.5 (given to Tasha (劉怡伶)), the median score of dance is the highest among the three categories.   
+On the other hand, Lee Hae In (李海印) received a score of 1 in vocal, because she lost her voice during the singing part (which was unfortunate).  
+
+Dance:    
+
+Although the best score was only 9.5 (given to Tasha (劉怡伶)), the median score of dance is the highest among the three categories.   
 
 In K-pop, dance is an essential element for performers. (citation needed)   
 In the live band, everyone must dance!  
@@ -273,9 +274,11 @@ c.f. Vocal roles are divided into main vocal, lead vocal, and sub-vocal (i.e., e
 
 Generally the most challenging lines are assigned to the main vocal and the lead vocal, while the other vocals receive easier parts. (citation needed)   
 
-Physical: Min = 0.4, and a total of five students had a score below 1.   
+Physical:    
 
 Kim Eun Suh (金恩書) came in first and received the full mark of 10, while Song Ha Young (宋河英) got 9.8 as the second place.   
+
+Min = 0.4, and a total of five students had a score below 1.   
 
 Lowest median score among all three categories.   
 
@@ -286,6 +289,16 @@ The show did not reveal how the physical scores were calculated from the raw tim
 We suspect that the individual exercise accounted for a larger proportion of the physical score. We saw in the video that Lee Da Hee (李多熙) and Kim Na Yeon (金娜妍) came in first in the group physical exercise. However, Lee Da Hee's physical score was only 4.9, and Kim Na Yeon got 6.4 (which is good but not one of the best).^[Screenshot of the first place team in the group physical exercise: <https://bit.ly/3EDBhz5>]    
 
 \textcolor{red}{Remark: That's why it is important to remove the record with all zeros, otherwise the minimum score would be zero in every single category. Then we would not have noticed that the vocal and dance scores start from 1 with mere partipation, but the physical scores have a different scale.}    
+
+Comparison:   
+
+The median in physical score (3.25) is lower than the median in vocal (4.95) or dance (5.55), indicating that many contestants did not do well in the physical test. In fact, some contestants had a remarkably high score in dance but a low score in physical. One example is Bae Eun Yeong (裴恩英), who scored 9.3 in dance (second place) and 3.5 in physical (slightly above the median of 3.25). Another example is Lee Hae In (李海印), who got 8.4 in dance 8.4 and only 1.8 in physical.    
+
+With a few exceptions:  
+
+e.g. Jo Yuri (曹柔理) received only 2.2 in dance but 5.9 in physical. Jo Yuri had not received any K-pop training prior to the show in 2017, but she was a long jump athlete during her school years.^[<https://bit.ly/431HHRS>]    
+
+e.g. Song Ha Young (宋河英) got 5.9 in dance and 9.8 in physical. Song Ha Young was a certified aerial yoga instructor before she first appeared in the *Idol School* reality show.  
 
 Shall we create a **box plot** using `ggplot2` \cite{ggplot2} to compare the three sets of scores?   
 <https://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization>
@@ -317,21 +330,6 @@ Create the scatterplots and/or correlation plots!
 \textcolor{red}{Need to explain the correlation coefficients and the K-pop context.}   
 
 The training at a K-pop entertainment company in Korea usually includes vocal and dance lessons \cite{padget2017difficulties}, so it is reasonable to see a high correlation between vocal and dance scores. Theoretically dance and physical should be highly correlated \cite{dance2024strength}, but in the Idol School dataset, we observed a slightly lower correlation in dance vs physical than in dance vs vocal. Physical strength is essential to dancing, but dance also includes other critical elements such as technique and aesthetic expression \cite{geukes2023mirror}.   
-
-Note that some contestants with a remarkably high score in dance but a low score in physical:  
-e.g. Bae Eun Yeong (裴恩英): Dance 9.3 (second place) and Physical 3.5   
-e.g. Lee Hae In (李海印): Dance 8.4 and Physical 1.8      
-
-Or because too many contestants did not do well in the physical part ?!  
-Evidence: Median in physical score is lower than the median in vocal or dance.  
-
-With a few exceptions:  
-
-e.g. Jo Yuri (曹柔理): Dance 2.2 and Physical 5.9  
-Jo Yuri was a long jump athlete during her school years.  
-
-e.g. Song Ha Young (宋河英): Dance 5.9 and Physical 9.8 (second place)   
-Song Ha Young was a certified aerial yoga instructor before she first appeared in the *Idol School* reality show.  
 
 \textcolor{red}{Do more analysis to the Idol School data!}   
 

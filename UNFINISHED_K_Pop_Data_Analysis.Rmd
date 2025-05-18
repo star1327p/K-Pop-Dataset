@@ -383,10 +383,6 @@ Create a matrix for the two sets of ratings.
 
 For each rating, also check how many contestants are from Korea and how many are from Japan.  
 
-Jo Yuri (曹柔理): A $\rightarrow$ F   
-
-What about other participants?  
-
 ```{r produce-48-ranking-lowest}
 # UNFINISHED HERE
 produce_48_data[81:96, columns_to_show]
@@ -412,12 +408,49 @@ Second Evaluation
 table(produce_48_data$Second_Eval, dnn="Second_Eval")
 ```
 
+Cross-table: **First_Eval** as row, and **Country** as column  
+
+Observation: The majority of contestants from Japan were placed in D or F (lowest grades), while very few contestants from Korea did.   
+
+Idol training differs in Korea and Japan (citation needed)   
+Korea - primary focus on vocal and dance techniques   
+Japan - artistic interpretation ?!  
+
+```{r produce-48-eval-1st-cross-country}
+table(produce_48_data$First_Eval, produce_48_data$Country,
+      dnn=c("First_Eval","Country"))
+```
+
+Cross-table: **Second_Eval** as row, and **Country** as column  
+
+Observation: Contestants from Japan faced a little better in the second evaluation -- approximately half of them received a satisfactory grade (A, B, or C).  
+
+The scoring of domestic contestants in Korean became harsher this time -- one third of them were rated unsatisfactory (D or F).  
+
+\textcolor{red}{Need to specify the (inferred) reason}   
+
+```{r produce-48-eval-2nd-cross-country}
+table(produce_48_data$Second_Eval, produce_48_data$Country,
+      dnn=c("Second_Eval","Country"))
+```
+
 Cross-table: **First_Eval** as row, and **Second_Eval** as column  
 
-```{r produce-48-eval-cross-table}
+List the names of the six contestants who got A $\rightarrow$ A.   
+
+Jo Yuri (曹柔理): A $\rightarrow$ F   
+
+Yabuki Nako (矢吹奈子): F $\rightarrow$ A    
+
+What about other participants?  
+
+```{r produce-48-eval-1st-cross-2nd}
 table(produce_48_data$First_Eval, produce_48_data$Second_Eval,
       dnn=c("First_Eval","Second_Eval"))
 ```
+
+Next step: Breakdown the 1st-cross-2nd table by country (Korea and Japan)  
+
 
 # Tentative Placeholders
 

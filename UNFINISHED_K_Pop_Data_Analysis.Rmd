@@ -436,7 +436,7 @@ table(produce_48_data$Second_Eval, produce_48_data$Country,
 
 Cross-table: **First_Eval** as row, and **Second_Eval** as column  
 
-List the names of the six contestants who got A $\rightarrow$ A.   
+\textcolor{red}{List the names of the six contestants who got A $\rightarrow$ A.}   
 
 Jo Yuri (曹柔理): A $\rightarrow$ F   
 
@@ -451,6 +451,21 @@ table(produce_48_data$First_Eval, produce_48_data$Second_Eval,
 
 Next step: Breakdown the 1st-cross-2nd table by country (Korea and Japan)  
 
+1st-cross-2nd table: Korea
+
+```{r produce-48-korea}
+produce_48_korea = produce_48_data[which(produce_48_data$Country=="Korea"),]
+table(produce_48_korea$First_Eval, produce_48_korea$Second_Eval,
+      dnn=c("First_Eval","Second_Eval"))
+```
+
+1st-cross-2nd table: Japan
+
+```{r produce-48-japan}
+produce_48_japan = produce_48_data[which(produce_48_data$Country=="Japan"),]
+table(produce_48_japan$First_Eval, produce_48_japan$Second_Eval,
+      dnn=c("First_Eval","Second_Eval"))
+```
 
 # Tentative Placeholders
 

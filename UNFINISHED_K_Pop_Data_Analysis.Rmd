@@ -122,7 +122,7 @@ e.g. Chapter 23 does something.
 
 *Idol School* (偶像學校) (2017)
 
-\textcolor{red}{Emphasize that \textit{Idol School} did not require vocal or dance experience and was willing to train the participants from scratch. Despite the low barrier to entry, many participants in the reality show had previously trained under various entertainment companies.}   
+\textcolor{red}{Emphasize that \textit{Idol School} did not require vocal or dance experience and was willing to train the participants from scratch.} Despite the low barrier to entry, many participants in the reality show had previously trained under various entertainment companies.^[<https://kpop.fandom.com/wiki/Idol_School>]   
 
 In the live reality show *Idol School*, nine winners were selected to form the girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This girl group debuted in 2018 and remained active until the contract with Pledis Entertainment ended in 2024. In January 2025, five members of the group signed a new contract with ASND.^[<https://kpop.fandom.com/wiki/ASND>]    
 
@@ -355,8 +355,7 @@ Wikipedia data: <https://en.wikipedia.org/wiki/Produce_48>
 
 \textcolor{red}{Need to write the data description}  
 
-*Produce 48* featured 96 contestants primarily from South Korea and Japan.  
-Footnote: Korea may include other countries, and the Korea-Japan split is not 1-1.  
+*Produce 48* featured 96 contestants primarily from South Korea and Japan. The show was a collaboration between the Mnet's *Produce 101* series^[<https://en.wikipedia.org/wiki/Produce_101>] and the Japanese *AKB48* idol group.^[<https://en.wikipedia.org/wiki/AKB48>]    
 
 Some former contestants in *Idol School* tried again in the *Produce 48* reality show in 2018.   
 
@@ -388,23 +387,23 @@ For each rating, also check how many contestants are from Korea and how many are
 produce_48_data[81:96, columns_to_show]
 ```
 
-
-Nationality
+Let's look at the nationality breakdown of *Produce 48* contestants. Although *Produce 48* advertised a collaboration between Korean and Japanese entertainment groups, the Korea-Japan split is not 1-1 among participants. The majority (56%) of contestants are domestic within South Korea, while a lower but remarkable (40%) proportion is from Japan. Also, two contestants are from China and another one is from the United States.    
 
 ```{r produce-48-country}
-# UNFINISHED HERE
 table(produce_48_data$Country)
 ```
 
 First Evaluation   
 
 ```{r produce-48-first-eval}
+# UNFINISHED HERE
 table(produce_48_data$First_Eval, dnn="First_Eval")
 ```
 
 Second Evaluation   
 
 ```{r produce-48-second-eval}
+# UNFINISHED HERE
 table(produce_48_data$Second_Eval, dnn="Second_Eval")
 ```
 

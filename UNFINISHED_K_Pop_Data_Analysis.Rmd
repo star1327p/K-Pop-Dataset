@@ -419,9 +419,7 @@ Cross-table: **First_Eval** as row, and **Country** as column
 
 Observation: The majority of contestants from Japan were placed in D or F (lowest grades), while very few contestants from Korea did.   
 
-Idol training differs in Korea and Japan (citation needed)   
-Korea - primary focus on vocal and dance techniques   
-Japan - artistic interpretation ?!  
+The Idol training process differs greatly in Korea and Japan.^[<https://www.adaymag.com/2020/10/22/japanese-vs-korean-idol.html>] In Korea, the primary focus is on vocal and dance techniques, while in Japan, the Idol training values artistic interpretation and individual expressiveness \cite{alice-jiye-lee-2023}.   
 
 ```{r produce-48-eval-1st-cross-country}
 table(produce_48_data$First_Eval, produce_48_data$Country,
@@ -441,9 +439,25 @@ table(produce_48_data$Second_Eval, produce_48_data$Country,
       dnn=c("Second_Eval","Country"))
 ```
 
-Cross-table: **First_Eval** as row, and **Second_Eval** as column  
+Cross-table: **First_Eval** as row, and **Second_Eval** as column    
+
+```{r produce-48-eval-1st-cross-2nd}
+table(produce_48_data$First_Eval, produce_48_data$Second_Eval,
+      dnn=c("First_Eval","Second_Eval"))
+```
 
 \textcolor{red}{List the names of the six contestants who got A $\rightarrow$ A.}   
+
+There are six contestants who got A's in both evaluations.   
+
+Miyawaki Sakura (宮脇咲良) is the only Japanese participant; the others are all from Korea.  
+
+Note that possessing a high talent does not guarantee being selected to debut in the new girl group; having a low starting point does not result in first-round elimination, either.   
+
+```{r produce-48-list-A-to-A}
+inds_A_to_A = which(produce_48_data$First_Eval == "A" & produce_48_data$Second_Eval == "A")
+produce_48_data[inds_A_to_A, columns_to_show]
+```
 
 Jo Yuri (曹柔理): A $\rightarrow$ F   
 
@@ -451,12 +465,11 @@ Yabuki Nako (矢吹奈子): F $\rightarrow$ A
 
 What about other participants?  
 
-```{r produce-48-eval-1st-cross-2nd}
-table(produce_48_data$First_Eval, produce_48_data$Second_Eval,
-      dnn=c("First_Eval","Second_Eval"))
-```
 
-Next step: Breakdown the 1st-cross-2nd table by country (Korea and Japan)  
+
+
+
+\textcolor{red}{Next step: Breakdown the 1st-cross-2nd table by country (Korea and Japan)}      
 
 1st-cross-2nd table: Korea
 

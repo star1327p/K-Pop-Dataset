@@ -393,6 +393,14 @@ Let's look at the nationality breakdown of *Produce 48* contestants. Although *P
 table(produce_48_data$Country)
 ```
 
+\textcolor{red}{Write some narrative about Produce 48}   
+
+At the beginning of the show, there were two evaluations to the 96 contestants' talents. Each evaluation involved a sing-and-dance performance and resulted in a letter grade (A-F). Both letter grades were recorded for each contestant.   
+
+In the first evaluation, the contestants were required to perform a popular K-pop song as their initial practice. Then the mentors gave each individual a grade based on their performance, and assigned them to temporary training classes at their level.   
+
+The second evaluation was to have each contestant perform the *Produce 48*'s theme song "Nekkoya (Pick Me)"^[<https://en.wikipedia.org/wiki/Nekkoya_(Pick_Me)>]. After the song was announced, the contestants were given three days to prepare for the choreography and memorize the lyrics. The song has a Korean version and a Japanese version, so each student may choose to perform in their preferred language. Then the students were given their new grades, and reassigned to their new practice classes.     
+
 First Evaluation   
 
 ```{r produce-48-first-eval}

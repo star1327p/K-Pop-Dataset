@@ -399,27 +399,23 @@ At the beginning of the show, there were two evaluations to the 96 contestants' 
 
 In the first evaluation, the contestants were required to perform a popular K-pop song as their initial practice. Then the mentors gave each individual a grade based on their performance, and assigned them to temporary training classes at their level.   
 
-The second evaluation was to have each contestant perform the *Produce 48*'s theme song "Nekkoya (Pick Me)"^[<https://en.wikipedia.org/wiki/Nekkoya_(Pick_Me)>]. After the song was announced, the contestants were given three days to prepare for the choreography and memorize the lyrics. The song has a Korean version and a Japanese version, so each student may choose to perform in their preferred language. Then the students were given their new grades, and reassigned to their new practice classes.     
-
-First Evaluation   
-
 ```{r produce-48-first-eval}
-# UNFINISHED HERE
 table(produce_48_data$First_Eval, dnn="First_Eval")
 ```
 
-Second Evaluation   
+The second evaluation was to have each contestant perform the *Produce 48*'s theme song "Nekkoya (Pick Me)".^[<https://en.wikipedia.org/wiki/Nekkoya_(Pick_Me)>] After the song was announced, the contestants were given three days to prepare for the choreography and memorize the lyrics. The song has a Korean version and a Japanese version, so each student may choose to perform in their preferred language. Then the students were given their new grades, and reassigned to their new practice classes.     
+
+\textcolor{red}{Need to explain the "X" ratings}   
 
 ```{r produce-48-second-eval}
-# UNFINISHED HERE
 table(produce_48_data$Second_Eval, dnn="Second_Eval")
 ```
 
 Cross-table: **First_Eval** as row, and **Country** as column  
 
-Observation: The majority of contestants from Japan were placed in D or F (lowest grades), while very few contestants from Korea did.   
+Let's examine how Korean and Japanese participants scored in the first evaluation. We noticed that the majority of contestants from Japan were placed in D or F (lowest grades), while very few contestants from Korea did. Although the Korean K-pop coaches criticized the Japanese contestants for their performance, we would like to emphasize that the Idol training process differs greatly in Korea and Japan.^[<https://www.adaymag.com/2020/10/22/japanese-vs-korean-idol.html>] In Korea, the primary focus is on vocal and dance techniques, while in Japan, the Idol training values artistic interpretation and individual expressiveness \cite{alice-jiye-lee-2023}.    
 
-The Idol training process differs greatly in Korea and Japan.^[<https://www.adaymag.com/2020/10/22/japanese-vs-korean-idol.html>] In Korea, the primary focus is on vocal and dance techniques, while in Japan, the Idol training values artistic interpretation and individual expressiveness \cite{alice-jiye-lee-2023}.   
+In the show, many Japanese contestants bursted into tears due to the harsh feedback given by the Korean K-pop instructors.^[<https://star.ettoday.net/news/1192170>] The Japanese contestants enjoyed highly positive responses in their own country, so they thought they would receive an A in the evaluation during *Produce 48*. Instead, most of them received an F (failure). After the first evaluation, some Japanese contestants even withdrew from the show for various reasons.^[<https://star.ettoday.net/news/1181576>]     
 
 ```{r produce-48-eval-1st-cross-country}
 table(produce_48_data$First_Eval, produce_48_data$Country,
@@ -428,9 +424,11 @@ table(produce_48_data$First_Eval, produce_48_data$Country,
 
 Cross-table: **Second_Eval** as row, and **Country** as column  
 
+\textcolor{red}{What about the second evaluation?}   
+
 Observation: Contestants from Japan faced a little better in the second evaluation -- approximately half of them received a satisfactory grade (A, B, or C).  
 
-The scoring of domestic contestants in Korean became harsher this time -- one third of them were rated unsatisfactory (D or F).  
+The scoring of domestic contestants in Korea became harsher this time -- one third of them were rated unsatisfactory (D or F).  
 
 \textcolor{red}{Need to specify the (inferred) reason}   
 
@@ -465,8 +463,9 @@ Yabuki Nako (矢吹奈子): F $\rightarrow$ A
 
 What about other participants?  
 
+Kang Hye Won (姜惠元): F $\rightarrow$ F    
 
-
+But Hye Won made it to the debut of the \textit{IZ*ONE} girl group.   
 
 
 \textcolor{red}{Next step: Breakdown the 1st-cross-2nd table by country (Korea and Japan)}      

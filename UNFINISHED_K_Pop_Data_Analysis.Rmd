@@ -124,9 +124,11 @@ e.g. Chapter 23 does something.
 
 *Idol School* (偶像學校) (2017)
 
-\textcolor{red}{Emphasize that \textit{Idol School} did not require vocal or dance experience and was willing to train the participants from scratch.} Despite the low barrier to entry, many participants in the reality show had previously trained under various entertainment companies.^[<https://kpop.fandom.com/wiki/Idol_School>]   
+\textcolor{red}{Emphasize that \textit{Idol School} did not require vocal or dance experience and was willing to train the participants from scratch.} Despite the low barrier to entry, many participants in the reality show had previously trained under various entertainment companies.^[<https://kpop.fandom.com/wiki/Idol_School>] For example, NATTY was trained under JYP Entertainment^[<https://en.wikipedia.org/wiki/JYP_Entertainment>] and made it to the finals of the *SIXTEEN* reality show^[<https://en.wikipedia.org/wiki/Sixteen_(TV_program)>] in 2015. Lee Yoo Jeong (李悠汀) previously debuted in the girl group *myB*, but the group disbanded in 2016.^[<https://zh.wikipedia.org/wiki/MyB>]    
 
-In the live reality show *Idol School*, nine winners were selected to form the girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This girl group debuted in 2018 and remained active until the contract with Pledis Entertainment ended in 2024. In January 2025, five members of the group signed a new contract with ASND.^[<https://kpop.fandom.com/wiki/ASND>]    
+\textcolor{red}{Shall we also mention some beginners who quickly learned to perform K-pop? Showing that it's possible to succeed with little-to-no initial experience.}   
+
+In the live reality show *Idol School*, nine winners were selected to form the new girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This girl group debuted in 2018 and remained active until the contract with Pledis Entertainment ended in 2024. In January 2025, five members of the group signed a new contract with ASND.^[<https://kpop.fandom.com/wiki/ASND>]    
 
 \textcolor{red}{Need to write the data description}  
 

@@ -59,9 +59,11 @@ This manuscript is written solely by the author, not by ChatGPT or any other gen
 
 \textcolor{red}{Important: Write about why K-pop music is so popular across the globe.}   
 
-K-pop music (Korean popular music) has emerged popularity worldwide since the early 2010's \cite{khiun2013k-pop, sun2022identifying}. K-pop's international popularity stems from its appealing music, eye-catching performances, and the strategic use of social media, fostering a global community of dedicated fans who actively promote the artists and genre \cite{kim2022global, chen2023expansion}. Therefore, K-pop enjoys fame not only across East Asian countries like China and Thailand \cite{malik2023korea-east-asia}, but also in the United States^[<https://bit.ly/4iIHpor>] and Western Europe^[<https://nolae.eu/blogs/news/diese-k-pop-konzerte-werden-2025-in-europa-stattfinden>] \cite{miroudot2024common}.      
+K-pop music (Korean popular music) is a music genre originated from South Korea \cite{lie2015k-pop}, and it has emerged popularity worldwide since the early 2010's \cite{khiun2013k-pop, sun2022identifying}. K-pop's international popularity stems from its appealing music, eye-catching performances, and the strategic use of social media, fostering a global community of dedicated fans who actively promote the artists and genre \cite{kim2022global, chen2023expansion}. Therefore, K-pop enjoys fame not only across East Asian countries like China and Thailand \cite{malik2023korea-east-asia}, but also in the United States^[<https://bit.ly/4iIHpor>] and Western Europe^[<https://nolae.eu/blogs/news/diese-k-pop-konzerte-werden-2025-in-europa-stattfinden>] \cite{miroudot2024common}.      
 
 The paragraph above is too short. Need to add more content.   
+
+In addition to the K-pop performance itself, ...   
 
 Trend of survival reality shows in K-pop \cite{butsoontorn2023narrative}   
 
@@ -85,6 +87,8 @@ K-pop overcrowded market \cite{liu2025overcrowded}.
 
 \textcolor{red}{Important: Write about the K-pop scandal revealed in 2019 and later.} 
 
+Although the author enjoyed watching the K-pop survival reality shows, ...   
+
 In 2019, the author stopped following the shows produced by Mnet because ...   
 
 We focus on the ratings directly given by the vocal and dance instructors, rather than the published number of audience votes.   
@@ -103,6 +107,8 @@ What was the penalty of these entertainment agency representatives?
 <https://www.ptt.cc/bbs/KoreaStar/M.1680484737.A.28A.html>   
 
 \textcolor{red}{Need academic citations, not just news links.}   
+
+\textcolor{red}{Also need to mention other scandals with citations, such as sexual harassment and profit-sharing contracts.}    
 
 Impact on the K-pop industry   
 
@@ -306,6 +312,32 @@ e.g. Song Ha Young (宋河英) got 5.9 in dance and 9.8 in physical. Song Ha You
 
 Shall we create a **box plot** using `ggplot2` \cite{ggplot2} to compare the three sets of scores?   
 <https://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization>
+
+```{r ggplot2-drafts}
+# UNFINISHED HERE
+
+library(tidyr)
+
+# Convert wide data to long format
+long_data <- pivot_longer(
+  idol_school,
+  cols = c("Vocal","Dance","Physical"), # Specify columns to pivot
+  names_to = "Category",        # Name of the new column for the group labels
+  values_to = "Score"       # Name of the new column for the values
+)
+
+# UNFINISHED HERE
+
+# To-Do:
+# 1. Add error bars
+# 2. Change the group order!!!
+# 3. Suppress the warnings from ggplot2
+# https://r-charts.com/distribution/box-plot-group-ggplot2/
+
+library(ggplot2)
+ggplot(long_data, aes(x=Category, y=Score, fill=Category)) + 
+    geom_boxplot()
+```
 
 ### Correlation between Vocal, Dance, and Physical Scores
 

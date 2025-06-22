@@ -34,7 +34,7 @@ link-citations: true
 ```
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 
 def.chunk.hook <- knitr::knit_hooks$get("chunk")
 knitr::knit_hooks$set(chunk = function(x, options) {
@@ -232,6 +232,7 @@ physical_sorted = sort(idol_school$Physical, decreasing = TRUE)
 combined_all_three = cbind(vocal_sorted, dance_sorted, physical_sorted)
 sorted_scores_df = as.data.frame(combined_all_three)
 ```
+
 Test
 
 ```{r top-10-sorted-scores}
@@ -329,14 +330,15 @@ long_data <- pivot_longer(
 # UNFINISHED HERE
 
 # To-Do:
-# 1. Add error bars
-# 2. Change the group order!!!
-# 3. Suppress the warnings from ggplot2
+# 1. Change the group order!!!
+# 2. Add ggtitle for plot title
+# 3. Add Figure caption and reference it in the narrative.
 # https://r-charts.com/distribution/box-plot-group-ggplot2/
 
 library(ggplot2)
-ggplot(long_data, aes(x=Category, y=Score, fill=Category)) + 
-    geom_boxplot()
+ggplot(long_data, aes(x=Category, y=Score)) + 
+  stat_boxplot(geom = "errorbar", width=0.25) +
+  geom_boxplot()
 ```
 
 ### Correlation between Vocal, Dance, and Physical Scores

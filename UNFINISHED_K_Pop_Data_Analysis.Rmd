@@ -311,10 +311,10 @@ e.g. Jo Yuri (曹柔理) received only 2.2 in dance but 5.9 in physical. Jo Yuri
 
 e.g. Song Ha Young (宋河英) got 5.9 in dance and 9.8 in physical. Song Ha Young was a certified aerial yoga instructor before she first appeared in the *Idol School* reality show.  
 
-Shall we create a **box plot** using `ggplot2` \cite{ggplot2} to compare the three sets of scores?   
-<https://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization>
+Figure \ref{fig:ggplot2-drafts} is the **box plot** of the vocal, dance, and physical scores in the *Idol School* show. We visualized the data using `ggplot2` \cite{ggplot2} to compare the three sets of scores.      
+<https://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization>  
 
-```{r ggplot2-drafts}
+```{r ggplot2-drafts, fig.cap="Box plot of the vocal, dance, and physical scores in the \\textit{Idol School} show"}
 # UNFINISHED HERE
 
 library(tidyr)
@@ -331,8 +331,8 @@ long_data <- pivot_longer(
 
 # To-Do:
 # 1. Change the group order!!!
-# 2. Add ggtitle for plot title
-# 3. Add Figure caption and reference it in the narrative.
+# 2. Add ggtitle for plot title (optional)
+# [done] 3. Add Figure caption and reference it in the narrative.
 # https://r-charts.com/distribution/box-plot-group-ggplot2/
 
 library(ggplot2)

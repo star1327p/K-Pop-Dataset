@@ -376,13 +376,18 @@ The training at a K-pop entertainment company in Korea usually includes vocal an
 Students who were eliminated from the show:  
 <https://www.ptt.cc/bbs/fromis_9/M.1555819461.A.C73.html>
 
-In 2017, a Taiwanese blogger used random forests to predict the *Idol School* final ranking:  
-<https://shavid.pixnet.net/blog/post/331691281>
+In 2017, a Taiwanese blogger followed the whole *Idol School* series, and used algorithms to predict the final ranking.^[<https://shavid.pixnet.net/blog/post/331691281>]    
 
-But this task turned out to be meaningless because the participant rankings were manipulated by the organizers.  
+Both random forests and SVM (Support Vector Machine) predicted Lee Hae In (李海印) to be in the top 9 for the debut, but Lee Hae In (李海印) ended up in an unexpected 11th place. K-pop fans crowdsourced to count the votes for Lee Hae In, and the number of confirmed votes was already higher the the number of votes published by Mnet. (Note that the number of confirmed votes is a subset of all actual votes.) This raised suspicion that the *Idol School* results may have been rigged.^[<https://star.ettoday.net/news/1022482>]     
+
+Then in 2019, the evidence showed that the participant rankings were manipulated by the organizers.    
+
+\textcolor{red}{Elaborate more on the vote manipulation}    
 
 *Idol School*: Vote Manipulation Investigation (2019)   
 <https://www.ptt.cc/bbs/KoreaStar/M.1624467107.A.D7F.html>  
+
+Therefore, it is meaningless to predict the final rankings in a K-pop survival show. That's why we decided to analyze only the contestant scores given by the professional instructors. These scores are a relatively good benchmark of raw performance, especially that they were not artificially changed to favor any particular contestant.    
 
 
 # Read in the *Produce 48* Dataset

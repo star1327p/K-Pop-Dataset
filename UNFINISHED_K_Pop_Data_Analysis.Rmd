@@ -371,7 +371,7 @@ The training at a K-pop entertainment company in Korea usually includes vocal an
 
 \textcolor{red}{Do more analysis to the Idol School data!}   
 
-## Idol School: Additional Resources
+## *Idol School*: Additional Resources
 
 Students who were eliminated from the show:  
 <https://www.ptt.cc/bbs/fromis_9/M.1555819461.A.C73.html>
@@ -390,7 +390,17 @@ Then in 2019, the evidence showed that the participant rankings were manipulated
 Therefore, it is meaningless to predict the final rankings in a K-pop survival show. That's why we decided to analyze only the contestant scores given by the professional instructors. These scores are a relatively good benchmark of raw performance, especially that they were not artificially changed to favor any particular contestant.    
 
 
-# Read in the *Produce 48* Dataset
+# *Produce 48* Dataset (2018)
+
+*Produce 48* dataset (2018)   
+
+Wikipedia data: <https://en.wikipedia.org/wiki/Produce_48>    
+
+\textcolor{red}{Need to write the background information of the reality show}  
+
+
+
+## Read in the *Produce 48* Dataset
 
 *Produce 48* dataset (2018)   
 
@@ -435,6 +445,8 @@ Let's look at the nationality breakdown of *Produce 48* contestants. Although *P
 ```{r produce-48-country}
 table(produce_48_data$Country)
 ```
+
+## *Produce 48*: Two Evaluations of Contestant Performance
 
 \textcolor{red}{Write some narrative about Produce 48}   
 
@@ -537,6 +549,31 @@ produce_48_japan = produce_48_data[which(produce_48_data$Country=="Japan"),]
 table(produce_48_japan$First_Eval, produce_48_japan$Second_Eval,
       dnn=c("First_Eval","Second_Eval"))
 ```
+
+## *Produce 48*: Additional Resources
+
+\textcolor{red}{What happened next?}  
+
+The final rankings were arbitrarily decided by the show organizers. (citation needed)    
+
+What were the political dynamics at play?   
+
+Evidence: Three contestants were unfairly eliminated from the debut in the final round of the show. (citation needed)   
+
+Lee Ka Eun (李佳恩)    
+
+Han Cho Won (韓霄瑗)    
+
+
+Additional suspects by the K-pop fans.   
+
+Why did Jang Won Young (張員瑛) came in 1st place, instead of Miyawaki Sakura (宮脇咲良)?   
+
+Tradition: First place must be Korean, rather than an international participant. (citation needed)   
+
+The importance of being selected in 1st place for the group debut:  
+C-position or center position in K-pop (citation needed)   
+
 
 # Tentative Placeholders
 

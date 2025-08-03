@@ -491,12 +491,21 @@ table(produce_48_data$First_Eval, produce_48_data$Second_Eval,
 
 There are six contestants who got A's in both evaluations.   
 
-Miyawaki Sakura (宮脇咲良) is the only Japanese participant; the others are all from Korea.  
+Miyawaki Sakura (宮脇咲良) is the only Japanese participant, and she was ranked 2nd in the final debut. The other five contestants are all from Korea.    
+
+Lee Chae Yeon (李彩演)    
+Known for her excellent dancing skills (citation needed)    
+Also made it to the final debut.   
+
+Lee Ka Eun (李佳恩)    
+Explain her actual ranking and the published ranking (citation needed)   
+
+The remaining three did not do so well in the audience votes ?!   
 
 Note that possessing a high talent does not guarantee being selected to debut in the new girl group; having a low starting point does not result in first-round elimination, either.   
 
 ```{r produce-48-list-A-to-A}
-inds_A_to_A = which(produce_48_data$First_Eval == "A" & produce_48_data$Second_Eval == "A")
+inds_A_to_A = which(produce_48_data$First_Eval=="A" & produce_48_data$Second_Eval=="A")
 produce_48_data[inds_A_to_A, columns_to_show]
 ```
 
@@ -508,7 +517,7 @@ What about other participants?
 
 Kang Hye Won (姜惠元): F $\rightarrow$ F    
 
-But Hye Won made it to the debut of the \textit{IZ*ONE} girl group.   
+Nevertheless, Hye Won made it to the debut of the \textit{IZ*ONE} girl group, and she was ranked 8th out of all 12 finalists.   
 
 
 \textcolor{red}{Next step: Breakdown the 1st-cross-2nd table by country (Korea and Japan)}      

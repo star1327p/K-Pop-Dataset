@@ -333,13 +333,19 @@ long_data <- pivot_longer(
   values_to = "Score"       # Name of the new column for the values
 )
 
+# Category should be 1. Vocal, 2. Dance, and 3. Physical.
+# Hence we reorder the levels in the data frame.
+long_data$Category <- factor(long_data$Category, 
+                             levels = c("Vocal", "Dance", "Physical"))
+
 # UNFINISHED HERE
 
 # To-Do:
-# 1. Change the group order!!!
+# [done] 1. Change the group order!!!
 # 2. Add ggtitle for plot title (optional)
 # [done] 3. Add Figure caption and reference it in the narrative.
 # https://r-charts.com/distribution/box-plot-group-ggplot2/
+# 4. Make the font size of axis labels larger and easier to read!!
 
 library(ggplot2)
 ggplot(long_data, aes(x=Category, y=Score)) + 

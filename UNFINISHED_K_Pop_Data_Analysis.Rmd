@@ -390,14 +390,27 @@ Students who were eliminated from the show:
 
 In 2017, a Taiwanese blogger followed the whole *Idol School* series, and used algorithms to predict the final ranking.^[<https://shavid.pixnet.net/blog/post/331691281>]    
 
-Both random forests and SVM (Support Vector Machine) predicted Lee Hae In (李海印) to be in the top 9 for the debut, but Lee Hae In (李海印) ended up in an unexpected 11th place. K-pop fans crowdsourced to count the votes for Lee Hae In, and the number of confirmed votes was already higher the the number of votes published by Mnet. (Note that the number of confirmed votes is a subset of all actual votes.) This raised suspicion that the *Idol School* results may have been rigged.^[<https://star.ettoday.net/news/1022482>]     
+Both random forests and SVM^[Support Vector Machine <https://en.wikipedia.org/wiki/Support_vector_machine>] predicted Lee Hae In (李海印) to be in the top 9 for the debut, but Hae In ended up in an unexpected 11th place. K-pop fans crowdsourced to count the votes for Hae In, and the number of confirmed votes was already higher the the number of votes published by Mnet. (Note that the number of confirmed votes is a subset of all actual votes.) This raised suspicion that the *Idol School* results may have been rigged.^[<https://star.ettoday.net/news/1022482>]     
 
-Then in 2019, the evidence showed that the participant rankings were manipulated by the organizers.    
+Then in 2019, the court's investigation revealed widespread manipulation of the participant rankings. (citation needed)   
+
+A lot more evidence revealed that the rankings were manipulated by the organizers.    
+
+In the final episode of *Idol School*, Lee Hae In (李海印) actually came in first place. However, Mnet adjusted her ranking to 11th, resulting in Hae In being unfairly eliminated.   
 
 \textcolor{red}{Elaborate more on the vote manipulation}    
 
 *Idol School*: Vote Manipulation Investigation (2019)   
 <https://www.ptt.cc/bbs/KoreaStar/M.1624467107.A.D7F.html>  
+
+
+\textcolor{red}{Consider creating a table to document the number of votes manipulated}   
+
+Columns:  
+
+- Episodes 1, 2, ..., 11
+- Number of participants
+- Number of rankings that were fabricated
 
 Therefore, it is meaningless to predict the final rankings in a K-pop survival show. That's why we decided to analyze only the contestant scores given by the professional instructors. These scores are a relatively good benchmark of raw performance, especially that they were not artificially changed to favor any particular contestant.    
 

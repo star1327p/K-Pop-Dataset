@@ -211,45 +211,46 @@ Unfortunately, Snowbaby (蔡瑞雪) did not do well.
 
 Snowbaby had not received any vocal or dance training in K-pop, so she was a complete beginner in the show.  
 
-\textcolor{red}{What changes did we make from the Wikipedia data?}   
+### Error Correction in Data
 
-Our presumption is that in each category, no two contestants should have the same score. However, after sorting the *Idol School* data, we found two 3.5's and two 1.2's in the physical scores. Especially that the two 3.5's belong to top-ranked contestants Bae Eun Yeong (裴恩英) and Park Ji Won (朴池原), this issue quickly caught our attention to make corrections to the data.   
+\textcolor{red}{Still need to write the description}    
 
-In the video clip, Park Ji Won (朴池原) and her partner were the first runner-up in the group physical exercise.^[Screenshot of the group physical exercise: <https://bit.ly/4a7QT9m>] We are surprised that Ji Won's physical score was only 3.5. According to the video's score table for contestants ranked 11th to 20th,^[<https://bit.ly/400KUhH>] Ji Won's physical score should be 6.2. The Wikipedia table shows an inconsistency in Ji Won's overall score, i.e., the average across the three categories. Ji Won's vocal score was 7.9, and her dance score was 5. These numbers seem to be reasonable for Ji Won, because she is known for excellent singing and good dancing as a performer.^[Park Ji Won was the main vocalist in *fromis_9*. <https://bit.ly/402yCFI>] Therefore, we assume both scores to be correct. If the physical score had really been 3.5, then Ji Won's overall score would be 5.47, dropping her from 13th place to the 18th. If the overall score of 6.37 had been correct, then Ji Won's physical score should be 6.2. The second scenario is more likely to be true, given the evidence we found in the video clip. Hence we corrected Ji Won's physical score to 6.2.      
+To observe the patterns of the *Idol School* data published on Wikipedia,^[<https://en.wikipedia.org/wiki/List_of_Idol_School_contestants#Elimination_chart>] we first sorted the scores of each category (vocal, dance, and physical) in descending order.   
 
-The two 1.2 physical scores are more difficult to check for the underlying values, probably because they occurred in two contestants of lower ranking.^[Physical scores of all contestants in *Idol School*: <https://bit.ly/3DRNK0Z>] The two contestants, Jessica Lee (李瑟) and Michelle White (懷特·米雪兒), ranked in the lower half of all 41 contestants in terms of the overall ability test. Both of them got eliminated in the first round, so they did not receive much attention in the show. With the help of Google Translate,^[<https://translate.google.com/>] we were able to translate the image of Korean text to (readable) English. Finally, we discovered that Michelle White's physical score should be 1.3, not 1.2.    
+What did we notice?   
 
-*Idol School* (2017): Videos with subtitles in Simplified Chinese are available on the Bilibili platform.^[<https://www.bilibili.com/video/BV1554y1C7wj/>]
-
-Screenshots saved:    
-<https://github.com/star1327p/K-Pop-Dataset/tree/main/Idol_School_Rating_Screenshots> 
-
-\textcolor{red}{Still need to write the description}  
-
-\textcolor{red}{Consider hiding the sorted scores}   
-
-```{r idol-school-eda}
+```{r idol-school-eda-sort, include=FALSE}
+# Hided the sorted scores
 
 vocal_sorted = sort(idol_school$Vocal, decreasing = TRUE)
 dance_sorted = sort(idol_school$Dance, decreasing = TRUE)
 physical_sorted = sort(idol_school$Physical, decreasing = TRUE)
 
-# UNFINISHED HERE
 combined_all_three = cbind(vocal_sorted, dance_sorted, physical_sorted)
 sorted_scores_df = as.data.frame(combined_all_three)
+
+# sorted_scores_df[1:10,] # top-10-sorted-scores
+# sorted_scores_df[31:40,] # bottom-10-sorted-scores
 ```
 
-Test
+\textcolor{red}{What changes did we make from the Wikipedia data?}   
 
-```{r top-10-sorted-scores}
-sorted_scores_df[1:10,]
-```
+Our presumption is that in each category, no two contestants should have the same score. However, after sorting the *Idol School* data, we found two 3.5's and two 1.2's in the physical scores. Especially that the two 3.5's belong to top-ranked contestants Bae Eun Yeong (裴恩英) and Park Ji Won (朴池原), this issue quickly caught our attention to make corrections to the data.   
 
-Test
+\textcolor{red}{Add a few transition sentences}   
 
-```{r bottom-10-sorted-scores}
-sorted_scores_df[31:40,]
-```
+*Idol School* (2017): Videos with subtitles in Simplified Chinese are available on the Bilibili platform.^[<https://www.bilibili.com/video/BV1554y1C7wj/>]
+
+Screenshots saved:    
+<https://github.com/star1327p/K-Pop-Dataset/tree/main/Idol_School_Rating_Screenshots>   
+
+\textcolor{red}{Then continue the discussion.}    
+
+In the video clip, Park Ji Won (朴池原) and her partner were the first runner-up in the group physical exercise.^[Screenshot of the group physical exercise: <https://bit.ly/4a7QT9m>] We are surprised that Ji Won's physical score was only 3.5. According to the video's score table for contestants ranked 11th to 20th,^[<https://bit.ly/400KUhH>] Ji Won's physical score should be 6.2. The Wikipedia table shows an inconsistency in Ji Won's overall score, i.e., the average across the three categories. Ji Won's vocal score was 7.9, and her dance score was 5. These numbers seem to be reasonable for Ji Won, because she is known for excellent singing and good dancing as a performer.^[Park Ji Won was the main vocalist in *fromis_9*. <https://bit.ly/402yCFI>] Therefore, we assume both scores to be correct. If the physical score had really been 3.5, then Ji Won's overall score would be 5.47, dropping her from 13th place to the 18th. If the overall score of 6.37 had been correct, then Ji Won's physical score should be 6.2. The second scenario is more likely to be true, given the evidence we found in the video clip. Hence we corrected Ji Won's physical score to 6.2.      
+
+The two 1.2 physical scores are more difficult to check for the underlying values, probably because they occurred in two contestants of lower ranking.^[Physical scores of all contestants in *Idol School*: <https://bit.ly/3DRNK0Z>] The two contestants, Jessica Lee (李瑟) and Michelle White (懷特·米雪兒), ranked in the lower half of all 41 contestants in terms of the overall ability test. Both of them got eliminated in the first round, so they did not receive much attention in the show. With the help of Google Translate,^[<https://translate.google.com/>] we were able to translate the image of Korean text to (readable) English. Finally, we discovered that Michelle White's physical score should be 1.3, not 1.2.    
+
+
 
 ### Summary Statistics
 

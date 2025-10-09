@@ -65,7 +65,7 @@ The paragraph above is too short. Need to add more content.
 
 In addition to the K-pop performance itself, ...   
 
-Trend of survival reality shows in K-pop \cite{butsoontorn2023narrative}   
+Trend of survival reality shows in K-pop \cite{butsoontorn2023narrative, lee2020k-pop}   
 
 
 \textcolor{red}{Then write about the author's motivation}   
@@ -603,14 +603,21 @@ Cho Won's Wiki: <http://bit.ly/45HLq8j>
 
 \textcolor{red}{Additional suspects by the K-pop fans.}       
 
-<https://www.kagit.kr/posts/123744>   
+ 
 
 Why did Jang Won Young (張員瑛) came in 1st place, instead of Miyawaki Sakura (宮脇咲良)?   
 
-Tradition: First place must be Korean, rather than an international participant. (citation needed)   
+Traditionally the first place (a.k.a. the center position) for the group debut is given to a Korean participant rather than an international one, despite the emerging popularity of K-pop survival shows featuring multicultural performers \cite{ahn2022birth}.    
 
-The importance of being selected in 1st place for the group debut:  
-C-position or center position in K-pop (citation needed)   
+Therefore, K-pop fans suspected that Jang Won Young (張員瑛) was artificially moved to first place, and that Won Young's actual ranking was between 2nd and 5th.^[<https://www.kagit.kr/posts/123744>]    
+
+Miyawaki Sakura (宮脇咲良)'s official ranking was second place, but ...   
+she was most likely to be the original first place, i.e., have received the most votes in the final round. (citation needed)    
+
+\textcolor{red}{The importance of being selected in 1st place for the group debut:}  
+\textcolor{red}{C-position or center position in K-pop (citation needed)}   
+
+For example, what were the privileges of the first place artists in *Idol School* and *PRODUCE 48*?   
 
 \textcolor{red}{Idea: We can assume that the vote manipulation happened only in the final round of the show.}   
 

@@ -440,6 +440,9 @@ Wikipedia data: <https://en.wikipedia.org/wiki/Produce_48>
 
 *Produce 48* featured 96 contestants primarily from South Korea and Japan. The show was a collaboration between the Mnet's *Produce 101* series^[<https://en.wikipedia.org/wiki/Produce_101>] and the Japanese *AKB48* idol group.^[<https://en.wikipedia.org/wiki/AKB48>]    
 
+
+Write a sentence about the prevalence of multiculural K-pop reality shows (citation needed)   
+
 Some former contestants in *Idol School* tried again in the *Produce 48* reality show in 2018.   
 
 A total of 12 contestants were eventually selected from *Produce 48* to create the time-limited girl group \textit{IZ*ONE},^[<https://en.wikipedia.org/wiki/Iz*One>] which was active during 2018-2021 in both Korea and Japan.  
@@ -603,23 +606,22 @@ Cho Won's Wiki: <http://bit.ly/45HLq8j>
 
 \textcolor{red}{Additional suspects by the K-pop fans.}       
 
- 
-
-Why did Jang Won Young (張員瑛) came in 1st place, instead of Miyawaki Sakura (宮脇咲良)?   
-
-Traditionally the first place (a.k.a. the center position) for the group debut is given to a Korean participant rather than an international one, despite the emerging popularity of K-pop survival shows featuring multicultural performers \cite{ahn2022birth}.    
-
-Therefore, K-pop fans suspected that Jang Won Young (張員瑛) was artificially moved to first place, and that Won Young's actual ranking was between 2nd and 5th.^[<https://www.kagit.kr/posts/123744>]    
-
-Miyawaki Sakura (宮脇咲良)'s official ranking was second place, but ...   
-she was most likely to be the original first place, i.e., have received the most votes in the final round. (citation needed)    
+Many K-pop fans wondered why Jang Won Young (張員瑛) was ranked 1st place in the finals, while the well-known Japanese contestant Miyawaki Sakura (宮脇咲良) came in 2nd. Traditionally the first place (a.k.a. the center position) for the group debut is given to a Korean participant rather than an international one, despite the emerging popularity of K-pop survival shows featuring multicultural performers \cite{ahn2022birth}. Therefore, K-pop fans suspected that Won Young was artificially moved to first place, and that Won Young's actual ranking was between 2nd and 5th.^[<https://www.kagit.kr/posts/123744>] Sakura's official ranking was second place, but she was most likely to be the original first place, i.e., received the most votes in the final round.^[<https://bit.ly/4n0QuKG>]     
 
 \textcolor{red}{The importance of being selected in 1st place for the group debut:}  
 \textcolor{red}{C-position or center position in K-pop (citation needed)}   
 
 For example, what were the privileges of the first place artists in *Idol School* and *PRODUCE 48*?   
 
+Usually the 1st place in the debut get the center position in the newly-formed K-pop group. (citation needed)   
+
+The girl group *fromis_9*: Roh Ji Sun (盧知宣) won first place in the finals of *Idol School* reality show, so she got the center position for the *fromis_9*'s debut single song. Ji Sun was also uniquely featured on the debut album cover as a special issue, giving her excellent recognition and visibility.^[<https://bit.ly/473Dcae>]   
+
+However, the \textit{IZ*ONE} assigned the center position to Miyawaki Sakura (宮脇咲良), not to the *PRODUCE 48* champion Jang Won Young (張員瑛).^[<https://star.ettoday.net/news/1870619>]    
+
+
 \textcolor{red}{Idea: We can assume that the vote manipulation happened only in the final round of the show.}   
+News citation needed.   
 
 Comparison: the 20 participants in the final round vs the rest  
 

@@ -80,7 +80,7 @@ Survivorship bias is prevalent in the entertainment industry, and the K-pop genr
 
 K-pop overcrowded market \cite{liu2025overcrowded}.      
 
-Strict body weight and dietary requirements, especially for girl trainees.^[<https://www.chinatimes.com/realtimenews/20200928003058-260404?chdtv>]   
+Strict body weight and dietary requirements, especially for girl trainees.^[<https://www.chinatimes.com/realtimenews/20200928003058-260404?chdtv>] (academic citations also needed)   
 
 (a lot more content here)   
 
@@ -91,9 +91,9 @@ Strict body weight and dietary requirements, especially for girl trainees.^[<htt
 
 Although the author enjoyed watching the K-pop survival reality shows, ...   
 
-In 2019, the author stopped following the shows produced by Mnet because ...   
+In 2019, the author stopped following the shows produced by Mnet because of the ethical controversies revealed, especially the manipulation of voting outcomes on survival shows \cite{leinonen2024idols}.    
 
-We focus on the ratings directly given by the vocal and dance instructors, rather than the published number of audience votes.   
+\textcolor{red}{Therefore, we focus on the ratings directly given by the vocal and dance instructors, rather than the number of audience votes announced by the show organizers.}    
 
 <https://en.wikipedia.org/wiki/Mnet_vote_manipulation_investigation>  
 
@@ -110,14 +110,22 @@ What was the penalty of these entertainment agency representatives?
 
 \textcolor{red}{Need academic citations, not just news links.}   
 
-\textcolor{red}{Also need to mention other scandals with citations, such as sexual harassment and profit-sharing contracts.}    
+\textcolor{red}{Also need to mention other scandals with citations}
 
-Impact on the K-pop industry   
+e.g. sexual harassment \cite{luu2022seung, varianna2024shifting}    
+e.g. exploitative contracts that mainly benefit the company, not the artists \cite{an2025k-pop}   
 
-Impact on the trainees who lost the chance to debut   
+Negative impact on the K-pop industry, such as the cancel culture from K-pop fans \cite{putri2025analysis, febrianti2023k-pop}.    
+
+Impact on the trainees who lost the chance to debut:   
+They received monetary compensation, but the debut opportunity could not be recovered. (citation needed)    
 
 After the 2019 scandal, Mnet has been under controversy but is still actively producing K-pop dance survival shows.^[<https://www.ptt.cc/bbs/KoreaStar/M.1618588754.A.7C9.html>] Recent works of Mnet include *Kingdom: Legendary War* (2021)^[<https://en.wikipedia.org/wiki/Kingdom:_Legendary_War>] and *Stage Fighter* (2024).^[<https://en.wikipedia.org/wiki/Stage_Fighter>]    
 
+
+\textcolor{red}{As of 2025: the Deepfake and Generative AI videos pertinent to K-pop.} (citation needed)   
+
+Videos published in 2022 or earlier are mostly real, because they were created before the widespread use of generative AI.    
 
 
 ## Technical Narrative

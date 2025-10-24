@@ -74,11 +74,13 @@ The author became interested in K-pop music from the debut of Tzuyu (Chou Tzu-Yu
 
 \section*{\textcolor{red}{Unfinished below}}
 
-Then in 2017, another Taiwanese girl, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] joined the Korean live reality show *Idol School* (偶像學校).^[<https://en.wikipedia.org/wiki/Idol_School_(2017_TV_series)>] At the end, the show would select nine winners to form the girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This also generated lots of discussion in the Mandarin-speaking community.^[<https://www.epochtimes.com/b5/17/7/2/n9346573.htm>] Although Snowbaby was eliminated in the middle of the show, she still deserves praise for her courage to participate as an international contestant.^[<https://bit.ly/41p3pym>] Since Snowbaby graduated from the same high school as the author did,^[<https://bit.ly/424u3gv>] Snowbaby's experience motivated the author to learn more about K-pop.    
+Then in 2017, another Taiwanese girl, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] joined the Korean live reality show *Idol School* (偶像學校).^[<https://en.wikipedia.org/wiki/Idol_School_(2017_TV_series)>] At the end, the show would select nine winners to form the girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This also generated much discussion in the Mandarin-speaking community.^[<https://www.epochtimes.com/b5/17/7/2/n9346573.htm>] Although Snowbaby was eliminated in the middle of the show, she still deserves praise for her courage to participate as an international contestant.^[<https://bit.ly/41p3pym>] Since Snowbaby graduated from the same high school as the author did,^[<https://bit.ly/424u3gv>] Snowbaby's experience motivated the author to learn more about K-pop.    
 
-Survivorship bias is prevalent in the entertainment industry, and the K-pop genre is no exception \cite{lockwood2021fooled}. To become a K-pop idol in Korea, aspiring kids usually start as a trainee at an entertainment company in their early teens \cite{lee2019k-pop}. The trainees take vocal and dance lessons, and the training process is intense and extremely competitive \cite{kang2017rediscovering, lee2024establishment}. (No wonder the K-pop artist performances are beautiful and well-rehearsed \cite{kim2021success}.) Very few trainees can eventually get selected to debut and perform on stage as the company's official group \cite{han2021k-pop}, and even fewer K-pop performers can achieve iconic status \cite{min2024competitiveness}. While a performing group enjoys the spotlight and fame, the group typically lasts only a few years before the contract ends \cite{cho2023leading}.       
+Survivorship bias is prevalent in the entertainment industry, and the K-pop genre is no exception \cite{lockwood2021fooled}. To become a K-pop idol in Korea, aspiring kids usually start as a trainee at an entertainment company in their early teens \cite{lee2019k-pop}. The trainees take vocal and dance lessons, and the training process is intense and extremely competitive \cite{kang2017rediscovering, lee2024establishment}. That's why most K-pop artist performances are beautiful and well-rehearsed \cite{kim2021success}. Very few trainees can eventually get selected to debut and perform on stage as the company's official group \cite{han2021k-pop}, and even fewer K-pop performers can achieve iconic status \cite{min2024competitiveness}. While a performing group enjoys the spotlight and fame, the group typically lasts only a few years before the contract ends \cite{cho2023leading}.       
 
 K-pop overcrowded market \cite{liu2025overcrowded}.      
+
+Strict body weight and dietary requirements, especially for girl trainees.^[<https://www.chinatimes.com/realtimenews/20200928003058-260404?chdtv>]   
 
 (a lot more content here)   
 
@@ -395,7 +397,7 @@ Students who were eliminated from the show:
 
 In 2017, a Taiwanese blogger followed the whole *Idol School* series, and used algorithms to predict the final ranking.^[<https://shavid.pixnet.net/blog/post/331691281>]    
 
-Both random forests and SVM^[Support Vector Machine <https://en.wikipedia.org/wiki/Support_vector_machine>] predicted Lee Hae In (李海印) to be in the top 9 for the debut, but Hae In ended up in an unexpected 11th place. K-pop fans crowdsourced to count the votes for Hae In, and the number of confirmed votes was already higher the the number of votes published by Mnet. (Note that the number of confirmed votes is a subset of all actual votes.) This raised suspicion that the *Idol School* results may have been rigged.^[<https://star.ettoday.net/news/1022482>]     
+Both random forests and SVM^[SVM stands for Support Vector Machine. <https://en.wikipedia.org/wiki/Support_vector_machine>] predicted Lee Hae In (李海印) to be in the top 9 for the debut, but Hae In ended up in an unexpected 11th place. K-pop fans crowdsourced to count the votes for Hae In, and the number of confirmed votes was already higher the the number of votes published by Mnet. (Note that the number of confirmed votes is a subset of all actual votes.) This raised suspicion that the *Idol School* results may have been rigged.^[<https://star.ettoday.net/news/1022482>]     
 
 Then in 2019, the court's investigation revealed widespread manipulation of the participant rankings. (citation needed)   
 
@@ -597,12 +599,15 @@ The show organizers received gifts from Starship and Woollim. (citation needed)
 
 Evidence: Three contestants were unfairly eliminated from the debut in the final round of the show. (citation needed)   
 
+The media announced two of them:   
+
 Lee Ka Eun (李佳恩): Actual ranking 5th, published ranking 14th.    
 <https://disp.cc/ptt/KoreaStar/1brmSfeA>   
 
 Han Cho Won (韓霄瑗): Actual ranking 6th, published ranking 13th.   
 Cho Won's Wiki: <http://bit.ly/45HLq8j>   
 
+K-pop fans suspected that the third contestant artificially removed was Japanese, who was replaced by another Korean contestant for the \textit{IZ*ONE} debut.^[<https://www.ptt.cc/bbs/KoreaStar/M.1605679750.A.B79.html>]    
 
 \textcolor{red}{Additional suspects by the K-pop fans.}       
 

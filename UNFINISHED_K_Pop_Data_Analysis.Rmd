@@ -53,7 +53,7 @@ Write something here
 
 # Disclaimer {.unnumbered}
 
-This manuscript is written solely by the author, not by ChatGPT or any other generative AI. The opinions and views expressed in this manuscript are those of the author, and do not necessarily state or reflect those of any institution or government entity.    
+This manuscript is written solely by the author, not by ChatGPT or any other generative AI. We emphasize this due to the widespread presence of AI-created articles.^[<https://graphite.io/five-percent/more-articles-are-now-created-by-ai-than-humans>] Moreover, the opinions and views expressed in this manuscript are those of the author, and do not necessarily state or reflect those of any institution or government entity.    
 
 # Introduction
 
@@ -125,7 +125,9 @@ After the 2019 scandal, Mnet has been under controversy but is still actively pr
 
 \textcolor{red}{As of 2025: the Deepfake and Generative AI videos pertinent to K-pop.} (citation needed)   
 
-Videos published in 2022 or earlier are mostly real, because they were created before the widespread use of generative AI.    
+Deepfake videos of K-pop idols are negatively perceived by the fans \cite{wang2022people, wang2022users}, and such malicious use of AI damages not only the idols' reputation but also the whole K-pop industry \cite{alexandri2024illusionary}.   
+
+Videos published in 2021 or earlier are mostly real, because they were created before the widespread use of generative AI. (citation also needed)    
 
 
 ## Technical Narrative

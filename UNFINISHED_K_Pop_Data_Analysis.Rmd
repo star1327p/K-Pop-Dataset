@@ -289,10 +289,9 @@ Vocal:
 
 NATTY received 9.8 as the highest vocal score, and the instructor said her singing performance was perfect (considering that NATTY is originally from Thailand and hence not a native speaker in Korean).^[NATTY's birth name is Anatchaya Suputhipong. <https://en.wikipedia.org/wiki/Natty_(Thai_singer)>]         
 
-On the other hand, Lee Hae In (李海印) received a score of 1 in vocal, because she lost her voice during the singing part (which was unfortunate).  
+On the other hand, Lee Hae In (李海印) received a score of 1 in vocal, because she unfortunately lost her voice and could barely sing at that time.  
 
-What about the median score of vocal?   
-Indicates decent performance.  
+The median score of vocal is 4.95 (rounding to 5), which indicates decent performance.   
 
 Dance:    
 
@@ -312,27 +311,25 @@ Physical:
 
 Kim Eun Suh (金恩書) came in first and received the full mark of 10, while Song Ha Young (宋河英) got 9.8 as the second place.   
 
-Min = 0.4, and a total of five students had a score below 1.   
+The physical scores are harsher than the vocal and dance scores. In the vocal and dance activities, the lowest score is 1 to account for the contestant's participation. However, the lowest physical score observed is 0.4, and a total of five students received a score below 1. Physical also has the lowest median score (3.25) among all three categories.    
 
-Physical has the lowest median score (3.25) among all three categories.   
-
-The show did not reveal how the physical scores were calculated from the raw time sustained by each participant the exercises.    
+The show did not reveal how the physical scores were calculated from the raw time sustained by each participant in each exercise.    
 
 \textcolor{red}{Physical: group physical exercise vs individual exercise}   
 
-We suspect that the individual exercise accounted for a larger proportion of the physical score. We saw in the video that Lee Da Hee (李多熙) and Kim Na Yeon (金娜妍) came in first in the group physical exercise. However, Da Hee's physical score was only 4.9, and Na Yeon got 6.4 (which is good but not one of the best).^[Screenshot of the first place team in the group physical exercise: <https://bit.ly/3EDBhz5>]    
+But after watching the video clip on the physical tests, we suspect that the individual exercise accounted for a larger proportion of the physical score. We saw in the video that Lee Da Hee (李多熙) and Kim Na Yeon (金娜妍) came in first in the group physical exercise. However, Da Hee's physical score was only 4.9, and Na Yeon got 6.4 (which is good but not one of the best).^[Screenshot of the first place team in the group physical exercise: <https://bit.ly/3EDBhz5>]    
 
 \textcolor{red}{Remark: That's why it is important to remove the record with all zeros, otherwise the minimum score would be zero in every single category. Then we would not have noticed that the vocal and dance scores start from 1 with mere partipation, but the physical scores have a different scale.}    
 
 Comparison:   
 
-The median in physical score (3.25) is lower than the median in vocal (4.95) or dance (5.55), indicating that many contestants did not do well in the physical test. In fact, some contestants had a remarkably high score in dance but a low score in physical. One example is Bae Eun Yeong (裴恩英), who scored 9.3 in dance (second place) and 3.5 in physical (slightly above the median of 3.25). Another example is Lee Hae In (李海印), who got 8.4 in dance 8.4 and only 1.8 in physical.    
+The median in physical score (3.25) is lower than the median in vocal (4.95) or dance (5.55), indicating that many contestants did not do well in the physical test. In fact, some contestants had a remarkably high score in dance but a low score in physical. One example is Bae Eun Yeong (裴恩英), who scored 9.3 in dance (second place) and 3.5 in physical (slightly above the median of 3.25). Another example is Lee Hae In (李海印), who got 8.4 in dance but only 1.8 in physical.    
 
 With a few exceptions:  
 
 e.g. Jo Yuri (曹柔理) received only 2.2 in dance but 5.9 in physical. Jo Yuri had not received any K-pop training prior to the show in 2017, but she was a long jump athlete during her school years.^[<https://bit.ly/431HHRS>]    
 
-e.g. Song Ha Young (宋河英) got 5.9 in dance and 9.8 in physical. Song Ha Young was a certified aerial yoga instructor before she first appeared in the *Idol School* reality show.  
+e.g. Song Ha Young (宋河英) got 5.9 in dance and 9.8 in physical. Song Ha Young was a certified aerial yoga instructor before she first appeared in the *Idol School* reality show.   
 
 Figure \ref{fig:ggplot2-drafts} is the **box plot** of the vocal, dance, and physical scores in the *Idol School* show. We visualized the data using `ggplot2` \cite{ggplot2} to compare the three sets of scores.      
 <https://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization>  
@@ -405,9 +402,9 @@ The training at a K-pop entertainment company in Korea usually includes vocal an
 Students who were eliminated from the show:  
 <https://www.ptt.cc/bbs/fromis_9/M.1555819461.A.C73.html>
 
-In 2017, a Taiwanese blogger followed the whole *Idol School* series, and used algorithms to predict the final ranking.^[<https://shavid.pixnet.net/blog/post/331691281>]    
+In 2017, a Taiwanese blogger followed the whole *Idol School* series, and used algorithms to predict the final ranking.^[<https://shavid.pixnet.net/blog/post/331691281>] Both random forests and SVM^[SVM stands for Support Vector Machine. <https://en.wikipedia.org/wiki/Support_vector_machine>] predicted Lee Hae In (李海印) to be in the top 9 for the debut, but Hae In ended up in an unexpected 11th place.    
 
-Both random forests and SVM^[SVM stands for Support Vector Machine. <https://en.wikipedia.org/wiki/Support_vector_machine>] predicted Lee Hae In (李海印) to be in the top 9 for the debut, but Hae In ended up in an unexpected 11th place. K-pop fans crowdsourced to count the votes for Hae In, and the number of confirmed votes was already higher the the number of votes published by Mnet. (Note that the number of confirmed votes is a subset of all actual votes.) This raised suspicion that the *Idol School* results may have been rigged.^[<https://star.ettoday.net/news/1022482>]     
+K-pop fans crowdsourced to count the votes for Hae In, and the number of confirmed votes was already higher than the number of votes published by Mnet. (Note that the number of confirmed votes is a subset of all actual votes.) This raised suspicion that the *Idol School* results may have been rigged.^[<https://star.ettoday.net/news/1022482>]     
 
 Then in 2019, the court's investigation revealed widespread manipulation of the participant rankings. (citation needed)   
 

@@ -65,8 +65,9 @@ The paragraph above is too short. Need to add more content.
 
 In addition to the K-pop performance itself, ...   
 
-Trend of survival reality shows in K-pop \cite{butsoontorn2023narrative, lee2020k-pop}   
+Trend of survival reality shows in K-pop \cite{butsoontorn2023narrative, lee2020k-pop}    
 
+One major feature is the audience involvement -- many survival shows allow the audience to vote on contestants' performance \cite{kim2025survival}, keeping the audience engaged with the live episodes.  
 
 \textcolor{red}{Then write about the author's motivation}   
 
@@ -76,11 +77,11 @@ The author became interested in K-pop music from the debut of Tzuyu (Chou Tzu-Yu
 
 Then in 2017, another Taiwanese girl, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] joined the Korean live reality show *Idol School* (偶像學校).^[<https://en.wikipedia.org/wiki/Idol_School_(2017_TV_series)>] At the end, the show would select nine winners to form the girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This also generated much discussion in the Mandarin-speaking community.^[<https://www.epochtimes.com/b5/17/7/2/n9346573.htm>] Although Snowbaby was eliminated in the middle of the show, she still deserves praise for her courage to participate as an international contestant.^[<https://bit.ly/41p3pym>] Since Snowbaby graduated from the same high school as the author did,^[<https://bit.ly/424u3gv>] Snowbaby's experience motivated the author to learn more about K-pop.    
 
-Survivorship bias is prevalent in the entertainment industry, and the K-pop genre is no exception \cite{lockwood2021fooled}. To become a K-pop idol in Korea, aspiring kids usually start as a trainee at an entertainment company in their early teens \cite{lee2019k-pop}. The trainees take vocal and dance lessons, and the training process is intense and extremely competitive \cite{kang2017rediscovering, lee2024establishment}. That's why most K-pop artist performances are beautiful and well-rehearsed \cite{kim2021success}. Very few trainees can eventually get selected to debut and perform on stage as the company's official group \cite{han2021k-pop}, and even fewer K-pop performers can achieve iconic status \cite{min2024competitiveness}. While a performing group enjoys the spotlight and fame, the group typically lasts only a few years before the contract ends \cite{cho2023leading}.       
+Survivorship bias is prevalent in the entertainment industry, and the K-pop genre is no exception \cite{lockwood2021fooled}. To become a K-pop idol in Korea, aspiring kids usually start as a trainee at an entertainment company in their early teens \cite{lee2019k-pop}. The trainees take vocal and dance lessons, and the training process is intense and extremely competitive \cite{kang2017rediscovering, lee2024establishment}. That's why most K-pop artist performances are beautiful and well-rehearsed \cite{kim2021success}. Nevertheless, very few trainees can eventually get selected to debut and perform on stage as the company's official group \cite{han2021k-pop}, and even fewer K-pop performers can achieve iconic status \cite{min2024competitiveness}. While a performing group enjoys the spotlight and fame, the group typically lasts only a few years before the contract ends \cite{cho2023leading}.       
 
 K-pop overcrowded market \cite{liu2025overcrowded}.      
 
-Strict body weight and dietary requirements, especially for girl trainees.^[<https://www.chinatimes.com/realtimenews/20200928003058-260404?chdtv>] (academic citations also needed)   
+Strict body weight and dietary requirements, especially for girl trainees \cite{venters2023trammelled, zysik2024k-pop}.^[<https://www.chinatimes.com/realtimenews/20200928003058-260404?chdtv>]      
 
 (a lot more content here)   
 
@@ -91,7 +92,7 @@ Strict body weight and dietary requirements, especially for girl trainees.^[<htt
 
 Although the author enjoyed watching the K-pop survival reality shows, ...   
 
-In 2019, the author stopped following the shows produced by Mnet because of the ethical controversies revealed, especially the manipulation of voting outcomes on survival shows \cite{leinonen2024idols}.    
+In 2019, the author stopped following the shows produced by Mnet because of the ethical controversies revealed \cite{miao2020more}, especially the manipulation of voting outcomes on survival shows \cite{leinonen2024idols}.    
 
 \textcolor{red}{Therefore, we focus on the ratings directly given by the vocal and dance instructors, rather than the number of audience votes announced by the show organizers.}    
 
@@ -100,7 +101,7 @@ In 2019, the author stopped following the shows produced by Mnet because of the 
 
 A K-pop vote manipulation scandal was surprisingly revealed in 2019, starting with the *Produce X 101*^[<https://en.wikipedia.org/wiki/Produce_X_101>] and the mysterious 29,978 number.^[<https://www.koreaboo.com/news/produce-x-101-rigged-votes-final-members/>] After the producer Mnet^[<https://en.wikipedia.org/wiki/Mnet_(TV_channel)>] published the number of votes each contestant received, people calculated the difference between rankings and noticed a strange pattern of the numbers. The difference was exactly 29,978 votes for five intervals among the rankings from 1st to 10th. The pattern seemed to be generated by some mathematical function, and it was nearly impossible to be a coincidence. Hence people suspected that the voting results were manipulated by Mnet,^[<https://bit.ly/4iWtPh0>] resulting in a lawsuit against Mnet and other companies involved \cite{choi2023chart}.     
 
-Finally, Mnet admitted to manipulating the votes in the *Produce 101* series and the subsequent reality shows, including *Idol School*.^[<https://www.popdaily.com.tw/korea/846603>] The show producers rigged the votes in return for financial favors, resulting in not only unfair competition but also employment fraud \cite{lee2021korean}. The court demanded that Mnet must provide monetary compensation to the affected trainees, who should have been selected for the debut but lost the opportunity.^[<https://bit.ly/44gkSKG>] These entertainment agency representatives were charged with bribery, fraud, and sabotage \cite{yoshimitsu2020affective}.    
+Finally, Mnet admitted to manipulating the votes in the *Produce 101* series^[<https://bit.ly/4oaMEzV>] and the subsequent reality shows, including *Idol School*.^[<https://www.popdaily.com.tw/korea/846603>] The show producers rigged the votes in return for financial favors, resulting in not only unfair competition but also employment fraud \cite{lee2021korean}. The court demanded that Mnet must provide monetary compensation to the affected trainees, who should have been selected for the debut but lost the opportunity.^[<https://bit.ly/44gkSKG>] These entertainment agency representatives were charged with bribery, fraud, and sabotage \cite{yoshimitsu2020affective}.    
 
 *Idol School*: Vote Manipulation Investigation (2019)   
 <https://www.ptt.cc/bbs/KoreaStar/M.1624467107.A.D7F.html>  
@@ -127,7 +128,7 @@ After the 2019 scandal, Mnet has been under controversy but is still actively pr
 
 Deepfake videos of K-pop idols are negatively perceived by the fans \cite{wang2022people, wang2022users}, and such malicious use of AI damages not only the idols' reputation but also the whole K-pop industry \cite{alexandri2024illusionary}.   
 
-Videos published in 2021 or earlier are mostly real, because they were created before the widespread use of generative AI. (citation also needed)    
+K-pop performance videos published in 2021 or earlier are mostly real, because they were created before the widespread use of generative AI \cite{cho2025short}.    
 
 
 ## Technical Narrative
@@ -141,6 +142,8 @@ e.g. Chapter 23 does something.
 # *Idol School* Dataset (2017)
 
 *Idol School* (偶像學校) is a 2017 Korean reality television show produced by Mnet. Unlike the 2016 *Produce 101* that mostly featured K-pop trainees,^[<https://en.wikipedia.org/wiki/Produce_101>] \textit{Idol School} did not require any vocal or dance experience and was willing to train the participants from scratch. Despite the low barrier to entry, many participants in the reality show had previously trained under various entertainment companies.^[<https://kpop.fandom.com/wiki/Idol_School>] For example, NATTY was trained under JYP Entertainment^[<https://en.wikipedia.org/wiki/JYP_Entertainment>] and made it to the finals of the *SIXTEEN* reality show^[<https://en.wikipedia.org/wiki/Sixteen_(TV_program)>] in 2015. Lee Yoo Jeong (李悠汀) previously debuted in the girl group *myB*, but the group disbanded in 2016.^[<https://zh.wikipedia.org/wiki/MyB>]    
+
+\textcolor{red}{For \textit{Idol School}, we need to add some academic citations.}    
 
 \textcolor{red}{Shall we also mention some beginners who quickly learned to perform K-pop? Showing that it's possible to succeed with little-to-no initial experience.}   
 
@@ -447,10 +450,10 @@ Wikipedia data: <https://en.wikipedia.org/wiki/Produce_48>
 
 \textcolor{red}{Need to write the data description}  
 
-*Produce 48* featured 96 contestants primarily from South Korea and Japan. The show was a collaboration between the Mnet's *Produce 101* series^[<https://en.wikipedia.org/wiki/Produce_101>] and the Japanese *AKB48* idol group.^[<https://en.wikipedia.org/wiki/AKB48>]    
+*Produce 48* featured 96 contestants primarily from South Korea and Japan. The show was a collaboration between the Mnet's *Produce 101* series^[<https://en.wikipedia.org/wiki/Produce_101>] and the Japanese *AKB48* idol group \cite{lopez2021lights}.^[<https://en.wikipedia.org/wiki/AKB48>]    
 
 
-Write a sentence about the prevalence of multiculural K-pop reality shows (citation needed)   
+\textcolor{red}{Write a sentence about the prevalence of multiculural K-pop reality shows} (citation needed)   
 
 Some former contestants in *Idol School* tried again in the *Produce 48* reality show in 2018.   
 
@@ -597,12 +600,10 @@ table(produce_48_japan$First_Eval, produce_48_japan$Second_Eval,
 
 \textcolor{red}{What happened next?}  
 
-The final rankings were arbitrarily decided by the show organizers. (citation needed)    
-<https://www.koreastardaily.com/tc/news/122447>   
-
+The final rankings were arbitrarily changed by the show organizers, because they received under-the-table monetary transactions from some entertainment companies, such as Starship and Woollim \cite{gu2020co-production}.^[<https://www.koreastardaily.com/tc/news/122447>]
 
 What were the political dynamics at play?   
-The show organizers received gifts from Starship and Woollim. (citation needed)     
+The show organizers received gifts from Starship and Woollim.        
 
 Evidence: Three contestants were unfairly eliminated from the debut in the final round of the show. (citation needed)   
 

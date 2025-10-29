@@ -67,6 +67,8 @@ In addition to the K-pop performance itself, ...
 
 Trend of survival reality shows in K-pop \cite{butsoontorn2023narrative, lee2020k-pop}    
 
+Mnet is a television music channel famous for hosting idol-making survival shows, such as *Produce 101* and *Produce 48* \cite{capistrano2023into}.  
+
 One major feature is the audience involvement -- many survival shows allow the audience to vote on contestants' performance \cite{kim2025survival}, keeping the audience engaged with the live episodes.  
 
 \textcolor{red}{Then write about the author's motivation}   
@@ -167,6 +169,13 @@ We manually copy-pasted the contestant data from Wikipedia into a Microsoft Exce
 
 \textcolor{red}{Specify the column names we included, also the column names we printed here.}   
 
+For each contestant, we have the following data:
+
+- **Name_Chn**: Chinese name
+- **Name_Eng**: English name
+- **DOB**: Date of birth (yyyy-mm-dd)
+- \textcolor{red}{Unfinished here}
+
 Add the metadata in the Excel file or the Appendix ?! 
 
 Currently I prefer adding the metadata in the Excel file for proximity to the data itself.  
@@ -198,15 +207,10 @@ idol_school[1:10, columns_to_show]
 # idol_school[31:41, columns_to_show]
 ```
 
-
-\textcolor{red}{Explain why we removed the 41st contestant whose scores were all zeros.}   
-
-The 41st contestant, Som Hye In (慎惠仁), left the *Idol School* show due to health reasons. She was unable to complete the basic test, so her score was zero in all three categories (vocal, dance, and physical).   
-
+A total of 41 contestants entered the *Idol School* reality show. But the 41st contestant, Som Hye In (慎惠仁), left the show early due to health reasons. She was unable to complete the basic test, so her score was zero in all three categories (vocal, dance, and physical). Hence we remove the last row (all zeros) and keep only the remaining 40 contestants' scores in the dataset.   
 
 ```{r idol-remove-zero-scores}
-# UNFINISHED HERE
-# We MUST remove the 41st contestant's scores (all zeros)!!
+# We MUST remove the 41st contestant's scores (all zeros).
 idol_school = idol_school[1:40,]
 ```
 

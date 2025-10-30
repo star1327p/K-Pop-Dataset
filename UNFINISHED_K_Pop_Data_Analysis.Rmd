@@ -57,49 +57,75 @@ This manuscript is written solely by the author, not by ChatGPT or any other gen
 
 # Introduction
 
+\textcolor{red}{Briefly describe what the K-pop music is, such as songs and elements}  
+
+K-pop music (Korean popular music) is a genre of entertainment originated from South Korea \cite{lie2015k-pop}, and K-pop emphasizes more on the dancing component than the singing element.  
+
+Therefore, K-pop shows are like an audio-visual treat, appealing to the general public \cite{pal2022k-pop}.  
+
+Music: K-pop groups often showcase a wide range of musical styles, from pop and hip-hop to rock and R&B (Rhythm and Blues), within a single discography \cite{liu2024newjeans}. [sentence needs revision]   
+
+Lyrics:  
+Upbeat and catchy - Many tracks are designed with high energy and memorable hooks, making them easy to listen to and popular for dancing.  
+
+Dance: Choreography, complex    
+
+Fashion: Dress, make-up, hair style, etc.   
+
+Stage and video effects: Bright lights, video-editing for focus, etc.  
+
 \textcolor{red}{Important: Write about why K-pop music is so popular across the globe.}   
 
-K-pop music (Korean popular music) is a music genre originated from South Korea \cite{lie2015k-pop}, and it has emerged popularity worldwide since the early 2010's \cite{khiun2013k-pop, sun2022identifying}. K-pop's international popularity stems from its appealing music, eye-catching performances, and the strategic use of social media, fostering a global community of dedicated fans who actively promote the artists and genre \cite{kim2022global, chen2023expansion}. Therefore, K-pop enjoys fame not only across East Asian countries like China and Thailand \cite{malik2023korea-east-asia}, but also in the United States^[<https://bit.ly/4iIHpor>] and Western Europe^[<https://nolae.eu/blogs/news/diese-k-pop-konzerte-werden-2025-in-europa-stattfinden>] \cite{miroudot2024common}.      
+K-pop has emerged popularity worldwide since the early 2010's \cite{khiun2013k-pop, sun2022identifying}. K-pop's international popularity stems from its versatile music, eye-catching performances, and the strategic use of social media, fostering a global community of dedicated fans who actively promote the artists and genre \cite{kim2022global, chen2023expansion}. Therefore, K-pop enjoys global fame -- not only across East Asian countries like China and Thailand \cite{malik2023korea-east-asia}, but also in the United States^[<https://bit.ly/4iIHpor>] and Western Europe^[<https://nolae.eu/blogs/news/diese-k-pop-konzerte-werden-2025-in-europa-stattfinden>] \cite{miroudot2024common}.      
 
-The paragraph above is too short. Need to add more content.   
+In addition to the K-pop performance itself, survival reality shows have also been an emerging trend in the K-pop industry \cite{butsoontorn2023narrative, lee2020k-pop}. The main objective of such shows is to select the top contestants to form a new K-pop group. One major feature is the audience involvement -- many survival shows allow the audience to vote on contestants' performance \cite{kim2025survival}, keeping the audience engaged with the live episodes.       
 
-In addition to the K-pop performance itself, ...   
+\textcolor{red}{Need a transition sentence here}   
 
-Trend of survival reality shows in K-pop \cite{butsoontorn2023narrative, lee2020k-pop}    
+Mnet is a television music channel famous for hosting idol-making survival shows, such as *Produce 101* and *Produce 48* \cite{capistrano2023into}.   
 
-Mnet is a television music channel famous for hosting idol-making survival shows, such as *Produce 101* and *Produce 48* \cite{capistrano2023into}.  
 
-One major feature is the audience involvement -- many survival shows allow the audience to vote on contestants' performance \cite{kim2025survival}, keeping the audience engaged with the live episodes.  
-
-\textcolor{red}{Then write about the author's motivation}   
+## Motivation  
 
 The author became interested in K-pop music from the debut of Tzuyu (Chou Tzu-Yu, 周子瑜).^[<https://en.wikipedia.org/wiki/Tzuyu>] Tzuyu is originally from Taiwan, the country in which the author grew up. In 2015, Tzuyu participated in the South Korean reality television show *SIXTEEN*,^[<https://en.wikipedia.org/wiki/Sixteen_(TV_program)>] and eventually got added to the newly-formed girl group *TWICE*.^[<https://en.wikipedia.org/wiki/Twice>] In early 2016, Tzuyu was forced to apologize after she raised the Taiwan flag in a Korean entertainment show \cite{ahn2019politics}.^[<https://bit.ly/3DOcNlP>] The flag controversy incident made headline news in Taiwan,^[<https://bit.ly/4k5j7ps>] and it was estimated to bring in 500,000 votes for the 2016 Taiwan presidential election.^[<https://bit.ly/3CUQWsK>]    
 
-\section*{\textcolor{red}{Unfinished below}}
-
 Then in 2017, another Taiwanese girl, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] joined the Korean live reality show *Idol School* (偶像學校).^[<https://en.wikipedia.org/wiki/Idol_School_(2017_TV_series)>] At the end, the show would select nine winners to form the girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This also generated much discussion in the Mandarin-speaking community.^[<https://www.epochtimes.com/b5/17/7/2/n9346573.htm>] Although Snowbaby was eliminated in the middle of the show, she still deserves praise for her courage to participate as an international contestant.^[<https://bit.ly/41p3pym>] Since Snowbaby graduated from the same high school as the author did,^[<https://bit.ly/424u3gv>] Snowbaby's experience motivated the author to learn more about K-pop.    
 
-Survivorship bias is prevalent in the entertainment industry, and the K-pop genre is no exception \cite{lockwood2021fooled}. To become a K-pop idol in Korea, aspiring kids usually start as a trainee at an entertainment company in their early teens \cite{lee2019k-pop}. The trainees take vocal and dance lessons, and the training process is intense and extremely competitive \cite{kang2017rediscovering, lee2024establishment}. That's why most K-pop artist performances are beautiful and well-rehearsed \cite{kim2021success}. Nevertheless, very few trainees can eventually get selected to debut and perform on stage as the company's official group \cite{han2021k-pop}, and even fewer K-pop performers can achieve iconic status \cite{min2024competitiveness}. While a performing group enjoys the spotlight and fame, the group typically lasts only a few years before the contract ends \cite{cho2023leading}.       
+The author also followed other K-pop reality shows such as *Produce 48* in 2018.   
 
-K-pop overcrowded market \cite{liu2025overcrowded}.      
+She loved the visual aesthetics and the artistic performances of K-pop.    
 
-Strict body weight and dietary requirements, especially for girl trainees \cite{venters2023trammelled, zysik2024k-pop}.^[<https://www.chinatimes.com/realtimenews/20200928003058-260404?chdtv>]      
+To combine with statistical analysis ?!  
 
-(a lot more content here)   
-
-\textcolor{red}{Need a transition paragraph to explain what we are doing in this analysis}  
-
+\textcolor{red}{Explain why and what we are doing in this analysis} 
 
 \textcolor{red}{Important: Write about the K-pop scandal revealed in 2019 and later.} 
 
 Although the author enjoyed watching the K-pop survival reality shows, ...   
 
-In 2019, the author stopped following the shows produced by Mnet because of the ethical controversies revealed \cite{miao2020more}, especially the manipulation of voting outcomes on survival shows \cite{leinonen2024idols}.    
+In 2019, the author stopped following the shows produced by Mnet due to the ethical scandals revealed \cite{miao2020more}, especially the manipulation of voting outcomes on survival shows \cite{leinonen2024idols}.    
 
 \textcolor{red}{Therefore, we focus on the ratings directly given by the vocal and dance instructors, rather than the number of audience votes announced by the show organizers.}    
 
 <https://en.wikipedia.org/wiki/Mnet_vote_manipulation_investigation>  
 
+## K-Pop Controversies
+
+\section*{\textcolor{red}{Unfinished below}}
+
+Behind the beautiful K-pop music and dance videos, ...  
+
+Blood and sweat ?! Also money and political capital involved. [citation needed]   
+
+\textcolor{red}{A lot more content here, probably need a transition paragraph}    
+
+Survivorship bias is prevalent in the entertainment industry, and the K-pop genre is no exception \cite{lockwood2021fooled}. To become a K-pop idol in Korea, aspiring kids usually start as a trainee at an entertainment company in their early teens \cite{lee2019k-pop}. The trainees take vocal and dance lessons, and the training process is intense and extremely competitive \cite{kang2017rediscovering, lee2024establishment}. That's why most K-pop artist performances are polished and well-rehearsed \cite{kim2021success}. Nevertheless, very few trainees can eventually get selected to debut and perform on stage as the company's official group \cite{han2021k-pop}, and even fewer K-pop performers can achieve iconic status \cite{min2024competitiveness}. While a performing group enjoys the spotlight and fame, the group typically lasts only a few years before the contract ends \cite{cho2023leading}.       
+
+K-pop overcrowded market \cite{liu2025overcrowded}.      
+
+Strict body weight and dietary requirements, especially for girl trainees \cite{venters2023trammelled, zysik2024k-pop}.^[<https://www.chinatimes.com/realtimenews/20200928003058-260404?chdtv>]      
+
+\textcolor{red}{Need another transition paragraph}   
 
 A K-pop vote manipulation scandal was surprisingly revealed in 2019, starting with the *Produce X 101*^[<https://en.wikipedia.org/wiki/Produce_X_101>] and the mysterious 29,978 number.^[<https://www.koreaboo.com/news/produce-x-101-rigged-votes-final-members/>] After the producer Mnet^[<https://en.wikipedia.org/wiki/Mnet_(TV_channel)>] published the number of votes each contestant received, people calculated the difference between rankings and noticed a strange pattern of the numbers. The difference was exactly 29,978 votes for five intervals among the rankings from 1st to 10th. The pattern seemed to be generated by some mathematical function, and it was nearly impossible to be a coincidence. Hence people suspected that the voting results were manipulated by Mnet,^[<https://bit.ly/4iWtPh0>] resulting in a lawsuit against Mnet and other companies involved \cite{choi2023chart}.     
 

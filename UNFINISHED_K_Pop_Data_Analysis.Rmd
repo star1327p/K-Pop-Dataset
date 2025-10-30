@@ -161,6 +161,62 @@ K-pop performance videos published in 2021 or earlier are mostly real, because t
 
 ## Technical Narrative
 
+\textcolor{red}{Datasets from K-pop reality shows in South Korea}
+
+In this project, we explore a few datasets from K-pop reality shows that have at least two sets of contestant ratings. We would like to evaluate the correlation and consistency between the ratings of the same K-pop trainees, so at least two sets of ratings are necessary. Note that contestant ratings differ from audience votes -- the former are given by professional K-pop coaches, while the latter come from the general public.^[For Mnet-hosted shows, voting requires an account on the Mnet Plus app.  <https://www.mnetplus.world/en/>]    
+
+\section*{\textcolor{red}{Unfinished below}}
+
+Datasets Considered: Need to have at least two sets of contestant ratings to evaluate for correlation and/or consistency.    
+
+- Idol School (2017)
+  - Female contestants
+  - Basic Strength Ratings: Vocal, Dance, Physical, Overall
+  - https://en.wikipedia.org/wiki/Idol_School_(2017_TV_series)
+  - https://en.wikipedia.org/wiki/List_of_Idol_School_contestants
+
+- Produce 101 (2016)
+  - Female contestants
+  - Judges' Evaluation 1: A, B, C, D, F
+  - Judges' Evaluation 2: A, B, C, D, F
+  - https://en.wikipedia.org/wiki/Produce_101
+  - https://en.wikipedia.org/wiki/Produce_101_season_1
+  - https://en.wikipedia.org/wiki/List_of_Produce_101_contestants
+
+- Produce 101 Season 2 (2017)
+  - Male contestants
+  - Judges' Evaluation 1: A, B, C, D, F
+  - Judges' Evaluation 2: A, B, C, D, F
+  - https://en.wikipedia.org/wiki/Produce_101_season_2
+  - https://en.wikipedia.org/wiki/List_of_Produce_101_contestants_(season_2)
+  
+- Produce 48 (2018)
+  - Female contestants (50% from South Korea and 50% from Japan)
+  - Judges' Evaluation 1: A, B, C, D, F
+  - Judges' Evaluation 2: A, B, C, D, F
+  - https://en.wikipedia.org/wiki/Produce_48
+  - https://en.wikipedia.org/wiki/List_of_Produce_48_contestants
+  
+- Produce X 101 (2019)
+  - Male contestants
+  - Judges' Evaluation 1: A, B, C, D, X
+  - Judges' Evaluation 2: A, B, C, D, F, X
+  - https://en.wikipedia.org/wiki/Produce_X_101
+  - https://en.wikipedia.org/wiki/List_of_Produce_X_101_contestants
+
+Datasets NOT Considered: These datasets do not have enough sets of contestant ratings for our analysis.   
+
+- Mix Nine (2017-2018)
+  - Selected 9 females and 9 males for the final team
+  - Only one set of contestant ratings was available.
+  - https://en.wikipedia.org/wiki/Mix_Nine
+  - https://en.wikipedia.org/wiki/List_of_Mix_Nine_contestants
+
+- Sixteen (2015)
+  - Female contestants within JYP Entertainment
+  - No ratings available for any contestant.
+  - https://en.wikipedia.org/wiki/Sixteen_(TV_program)
+
 This manuscript is created using `R` Markdown \cite{r-markdown}^[<https://rmarkdown.rstudio.com/>] for reproducible data analysis, just like our earlier technical report about the education in Taiwan \cite{chai2024statistical}. We have posted our code and data on GitHub,^[<https://github.com/star1327p/K-Pop-Dataset>] so readers can download the GitHub repository and play with the script themselves.    
 
 \textcolor{red}{The rest of this manuscript is organized as follows.}   

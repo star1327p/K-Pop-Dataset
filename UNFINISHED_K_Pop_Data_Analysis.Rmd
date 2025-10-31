@@ -255,25 +255,25 @@ We manually copy-pasted the contestant data from Wikipedia into a Microsoft Exce
 
 For each contestant, we focus on these columns below:   
 
-- **Name_Chn**: Chinese name of the contestant
-- **Name_Eng**: English name of the contestant
-- **DOB**: Date of birth (yyyy-mm-dd) of the contestant^[In the Excel file, the date of birth is shown in m/d/yyyy format.]
-- **Vocal**: Vocal score in the initial test, ranging from 0 to 10 in 0.1 point increments
-- **Dance**: Dance score in the initial test, ranging from 0 to 10 in 0.1 point increments
-- **Physical**: Physical score in the initial test, ranging from 0 to 10 in 0.1 point increments
-- **Overall**: Average of the vocal, dance, and physical scores
+- **Name_Chn**: Chinese name of the contestant.
+- **Name_Eng**: English name of the contestant.
+- **DOB**: Date of birth (yyyy-mm-dd) of the contestant.^[In the Excel file, the date of birth is shown in m/d/yyyy format.]
+- **Vocal**: Vocal score in the initial test, ranging from 0 to 10 in 0.1 point increments.
+- **Dance**: Dance score in the initial test, ranging from 0 to 10 in 0.1 point increments.
+- **Physical**: Physical score in the initial test, ranging from 0 to 10 in 0.1 point increments.
+- **Overall**: Average of the vocal, dance, and physical scores.
 
 Additional variables:  
 
-- **Ability_Rank**: Rank of the contestant by the initial test score average
-- **Final_Rank**: Final rank of the contestant published by the show
+- **Ability_Rank**: Rank of the contestant by the initial test score average.
+- **Final_Rank**: Final rank of the contestant published by the show.
 - **Round_Eliminated**:
-  - R1: Eliminated in the first round
-  - R2: Eliminated in the second round
-  - R3: Eliminated in the third and penultimate round
-  - R4: Eliminated in the fourth and final round
-  - Survived: Selected for the debut and joined the newly-formed K-pop group
-  - X: Left the show before the first round of elimination started
+  - R1: Eliminated in the first round.
+  - R2: Eliminated in the second round.
+  - R3: Eliminated in the third and penultimate round.
+  - R4: Eliminated in the fourth and final round.
+  - Survived: Selected for the debut and joined the newly-formed K-pop group.
+  - X: Left the show before the first round of elimination started.
 - **Special_Notes**: Notes that are worth mentioning but do not belong to any other column, such as nationality (outside South Korea) and score error correction.
 
 Add the metadata in the Excel file or the Appendix ?! 
@@ -561,14 +561,22 @@ Wikipedia data: <https://en.wikipedia.org/wiki/Produce_48>
 
 \textcolor{red}{Need to write the data description}  
 
-Variable definitions are similar to the *Idol School* dataset described in Section \ref{idol-school-data}.   
+Similar data format to the *Idol School* dataset described in Section \ref{idol-school-data}.   
 
-List the variables here:  
+Same definition as in the *Idol School* dataset:  
+**Name_Chn**, **Name_Eng**, **DOB**, **Final_Rank**, **Round_Eliminated**, and **Special_Notes**.   
 
-- \textcolor{red}{Unfinished here}
-- **First_Eval**:
-- **Second_Eval**:
-- **Country**:
+Since there are only 96 participants, contestants who voluntarily left the show early (not due to elimination) are assigned to a 100 in **Final_Rank**.   
+
+List the newly-introduced variables here:   
+
+- \textcolor{red}{Unfinished here.}
+- **First_Eval**: Rating of the first evaluation (A, B, C, D, F).
+- **Second_Eval**: Rating of the second evaluation (A, B, C, D, F).
+  - X: Left the show before completing the second evaluation.
+- **Country**: Nationality, most contestants are from Korea or Japan.
+
+Snapshot of the *Produce 48* dataset:  
 
 ```{r produce-48-data}
 library(readxl)

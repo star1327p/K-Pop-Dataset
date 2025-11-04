@@ -85,7 +85,7 @@ In addition to the K-pop performance itself, survival reality shows have also be
 Mnet is a television music channel famous for hosting idol-making survival shows, such as *Produce 101* and *Produce 48* \cite{capistrano2023into}.   
 
 
-## Motivation  
+## Motivation {#motivation}   
 
 The author became interested in K-pop music from the debut of Tzuyu (Chou Tzu-Yu, 周子瑜).^[<https://en.wikipedia.org/wiki/Tzuyu>] Tzuyu is originally from Taiwan, the country in which the author grew up. In 2015, Tzuyu participated in the South Korean reality television show *SIXTEEN*,^[<https://en.wikipedia.org/wiki/Sixteen_(TV_program)>] and eventually got added to the newly-formed girl group *TWICE*.^[<https://en.wikipedia.org/wiki/Twice>] In early 2016, Tzuyu was forced to apologize after she raised the Taiwan flag in a Korean entertainment show \cite{ahn2019politics}.^[<https://bit.ly/3DOcNlP>] The flag controversy incident made headline news in Taiwan,^[<https://bit.ly/4k5j7ps>] and it was estimated to bring in 500,000 votes for the 2016 Taiwan presidential election.^[<https://bit.ly/3CUQWsK>]    
 
@@ -169,53 +169,47 @@ In this project, we explore a few datasets from K-pop reality shows that have at
 
 Datasets Considered: Need to have at least two sets of contestant ratings to evaluate for correlation and/or consistency.    
 
-- Idol School (2017)
+- *Idol School* (2017)
   - Female contestants
   - Basic Strength Ratings: Vocal, Dance, Physical, Overall
-  - https://en.wikipedia.org/wiki/Idol_School_(2017_TV_series)
-  - https://en.wikipedia.org/wiki/List_of_Idol_School_contestants
+  - <https://en.wikipedia.org/wiki/Idol_School_(2017_TV_series)>
+  - <https://en.wikipedia.org/wiki/List_of_Idol_School_contestants>
 
-- Produce 101 (2016)
+- *Produce 101* (2016)
   - Female contestants
   - Judges' Evaluation 1: A, B, C, D, F
   - Judges' Evaluation 2: A, B, C, D, F
-  - https://en.wikipedia.org/wiki/Produce_101
-  - https://en.wikipedia.org/wiki/Produce_101_season_1
-  - https://en.wikipedia.org/wiki/List_of_Produce_101_contestants
+  - <https://en.wikipedia.org/wiki/Produce_101>
+  - <https://en.wikipedia.org/wiki/Produce_101_season_1>
+  - <https://en.wikipedia.org/wiki/List_of_Produce_101_contestants>
 
-- Produce 101 Season 2 (2017)
+- *Produce 101 Season 2* (2017)
   - Male contestants
   - Judges' Evaluation 1: A, B, C, D, F
   - Judges' Evaluation 2: A, B, C, D, F
-  - https://en.wikipedia.org/wiki/Produce_101_season_2
-  - https://en.wikipedia.org/wiki/List_of_Produce_101_contestants_(season_2)
+  - <https://en.wikipedia.org/wiki/Produce_101_season_2>
+  - <https://en.wikipedia.org/wiki/List_of_Produce_101_contestants_(season_2)>
   
-- Produce 48 (2018)
+- *Produce 48* (2018)
   - Female contestants (50% from South Korea and 50% from Japan)
   - Judges' Evaluation 1: A, B, C, D, F
   - Judges' Evaluation 2: A, B, C, D, F
-  - https://en.wikipedia.org/wiki/Produce_48
-  - https://en.wikipedia.org/wiki/List_of_Produce_48_contestants
+  - <https://en.wikipedia.org/wiki/Produce_48>
+  - <https://en.wikipedia.org/wiki/List_of_Produce_48_contestants>
   
-- Produce X 101 (2019)
+- *Produce X 101* (2019)
   - Male contestants
   - Judges' Evaluation 1: A, B, C, D, X
   - Judges' Evaluation 2: A, B, C, D, F, X
-  - https://en.wikipedia.org/wiki/Produce_X_101
-  - https://en.wikipedia.org/wiki/List_of_Produce_X_101_contestants
+  - <https://en.wikipedia.org/wiki/Produce_X_101>
+  - <https://en.wikipedia.org/wiki/List_of_Produce_X_101_contestants>
 
 Datasets NOT Considered: These datasets do not have enough sets of contestant ratings for our analysis.   
 
-- Mix Nine (2017-2018)
-  - Selected 9 females and 9 males for the final team
-  - Only one set of contestant ratings was available.
-  - https://en.wikipedia.org/wiki/Mix_Nine
-  - https://en.wikipedia.org/wiki/List_of_Mix_Nine_contestants
+For instance, *Mix Nine* (2017-2018)^[<https://en.wikipedia.org/wiki/Mix_Nine>] has only one set of contestant ratings at the beginning of the show.    
 
-- Sixteen (2015)
-  - Female contestants within JYP Entertainment
-  - No ratings available for any contestant.
-  - https://en.wikipedia.org/wiki/Sixteen_(TV_program)
+In fact, many K-pop survival shows do not provide even one set of contestant ratings. One example is *SIXTEEN* (2015),^[<https://en.wikipedia.org/wiki/Sixteen_(TV_program)>] which we mentioned earlier in Section \ref{motivation}. Other examples include *I-Land* (2020),^[<https://en.wikipedia.org/wiki/I-Land>] *Girls Planet 999* (2021),^[<https://en.wikipedia.org/wiki/Girls_Planet_999>] and *Street Man Fighter* (2022).^[<https://en.wikipedia.org/wiki/Street_Man_Fighter>]     
+
 
 This manuscript is created using `R` Markdown \cite{r-markdown}^[<https://rmarkdown.rstudio.com/>] for reproducible data analysis, just like our earlier technical report about the education in Taiwan \cite{chai2024statistical}. We have posted our code and data on GitHub,^[<https://github.com/star1327p/K-Pop-Dataset>] so readers can download the GitHub repository and play with the script themselves.    
 

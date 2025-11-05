@@ -435,6 +435,8 @@ e.g. Song Ha Young (宋河英) got 5.9 in dance and 9.8 in physical. Song Ha You
 Figure \ref{fig:ggplot2-drafts} is the **box plot** of the vocal, dance, and physical scores in the *Idol School* show. We visualized the data using `ggplot2` \cite{ggplot2} to compare the three sets of scores.      
 <https://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization>  
 
+\textcolor{red}{Explain the \texttt{tidyr} and long-data parts}  
+
 ```{r ggplot2-drafts, fig.cap="Box plot of the vocal, dance, and physical scores in the \\textit{Idol School} show"}
 # UNFINISHED HERE
 
@@ -457,7 +459,7 @@ long_data$Category <- factor(long_data$Category,
 
 # To-Do:
 # [done] 1. Change the group order!!!
-# 2. Add ggtitle for plot title (optional)
+# [done] 2. Add ggtitle for plot title
 # [done] 3. Add Figure caption and reference it in the narrative.
 # https://r-charts.com/distribution/box-plot-group-ggplot2/
 # 4. Make the font size of axis labels larger and easier to read!!
@@ -465,7 +467,9 @@ long_data$Category <- factor(long_data$Category,
 library(ggplot2)
 ggplot(long_data, aes(x=Category, y=Score)) + 
   stat_boxplot(geom = "errorbar", width=0.25) +
-  geom_boxplot()
+  geom_boxplot() +
+  ggtitle("Box Plot of Scores in Each Category") +
+  theme(plot.title = element_text(hjust = 0.5))
 ```
 
 ### Correlation between Vocal, Dance, and Physical Scores
@@ -491,6 +495,33 @@ round(cor(idol_school[,c("Vocal","Dance","Physical")]), 3)
 
 Create the scatterplots and/or correlation plots!   
 \textcolor{red}{Use \texttt{ggplot} or not} ?!    
+
+Explain the `gridExtra` package.  
+
+```{r idol-scores-scatter-plot-drafts, fig.height=2, fig.width=6.5, fig.cap="Test scatterplots, from left to right"}
+
+# UNFINISHED HERE
+# 1. Set the x-ticks and y-ticks to c(0, 2.5, 5, 7.5, 10)
+# 2. Change the colors and/or shapes of the points (optional)
+# 3. Write an appropriate figure caption
+
+library(ggplot2)
+library(gridExtra)
+
+scatter1 <- ggplot(data = idol_school, aes(x=Vocal, y=Dance)) + 
+  geom_point() + ggtitle("Vocal vs Dance") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+scatter2 <- ggplot(data = idol_school, aes(x=Vocal, y=Physical)) +
+  geom_point() + ggtitle("Vocal vs Physical") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+scatter3 <- ggplot(data = idol_school, aes(x=Dance, y=Physical)) + 
+  geom_point() + ggtitle("Dance vs Physical") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+grid.arrange(scatter1, scatter2, scatter3, ncol=3)
+```
 
 \textcolor{red}{Need to explain the correlation coefficients and the K-pop context.}   
 

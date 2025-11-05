@@ -225,7 +225,7 @@ e.g. Chapter 23 does something.
 
 \textcolor{red}{Shall we also mention some beginners who quickly learned to perform K-pop? Showing that it's possible to succeed with little-to-no initial experience.}   
 
-e.g. Lee Si An (李詩安) and Yoo Ji Na (柳知娜) started out as complete beginners in the show, but they picked up the K-pop dance very fast and survived untill the final episode.   
+e.g. Lee Si An (李詩安) and Yoo Ji Na (柳知娜) started out as complete beginners in the show, but they picked up the K-pop dance very fast and survived until the final episode.   
 
 e.g. Baek Ji Heon (白知憲) and Lee Na Gyung (李娜景) also scored low in the initial performance test, but both of them eventually made it to the top nine for the debut.     
 
@@ -369,7 +369,7 @@ The two 1.2 physical scores are more difficult to check for the underlying value
 
 \textcolor{red}{Check for the mean and median of each category score}  
 
-The five-number summary refers to the five most important percentiles in the data sample -- minimum, 1st quartile, median, 3rd quartile, and maximum.^[<http://en.wikipedia.org/wiki/Five-number_summary>] The `summary` function in `R` outputs the five-number summary along with the arithmetic mean for the data.   
+Let's check for the mean and median of each category score. Wait - we can do better by obtaining the summary statistics. The five-number summary refers to the five most important percentiles in the data sample -- minimum, 1st quartile (25th percentile), median (50th percentile), 3rd quartile (75th percentile), and maximum.^[<http://en.wikipedia.org/wiki/Five-number_summary>] The `summary` function in `R` outputs the five-number summary along with the arithmetic mean for the data.   
 
 ```{r idol-summary-stats}
 # Combine all three summary tables
@@ -380,6 +380,63 @@ physical_summary = summary(idol_school$Physical)
 score_summary = rbind(vocal_summary, dance_summary, physical_summary)
 row.names(score_summary) = c("Vocal","Dance","Physical")
 print(score_summary)
+```
+
+If the readers prefer a graphical summary of the data distributions, Figure \ref{fig:ggplot2-drafts} is the **box plot** of the vocal, dance, and physical scores in the *Idol School* show.    
+
+We visualize the data using `ggplot2` \cite{ggplot2} to compare the three sets of scores.      
+
+\textcolor{red}{What is the purpose of a box plot?}   
+
+Central bold line = median  
+Box = from 1st quartile to 3rd quartile   
+Whiskers = Minimum and maximum values   
+
+<https://medium.com/analytics-vidhya/the-box-plot-a-simple-but-informative-visualization-cacc20d9ff25>
+
+\textcolor{red}{Explain the \texttt{tidyr} and long-data parts}  
+
+We are using the `R` package `tidyr` \cite{tidyr} to convert wide data into long format.   
+
+```{r ggplot2-resources, include=FALSE}
+# https://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization
+# To-Do:
+# [done] 1. Change the group order!!!
+# [done] 2. Add ggtitle for plot title
+# [done] 3. Add Figure caption and reference it in the narrative.
+# https://r-charts.com/distribution/box-plot-group-ggplot2/
+# 4. Make the font size of axis labels larger and easier to read.
+```
+
+```{r ggplot2-drafts, fig.cap="Box plot of the vocal, dance, and physical scores in the \\textit{Idol School} show"}
+# UNFINISHED HERE
+
+library(tidyr)
+
+# Convert wide data into long format
+long_data <- pivot_longer(
+  idol_school,
+  cols = c("Vocal","Dance","Physical"), # Specify columns to pivot
+  names_to = "Category",    # Name of the new column for the group labels
+  values_to = "Score"       # Name of the new column for the values
+)
+
+# Category should be 1. Vocal, 2. Dance, and 3. Physical.
+# Hence we reorder the levels in the data frame.
+long_data$Category <- factor(long_data$Category, 
+                             levels = c("Vocal", "Dance", "Physical"))
+
+# UNFINISHED HERE
+# Do we need to add a snapshot of the long_data?
+# Consider but unsure: 
+# Separate this code chunk into tidyr and ggplot2.
+
+library(ggplot2)
+ggplot(long_data, aes(x=Category, y=Score)) + 
+  stat_boxplot(geom = "errorbar", width=0.25) +
+  geom_boxplot() +
+  ggtitle("Box Plot of Scores in Each Category") +
+  theme(plot.title = element_text(hjust = 0.5))
 ```
 
 Observation:  
@@ -432,45 +489,6 @@ e.g. Jo Yuri (曹柔理) received only 2.2 in dance but 5.9 in physical. Jo Yuri
 
 e.g. Song Ha Young (宋河英) got 5.9 in dance and 9.8 in physical. Song Ha Young was a certified aerial yoga instructor before she first appeared in the *Idol School* reality show.   
 
-Figure \ref{fig:ggplot2-drafts} is the **box plot** of the vocal, dance, and physical scores in the *Idol School* show. We visualized the data using `ggplot2` \cite{ggplot2} to compare the three sets of scores.      
-<https://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization>  
-
-\textcolor{red}{Explain the \texttt{tidyr} and long-data parts}  
-
-```{r ggplot2-drafts, fig.cap="Box plot of the vocal, dance, and physical scores in the \\textit{Idol School} show"}
-# UNFINISHED HERE
-
-library(tidyr)
-
-# Convert wide data to long format
-long_data <- pivot_longer(
-  idol_school,
-  cols = c("Vocal","Dance","Physical"), # Specify columns to pivot
-  names_to = "Category",        # Name of the new column for the group labels
-  values_to = "Score"       # Name of the new column for the values
-)
-
-# Category should be 1. Vocal, 2. Dance, and 3. Physical.
-# Hence we reorder the levels in the data frame.
-long_data$Category <- factor(long_data$Category, 
-                             levels = c("Vocal", "Dance", "Physical"))
-
-# UNFINISHED HERE
-
-# To-Do:
-# [done] 1. Change the group order!!!
-# [done] 2. Add ggtitle for plot title
-# [done] 3. Add Figure caption and reference it in the narrative.
-# https://r-charts.com/distribution/box-plot-group-ggplot2/
-# 4. Make the font size of axis labels larger and easier to read!!
-
-library(ggplot2)
-ggplot(long_data, aes(x=Category, y=Score)) + 
-  stat_boxplot(geom = "errorbar", width=0.25) +
-  geom_boxplot() +
-  ggtitle("Box Plot of Scores in Each Category") +
-  theme(plot.title = element_text(hjust = 0.5))
-```
 
 ### Correlation between Vocal, Dance, and Physical Scores
 
@@ -494,13 +512,15 @@ round(cor(idol_school[,c("Vocal","Dance","Physical")]), 3)
 ```
 
 Create the scatterplots and/or correlation plots!   
-\textcolor{red}{Use \texttt{ggplot} or not} ?!    
+\textcolor{red}{Use \texttt{ggplot}!}    
 
-Explain the `gridExtra` package.  
+Explain the `gridExtra` package \cite{gridExtra}.   
 
-```{r idol-scores-scatter-plot-drafts, fig.height=2, fig.width=6.5, fig.cap="Test scatterplots, from left to right"}
+```{r idol-scores-scatter-plot-drafts, fig.height=2, fig.width=6.5, fig.cap="Scatterplots to show the pairwise correlation between the vocal, dance, and physical scores. The graphs from left to right are: Vocal vs Dance, Vocal vs Physical, and Dance vs Physical."}
 
 # UNFINISHED HERE
+
+# To-Do:
 # 1. Set the x-ticks and y-ticks to c(0, 2.5, 5, 7.5, 10)
 # 2. Change the colors and/or shapes of the points (optional)
 # 3. Write an appropriate figure caption

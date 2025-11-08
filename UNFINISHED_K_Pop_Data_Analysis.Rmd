@@ -219,15 +219,15 @@ e.g. Chapter 23 does something.
 
 # *Idol School* Dataset (2017)
 
-*Idol School* (偶像學校) is a 2017 Korean reality television show produced by Mnet. Unlike the 2016 *Produce 101* that mostly featured K-pop trainees,^[<https://en.wikipedia.org/wiki/Produce_101>] \textit{Idol School} did not require any vocal or dance experience and was willing to train the participants from scratch. Despite the low barrier to entry, many participants in the reality show had previously trained under various entertainment companies.^[<https://kpop.fandom.com/wiki/Idol_School>] For example, NATTY was trained under JYP Entertainment^[<https://en.wikipedia.org/wiki/JYP_Entertainment>] and made it to the finals of the *SIXTEEN* reality show^[<https://en.wikipedia.org/wiki/Sixteen_(TV_program)>] in 2015. Lee Yoo Jeong (李悠汀) previously debuted in the girl group *myB*, but the group disbanded in 2016.^[<https://zh.wikipedia.org/wiki/MyB>]    
+*Idol School* (偶像學校) is a 2017 Korean reality television show produced by Mnet, selecting nine winners were selected to form the new girl group *fromis_9* in 2018.^[<https://en.wikipedia.org/wiki/Fromis_9>] Unlike the 2016 *Produce 101* that mostly featured K-pop trainees,^[<https://en.wikipedia.org/wiki/Produce_101>] \textit{Idol School} did not require any vocal or dance experience and was willing to train the participants from scratch. Despite the low barrier to entry, many participants in the reality show had previously trained under various entertainment companies.^[<https://kpop.fandom.com/wiki/Idol_School>] For example, NATTY was trained under JYP Entertainment^[<https://en.wikipedia.org/wiki/JYP_Entertainment>] and made it to the finals of the *SIXTEEN* reality show^[<https://en.wikipedia.org/wiki/Sixteen_(TV_program)>] in 2015. Lee Yoo Jeong (李悠汀) previously debuted in the girl group *myB*, but the group disbanded in 2016.^[<https://zh.wikipedia.org/wiki/MyB>]    
 
 \textcolor{red}{For \textit{Idol School}, we need to add some academic citations.}    
 
-\textcolor{red}{Shall we also mention some beginners who quickly learned to perform K-pop? Showing that it's possible to succeed with little-to-no initial experience.}   
+On the other hand, some contestants quickly learned to perform K-pop at a high level, showing that it's possible to succeed with little-to-no initial experience. For example, Lee Si An (李詩安) and Yoo Ji Na (柳知娜) started out as complete beginners in the show, but they picked up the K-pop dance very fast and survived until the final episode. Baek Ji Heon (白知憲) and Lee Na Gyung (李娜景) also scored low in the initial performance test, but both of them eventually made it to the top nine for the debut.     
 
-e.g. Lee Si An (李詩安) and Yoo Ji Na (柳知娜) started out as complete beginners in the show, but they picked up the K-pop dance very fast and survived until the final episode.   
+Unfortunately, Snowbaby (蔡瑞雪) did not do well and got eliminated in the first round (fourth episode of the series). Snowbaby had not received any vocal or dance training in K-pop, so she was a complete beginner in the show. Moreover, Korean is not Snowbaby's native language, making the *Idol School* training extremely tough for her. Despite the major setbacks, Snowbaby still cherished the *Idol School* experience and was willing to publicly share what she learned during the K-pop bootcamp.^[Snowbaby's sharing on YouTube: <https://www.youtube.com/watch?v=WMUBDbNsuGU>]    
 
-e.g. Baek Ji Heon (白知憲) and Lee Na Gyung (李娜景) also scored low in the initial performance test, but both of them eventually made it to the top nine for the debut.     
+\textcolor{red}{Need another transition sentence or paragraph}    
 
 In the live reality show *Idol School*, nine winners were selected to form the new girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This girl group debuted in 2018 and remained active until the contract with Pledis Entertainment ended in 2024. In January 2025, five members of the group signed a new contract with ASND.^[<https://kpop.fandom.com/wiki/ASND>]    
 
@@ -312,25 +312,17 @@ idol_school = idol_school[1:40,]
 
 \textcolor{red}{Context: Write about how the vocal, dance, and physical scores were evaluated.}   
 
+Vocal testing   
+
+Mostly about the singing techniques, rather than memorizing the Korean lyrics.   
+
+Dance testing   
+
 Physical testing contains a group exercise and an individual exercise.   
 
 Also mention the top performers in overall scores and in each category.  
 
-Most of the top performers had experience as a trainee under an entertainment company, and some even had debuted before.  
-
-\textcolor{red}{Then why did they join the Idol School reality show?}  
-
-Unfortunately, Snowbaby (蔡瑞雪) did not do well.  
-
-Snowbaby had not received any vocal or dance training in K-pop, so she was a complete beginner in the show.  
-
 ### Error Correction in Data
-
-\textcolor{red}{Still need to write the description}    
-
-To observe the patterns of the *Idol School* data published on Wikipedia,^[<https://en.wikipedia.org/wiki/List_of_Idol_School_contestants#Elimination_chart>] we first sorted the scores of each category (vocal, dance, and physical) in descending order.   
-
-What did we notice?   
 
 ```{r idol-school-eda-sort, include=FALSE}
 # Hided the sorted scores
@@ -344,26 +336,13 @@ sorted_scores_df = as.data.frame(combined_all_three)
 
 # sorted_scores_df[1:10,] # top-10-sorted-scores
 # sorted_scores_df[31:40,] # bottom-10-sorted-scores
-```
+``` 
 
-\textcolor{red}{What changes did we make from the Wikipedia data?}   
-
-Our presumption is that in each category, no two contestants should have the same score. However, after sorting the *Idol School* data, we found two 3.5's and two 1.2's in the physical scores. Especially that the two 3.5's belong to top-ranked contestants Bae Eun Yeong (裴恩英) and Park Ji Won (朴池原), this issue quickly caught our attention to make corrections to the data.   
-
-\textcolor{red}{Add a few transition sentences}   
-
-*Idol School* (2017): Videos with subtitles in Simplified Chinese are available on the Bilibili platform.^[<https://www.bilibili.com/video/BV1554y1C7wj/>]
-
-Screenshots saved:    
-<https://github.com/star1327p/K-Pop-Dataset/tree/main/Idol_School_Rating_Screenshots>   
-
-\textcolor{red}{Then continue the discussion.}    
+To observe the patterns of the *Idol School* data published on Wikipedia,^[<https://en.wikipedia.org/wiki/List_of_Idol_School_contestants#Elimination_chart>] we first sorted the scores of each category (vocal, dance, and physical) in descending order. Our presumption is that in each category, no two contestants should have the same score. However, after sorting the *Idol School* data, we found two 3.5's and two 1.2's in the physical scores. Especially that the two 3.5's belong to top-ranked contestants Bae Eun Yeong (裴恩英) and Park Ji Won (朴池原), this issue quickly caught our attention to make corrections to the data. Fortunately, the *Idol School* show's videos are available on the Bilibili platform, with subtitles in Simplified Chinese that we can understand.^[<https://www.bilibili.com/video/BV1554y1C7wj/>] We saved the screenshots from the contestant scores in the first episode.^[Screenshots saved: <https://github.com/star1327p/K-Pop-Dataset/tree/main/Idol_School_Rating_Screenshots>] Hence we can compare the Wikipedia data with the exact scores published in the show.     
 
 In the video clip, Park Ji Won (朴池原) and her partner were the first runner-up in the group physical exercise.^[Screenshot of the group physical exercise: <https://bit.ly/4a7QT9m>] We are surprised that Ji Won's physical score was only 3.5. According to the video's score table for contestants ranked 11th to 20th,^[<https://bit.ly/400KUhH>] Ji Won's physical score should be 6.2. The Wikipedia table shows an inconsistency in Ji Won's overall score, i.e., the average across the three categories. Ji Won's vocal score was 7.9, and her dance score was 5. These numbers seem to be reasonable for Ji Won, because she is known for excellent singing and good dancing as a performer.^[Park Ji Won was the main vocalist in *fromis_9*. <https://bit.ly/402yCFI>] Therefore, we assume both scores to be correct. If the physical score had really been 3.5, then Ji Won's overall score would be 5.47, dropping her from 13th place to the 18th. If the overall score of 6.37 had been correct, then Ji Won's physical score should be 6.2. The second scenario is more likely to be true, given the evidence we found in the video clip. Hence we corrected Ji Won's physical score to 6.2.      
 
 The two 1.2 physical scores are more difficult to check for the underlying values, probably because they occurred in two contestants of lower ranking.^[Physical scores of all contestants in *Idol School*: <https://bit.ly/3DRNK0Z>] The two contestants, Jessica Lee (李瑟) and Michelle White (懷特·米雪兒), ranked in the lower half of all 41 contestants in terms of the overall ability test. Both of them got eliminated in the first round, so they did not receive much attention in the show. With the help of Google Translate,^[<https://translate.google.com/>] we were able to translate the image of Korean text to (readable) English. Finally, we discovered that Michelle White's physical score should be 1.3, not 1.2.    
-
-
 
 ### Summary Statistics
 

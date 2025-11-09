@@ -377,6 +377,8 @@ Whiskers = Minimum and maximum values
 
 We are using the `R` package `tidyr` \cite{tidyr} to convert wide data into long format.   
 
+\textcolor{red}{Alternative: Hide the code and only show the graph itself}   
+
 ```{r ggplot2-resources, include=FALSE}
 # https://www.sthda.com/english/wiki/ggplot2-box-plot-quick-start-guide-r-software-and-data-visualization
 # To-Do:
@@ -387,7 +389,7 @@ We are using the `R` package `tidyr` \cite{tidyr} to convert wide data into long
 # 4. Make the font size of axis labels larger and easier to read.
 ```
 
-```{r ggplot2-drafts, fig.cap="Box plot of the vocal, dance, and physical scores in the \\textit{Idol School} show"}
+```{r ggplot2-drafts, fig.cap="Box plot of the vocal, dance, and physical scores in the \\textit{Idol School} show", echo=FALSE}
 # UNFINISHED HERE
 
 library(tidyr)
@@ -404,11 +406,6 @@ long_data <- pivot_longer(
 # Hence we reorder the levels in the data frame.
 long_data$Category <- factor(long_data$Category, 
                              levels = c("Vocal", "Dance", "Physical"))
-
-# UNFINISHED HERE
-# Do we need to add a snapshot of the long_data?
-# Consider but unsure: 
-# Separate this code chunk into tidyr and ggplot2.
 
 library(ggplot2)
 ggplot(long_data, aes(x=Category, y=Score)) + 
@@ -495,31 +492,70 @@ Create the scatterplots and/or correlation plots!
 
 Explain the `gridExtra` package \cite{gridExtra}.   
 
-```{r idol-scores-scatter-plot-drafts, fig.height=2, fig.width=6.5, fig.cap="Scatterplots to show the pairwise correlation between the vocal, dance, and physical scores. The graphs from left to right are: Vocal vs Dance, Vocal vs Physical, and Dance vs Physical."}
+Figure \ref{fig:idol-scores-scatter-plot-drafts} contains the three scatterplots.   
+
+\textcolor{red}{Also need to explain the code}   
+
+\textcolor{red}{Alternative: Hide the code and only show the graph itself}   
+
+```{r idol-scores-scatter-plot-drafts, fig.height=2, fig.width=6.5, fig.cap="Scatterplots to show the pairwise correlation between the vocal, dance, and physical scores. The graphs from left to right are: Vocal vs Dance, Vocal vs Physical, and Dance vs Physical.", echo=FALSE}
 
 # UNFINISHED HERE
-
-# To-Do:
-# 1. Set the x-ticks and y-ticks to c(0, 2.5, 5, 7.5, 10)
-# 2. Change the colors and/or shapes of the points (optional)
-# 3. Write an appropriate figure caption
 
 library(ggplot2)
 library(gridExtra)
 
-scatter1 <- ggplot(data = idol_school, aes(x=Vocal, y=Dance)) + 
-  geom_point() + ggtitle("Vocal vs Dance") +
+scale_req <- function(plot_obj) {
+  plot_obj + 
+  scale_x_continuous(breaks=c(0, 2.5, 5, 7.5, 10), limits=c(0, 10)) +
+  scale_y_continuous(breaks=c(0, 2.5, 5, 7.5, 10), limits=c(0, 10)) +
   theme(plot.title = element_text(hjust = 0.5))
+}
+
+scatter1 <- ggplot(data = idol_school, aes(x=Vocal, y=Dance)) + 
+  geom_point() + ggtitle("Vocal vs Dance")
+scatter1 <- scale_req(scatter1)
 
 scatter2 <- ggplot(data = idol_school, aes(x=Vocal, y=Physical)) +
-  geom_point() + ggtitle("Vocal vs Physical") +
-  theme(plot.title = element_text(hjust = 0.5))
+  geom_point() + ggtitle("Vocal vs Physical") 
+scatter2 <- scale_req(scatter2)
 
 scatter3 <- ggplot(data = idol_school, aes(x=Dance, y=Physical)) + 
-  geom_point() + ggtitle("Dance vs Physical") +
-  theme(plot.title = element_text(hjust = 0.5))
+  geom_point() + ggtitle("Dance vs Physical")
+scatter3 <- scale_req(scatter3)
 
 grid.arrange(scatter1, scatter2, scatter3, ncol=3)
+```
+
+
+```{r scatter-plot-resources, include=FALSE}
+# To-Do:
+# [done] 1. Set the x-ticks and y-ticks to c(0, 2.5, 5, 7.5, 10)
+# 2. Change the colors and/or shapes of the points (optional)
+# [done] 3. Write an appropriate figure caption
+
+# library(ggplot2)
+# library(gridExtra)
+
+#scatter1 <- ggplot(data = idol_school, aes(x=Vocal, y=Dance)) + 
+#  geom_point() + ggtitle("Vocal vs Dance") +
+#  scale_x_continuous(breaks=c(0, 2.5, 5, 7.5, 10), limits=c(0, 10)) +
+#  scale_y_continuous(breaks=c(0, 2.5, 5, 7.5, 10), limits=c(0, 10)) +
+#  theme(plot.title = element_text(hjust = 0.5))
+
+#scatter2 <- ggplot(data = idol_school, aes(x=Vocal, y=Physical)) +
+#  geom_point() + ggtitle("Vocal vs Physical") +
+#  scale_x_continuous(breaks=c(0, 2.5, 5, 7.5, 10), limits=c(0, 10)) +
+#  scale_y_continuous(breaks=c(0, 2.5, 5, 7.5, 10), limits=c(0, 10)) +  
+#  theme(plot.title = element_text(hjust = 0.5))
+
+#scatter3 <- ggplot(data = idol_school, aes(x=Dance, y=Physical)) + 
+#  geom_point() + ggtitle("Dance vs Physical") +
+#  scale_x_continuous(breaks=c(0, 2.5, 5, 7.5, 10), limits=c(0, 10)) +
+#  scale_y_continuous(breaks=c(0, 2.5, 5, 7.5, 10), limits=c(0, 10)) +  
+#  theme(plot.title = element_text(hjust = 0.5))
+
+# grid.arrange(scatter1, scatter2, scatter3, ncol=3)
 ```
 
 \textcolor{red}{Need to explain the correlation coefficients and the K-pop context.}   
@@ -530,8 +566,7 @@ The training at a K-pop entertainment company in Korea usually includes vocal an
 
 ## *Idol School*: Additional Resources
 
-Students who were eliminated from the show:  
-<https://www.ptt.cc/bbs/fromis_9/M.1555819461.A.C73.html>
+For the contestants eliminated from the show, some continued to try in K-pop reality shows to earn another position in debut, while some others left the K-pop industry to pursue other goals.^[<https://www.ptt.cc/bbs/fromis_9/M.1555819461.A.C73.html>]   
 
 In 2017, a Taiwanese blogger followed the whole *Idol School* series, and used algorithms to predict the final ranking.^[<https://shavid.pixnet.net/blog/post/331691281>] Both random forests and SVM^[SVM stands for Support Vector Machine. <https://en.wikipedia.org/wiki/Support_vector_machine>] predicted Lee Hae In (李海印) to be in the top 9 for the debut, but Hae In ended up in an unexpected 11th place.    
 

@@ -361,21 +361,7 @@ row.names(score_summary) = c("Vocal","Dance","Physical")
 print(score_summary)
 ```
 
-If the readers prefer a graphical summary of the data distributions, Figure \ref{fig:ggplot2-drafts} is the **box plot** of the vocal, dance, and physical scores in the *Idol School* show.    
-
-We visualize the data using `ggplot2` \cite{ggplot2} to compare the three sets of scores.      
-
-\textcolor{red}{What is the purpose of a box plot?}   
-
-Central bold line = median  
-Box = from 1st quartile to 3rd quartile   
-Whiskers = Minimum and maximum values   
-
-<https://medium.com/analytics-vidhya/the-box-plot-a-simple-but-informative-visualization-cacc20d9ff25>
-
-\textcolor{red}{Explain the \texttt{tidyr} and long-data parts}  
-
-We are using the `R` package `tidyr` \cite{tidyr} to convert wide data into long format.   
+If the readers prefer a graphical summary of the data distributions, Figure \ref{fig:idol-school-box-plot} is the **box plot** of the vocal, dance, and physical scores in the *Idol School* show. We visualize the data using `ggplot2` \cite{ggplot2} to compare the three sets of scores. For each category, the central bold line indicates the median score. The box ranges from the 1st quartile to the 3rd quartile. The whiskers represent the minimum and maximum values in the sample.^[It is possible to have outliers beyond the upper and lower whiskers. <https://bit.ly/3LSPTxu>]    
 
 \textcolor{red}{Alternative: Hide the code and only show the graph itself}   
 
@@ -389,10 +375,9 @@ We are using the `R` package `tidyr` \cite{tidyr} to convert wide data into long
 # 4. Make the font size of axis labels larger and easier to read.
 ```
 
-```{r ggplot2-drafts, fig.cap="Box plot of the vocal, dance, and physical scores in the \\textit{Idol School} show", echo=FALSE}
-# UNFINISHED HERE
-
+```{r idol-school-box-plot, fig.cap="Box plot of the vocal, dance, and physical scores in the \\textit{Idol School} show", echo=FALSE}
 library(tidyr)
+library(ggplot2)
 
 # Convert wide data into long format
 long_data <- pivot_longer(
@@ -407,7 +392,6 @@ long_data <- pivot_longer(
 long_data$Category <- factor(long_data$Category, 
                              levels = c("Vocal", "Dance", "Physical"))
 
-library(ggplot2)
 ggplot(long_data, aes(x=Category, y=Score)) + 
   stat_boxplot(geom = "errorbar", width=0.25) +
   geom_boxplot() +
@@ -415,19 +399,14 @@ ggplot(long_data, aes(x=Category, y=Score)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-Observation:  
+Observe that vocal and dance scores have 1 as the minimum score (who participated but made a blunder while performing), and the maximum score is below 10 (full mark). Physical scores have a wider range because the first place is automatically given a 10, and the other contestants' scores are calculated using the best performer as the baseline. Hence it is possible to receive a physical score below 1.   
 
-Vocal and dance scores have 1 as the minimum score (who participated but made a blunder while performing), and the maximum score is below 10 (full mark). Physical scores have a wider range because the first place is automatically given a 10, and the other contestants' scores are calculated using the best performer as the baseline. Hence it is possible to receive a physical score below 1.   
+Vocal has a median score of 4.95 (rounding to 5), which indicates decent performance. NATTY received 9.8 as the highest vocal score, and the instructor said her singing performance was perfect (considering that NATTY is originally from Thailand and hence not a native speaker in Korean).^[NATTY's birth name is Anatchaya Suputhipong. <https://en.wikipedia.org/wiki/Natty_(Thai_singer)>] On the other hand, Lee Hae In (李海印) received a score of 1 in vocal, because she unfortunately lost her voice and could barely sing at that time.   
 
-Vocal:   
-
-NATTY received 9.8 as the highest vocal score, and the instructor said her singing performance was perfect (considering that NATTY is originally from Thailand and hence not a native speaker in Korean).^[NATTY's birth name is Anatchaya Suputhipong. <https://en.wikipedia.org/wiki/Natty_(Thai_singer)>]         
-
-On the other hand, Lee Hae In (李海印) received a score of 1 in vocal, because she unfortunately lost her voice and could barely sing at that time.  
-
-The median score of vocal is 4.95 (rounding to 5), which indicates decent performance.   
 
 Dance:    
+
+Dance has the highest median score (5.55) among the three categories because ... (elaborate on the reasons)   
 
 Although the best score was only 9.5 (given to Tasha (劉怡伶)), the median score of dance is the highest (5.55) among the three categories.   
 
@@ -487,20 +466,22 @@ Alternatively, we can also compute the correlation matrix for the three score ca
 round(cor(idol_school[,c("Vocal","Dance","Physical")]), 3)
 ```
 
-Create the scatterplots and/or correlation plots!   
-\textcolor{red}{Use \texttt{ggplot}!}    
+\textcolor{red}{Create the scatterplots and/or correlation plots using \texttt{ggplot}!}     
 
-Explain the `gridExtra` package \cite{gridExtra}.   
+Figure \ref{fig:idol-scores-scatter-plot-pairwise} contains the three scatterplots of the pairwise correlation.  
 
-Figure \ref{fig:idol-scores-scatter-plot-drafts} contains the three scatterplots.   
+Vocal vs dance has the highest linear correlation, with many points on the diagonal line.  
 
-\textcolor{red}{Also need to explain the code}   
+Vocal vs physical also has a high correlation, although the graph seems slightly more spread-out than vocal vs dance.   
+
+Physical vs dance shows a funnel shape in the scatter plot, implying a relatively large variance of physical scores among the participants with high dance scores.   
+
 
 \textcolor{red}{Alternative: Hide the code and only show the graph itself}   
 
-```{r idol-scores-scatter-plot-drafts, fig.height=2, fig.width=6.5, fig.cap="Scatterplots to show the pairwise correlation between the vocal, dance, and physical scores. The graphs from left to right are: Vocal vs Dance, Vocal vs Physical, and Dance vs Physical.", echo=FALSE}
+\textcolor{red}{Idea: Check out physical vs dance -- conditional on dance < 5.0 vs dance > 5.0}   
 
-# UNFINISHED HERE
+```{r idol-scores-scatter-plot-pairwise, fig.height=2, fig.width=6.5, fig.cap="Scatterplots to show the pairwise correlation between the vocal, dance, and physical scores. The graphs from left to right are: Vocal vs Dance, Vocal vs Physical, and Dance vs Physical.", echo=FALSE}
 
 library(ggplot2)
 library(gridExtra)
@@ -563,6 +544,22 @@ grid.arrange(scatter1, scatter2, scatter3, ncol=3)
 The training at a K-pop entertainment company in Korea usually includes vocal and dance lessons \cite{padget2017difficulties}, so it is reasonable to see a high correlation between vocal and dance scores. Theoretically dance and physical should be highly correlated \cite{dance2024strength}, but in the Idol School dataset, we observed a slightly lower correlation in dance vs physical than in dance vs vocal. Physical strength is essential to dancing, but dance also includes other critical elements such as technique and aesthetic expression \cite{geukes2023mirror}.   
 
 \textcolor{red}{Do more analysis to the Idol School data!}   
+
+\textcolor{red}{Idea: Check out physical vs dance -- conditional on dance < 5.0 vs dance >= 5.0}   
+
+```{r idol-physical-cond-on-dance-drafts}
+# UNFINISHED HERE
+dance_upper = idol_school[which(idol_school$Dance >= 5),]
+dance_lower = idol_school[which(idol_school$Dance < 5),]
+
+# Correlation coefficients
+# cor(dance_upper$Dance, dance_upper$Physical)  # 0.06372215
+# cor(dance_lower$Dance, dance_lower$Physical) # 0.1262473
+
+# Standard deviation
+# sd(dance_upper$Physical) # 2.773007
+# sd(dance_lower$Physical) # 1.645861
+```
 
 ## *Idol School*: Additional Resources
 

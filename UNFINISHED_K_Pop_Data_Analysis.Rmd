@@ -589,6 +589,33 @@ Columns:
 - Number of participants
 - Number of rankings that were fabricated
 
+```{r idol-school-fabricated-drafts}
+# UNFINISHED HERE
+
+episode = c("1st","2nd","3rd","4th","5th",
+            "6th","7th","8th","9th","10th","11th")
+participants = c(41,40,40,40,32,32,28,28,28,18,18)
+fabricated   = c( 0,33, 0,39,26,27,27,27,26,17,17)
+
+evidence_df = data.frame(episode, participants, fabricated)
+names(evidence_df) = c("Episode", "Participants", "Fabricated Rankings")
+
+# UNFINISHED HERE
+# Next step: Add a new column "Notes" to write more comments
+
+evidence_df$Notes = c(rep(" ",11)) # initialize each row to blank
+evidence_df$Notes[1] = "No evidence of fabrication found."
+evidence_df$Notes[3] = "No rankings published."
+
+names(evidence_df)[4] = "Special Comments or Notes"
+
+# Also write Notes for the 4th, 6th, 9th, 11th episodes.
+
+# Do we need to add a Total row at the bottom of the data.frame?
+
+evidence_df
+```
+
 Therefore, it is meaningless to predict the final rankings in a K-pop survival show. That's why we decided to analyze only the contestant scores given by the professional instructors. These scores are a relatively good benchmark of raw performance, especially that they were not artificially changed to favor any particular contestant.    
 
 

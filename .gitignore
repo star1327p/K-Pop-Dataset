@@ -1,3 +1,6 @@
+# Common temporary/backup files, especially in Microsoft Word and Excel
+~$*
+
 # History files
 .Rhistory
 .Rapp.history

@@ -59,20 +59,26 @@ This manuscript is written solely by the author, not by ChatGPT or any other gen
 
 \textcolor{red}{Briefly describe what the K-pop music is, such as songs and elements}  
 
-K-pop music (Korean popular music) is a genre of entertainment originated from South Korea \cite{lie2015k-pop}, and K-pop emphasizes more on the dancing component than the singing element.  
+K-pop music (Korean popular music) is a genre of entertainment originated from South Korea \cite{lie2015k-pop}, and K-pop emphasizes more on the dancing component than the singing element [citation needed].  
 
 Therefore, K-pop shows are like an audio-visual treat, appealing to the general public \cite{pal2022k-pop}.  
 
-Music: K-pop groups often showcase a wide range of musical styles, from pop and hip-hop to rock and R&B (Rhythm and Blues), within a single discography \cite{liu2024newjeans}. [sentence needs revision]   
+Music: K-pop groups often showcase a wide range of musical styles within a single discography, and common styles include pop, hip-hop, rock, and R&B (Rhythm and Blues) \cite{liu2024newjeans}.     
 
 Lyrics:  
-Upbeat and catchy - Many tracks are designed with high energy and memorable hooks, making them easy to listen to and popular for dancing.  
+Upbeat and catchy - Many tracks are designed with high energy and memorable hooks, making them easy to listen to and popular for dancing [citation needed].  
 
-Dance: Choreography, complex    
+e.g. Debut single song - "Into the New World" (再次重逢的世界)^[<https://en.wikipedia.org/wiki/Into_the_New_World>]    
+
+Performed by *Girls' Generation* (少女時代)^[<https://en.wikipedia.org/wiki/Girls%27_Generation>] in 2007.      
+
+What do you think about the lyrics? Why is this song considered a textbook example of K-pop music? [citation needed]    
+
+Dance: Choreography, complex       
 
 Fashion: Dress, make-up, hair style, etc.   
 
-Stage and video effects: Bright lights, video-editing for focus, etc.  
+Stage and video effects: Bright lights, video-editing for focus, etc.     
 
 \textcolor{red}{Important: Write about why K-pop music is so popular across the globe.}   
 

@@ -448,7 +448,7 @@ With a few exceptions:
 
 e.g. Jo Yuri (曹柔理) received only 2.2 in dance but 5.9 in physical. Jo Yuri had not received any K-pop training prior to the show in 2017, but she was a long jump athlete during her school years.^[<https://bit.ly/431HHRS>]    
 
-e.g. Song Ha Young (宋河英) got 5.9 in dance and 9.8 in physical. Song Ha Young was a certified aerial yoga instructor before she first appeared in the *Idol School* reality show.   
+e.g. Song Ha Young (宋河英) got 5.9 in dance and 9.8 in physical. Song Ha Young was a certified aerial yoga instructor before she first appeared in the *Idol School* reality show.^[<https://bit.ly/3ZJQipK>]   
 
 
 ### Correlation between Vocal, Dance, and Physical Scores
@@ -606,18 +606,25 @@ fabricated   = c( 0,33, 0,39,26,27,27,27,26,17,17)
 evidence_df = data.frame(episode, participants, fabricated)
 names(evidence_df) = c("Episode", "Participants", "Fabricated Rankings")
 
-# UNFINISHED HERE
-# Next step: Add a new column "Notes" to write more comments
-
+# Add a new column "Notes" to write more comments
 evidence_df$Notes = c(rep(" ",11)) # initialize each row to blank
 evidence_df$Notes[1] = "No evidence of fabrication found."
 evidence_df$Notes[3] = "No rankings published."
-
+evidence_df$Notes[4] = "R1: Moved 3 people to survival."
+evidence_df$Notes[6] = "R2: Moved 2 people to survival."
+evidence_df$Notes[9] = "R3: Moved 2 people to survival."
+evidence_df$Notes[11]= "R4: Moved 3 people to the debut."
 names(evidence_df)[4] = "Special Comments or Notes"
 
-# Also write Notes for the 4th, 6th, 9th, 11th episodes.
-
+# UNFINISHED HERE
 # Do we need to add a Total row at the bottom of the data.frame?
+
+# sum(participants) # 345
+# sum(fabricated) # 239
+# 239/345 ~= 69.%
+# Nearly 70% of the rankings were artificially modified by the show organizers.
+# In other words, the results were pre-determined 
+# before the survival show had even started!
 
 evidence_df
 ```

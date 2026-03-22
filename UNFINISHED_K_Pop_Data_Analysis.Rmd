@@ -598,6 +598,8 @@ Columns:
 
 ```{r idol-school-fabricated-drafts}
 # UNFINISHED HERE
+# Consider: Hide the code and only show the table itself
+# Use: echo=FALSE
 
 episode = c("1st","2nd","3rd","4th","5th",
             "6th","7th","8th","9th","10th","11th")
@@ -617,25 +619,22 @@ evidence_df$Notes[9] = "R3: Moved 2 people to survival."
 evidence_df$Notes[11]= "R4: Moved 3 people to the debut."
 names(evidence_df)[4] = "Special Comments or Notes"
 
-# UNFINISHED HERE
-# Do we need to add a Total row at the bottom of the data.frame?
-
+# Add a Total row at the bottom of the data.frame
 total_participants = sum(participants) # 345
 total_fabricated = sum(fabricated) # 239
-
-# total_fabricated/total_participants (Need to round this fraction)
-# round(total_fabricated/total_participants, 3) # 0.693
+ratio_fabricated = round(total_fabricated/total_participants, 3) # 0.693
 # 239/345 ~= 69.3%
 
-# UNFINISHED HERE
-# How to auto-convert the fraction into a percentage in R?
+final_row = c("Total", total_participants, total_fabricated,
+              paste0("A total of ",ratio_fabricated*100,"% were fabricated."))
 
-# Nearly 70% of the rankings were artificially modified by the show organizers.
-# In other words, the results were pre-determined 
-# before the survival show had even started!
-
+evidence_df = rbind(evidence_df, final_row)
 evidence_df
 ```
+
+Nearly 70% of the rankings were artificially modified by the show organizers.   
+
+In other words, the results were pre-determined before the survival show had even started!   
 
 Due to the manipulation of votes, it is meaningless to predict the final rankings in the *Idol School* survival show. That's why we decided to analyze only the contestant scores given by the professional instructors. These scores are a relatively good benchmark of raw performance, especially that they were not artificially changed to favor any particular contestant.    
 

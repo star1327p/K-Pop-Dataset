@@ -1,9 +1,9 @@
 ---
-title: "K-Pop Data Analysis"
+title: K-Pop Data Analysis
 author:
 - Christine P. Chai
 - cpchai21@gmail.com
-date: "\today"
+date: \today
 output:
   pdf_document:
     latex_engine: xelatex

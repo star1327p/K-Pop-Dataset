@@ -58,6 +58,10 @@ This manuscript is written solely by the author, not by ChatGPT or any other gen
 
 # Introduction
 
+\textcolor{red}{Need to add: How to compile this .Rmd into pdf using command line}   
+Need to write a Makefile and the compilation instructions.   
+Don't just use the RStudio IDE!    
+
 \textcolor{red}{Briefly describe what the K-pop music is, such as songs and elements}  
 
 K-pop music (Korean popular music) is a genre of entertainment originated from South Korea \cite{lie2015k-pop}, and K-pop emphasizes more on the dancing component than the singing element [citation needed].  

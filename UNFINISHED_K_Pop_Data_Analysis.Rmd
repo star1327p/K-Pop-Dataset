@@ -77,7 +77,11 @@ e.g. Debut single song - "Into the New World" (再次重逢的世界)^[<https://
 
 Performed by *Girls' Generation* (少女時代)^[<https://en.wikipedia.org/wiki/Girls%27_Generation>] in 2007.      
 
-What do you think about the lyrics? Why is this song considered a textbook example of K-pop music? [citation needed]    
+This song is considered a textbook example of K-pop music \cite{epstein2014into}.       
+
+What do you think about the lyrics in this K-pop group?      
+Positive, motivational, about women's empowerment \cite{tiensha2025between}   
+
 
 Dance: Choreography, complex       
 

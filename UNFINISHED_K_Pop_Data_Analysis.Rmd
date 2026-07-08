@@ -64,7 +64,7 @@ Don't just use the RStudio IDE!
 
 \textcolor{red}{Briefly describe what the K-pop music is, such as songs and elements}  
 
-K-pop music (Korean popular music) is a genre of entertainment originated from South Korea \cite{lie2015k-pop}, and K-pop emphasizes more on the dancing component than the singing element [citation needed].  
+K-pop music (Korean popular music) is a genre of entertainment originated from South Korea \cite{lie2015k-pop}, and K-pop emphasizes on both dancing and singing components [citation needed].  
 
 Therefore, K-pop shows are like an audio-visual treat, appealing to the general public \cite{pal2022k-pop}.  
 
@@ -97,11 +97,11 @@ In addition to the K-pop performance itself, survival reality shows have also be
 
 \textcolor{red}{Need a transition sentence here}   
 
-Therefore, such TV programs often have high viewership. [citation needed]  
+Therefore, such TV programs often have high viewership \cite{ahn2022birth}. [more citations needed]   
 
 For example, Mnet^[<https://en.wikipedia.org/wiki/Mnet_(TV_channel)>] is a television music channel famous for hosting idol-making survival shows, such as *Produce 101* and *Produce 48* \cite{capistrano2023into}. Their YouTube channel, *Mnet K-POP*,^[<http://www.youtube.com/@Mnet>] has more than 22 million subscribers worldwide.    
 
-Thanks to translation [citation needed], K-pop shows can be enjoyed by people outside the Korean-speaking community.   
+Thanks to translation, K-pop shows can be enjoyed by people outside the Korean-speaking community \cite{cruz2021cultural, yoon2023theorizing}.   
 
 \textcolor{red}{Do we need to write something more?}  
 

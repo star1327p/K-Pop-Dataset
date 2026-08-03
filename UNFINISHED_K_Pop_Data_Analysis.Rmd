@@ -424,7 +424,7 @@ Observe that vocal and dance scores have 1 as the minimum score (who participate
 Vocal has a median score of 4.95 (rounding to 5), which indicates decent performance. NATTY received 9.8 as the highest vocal score, and the instructor said her singing performance was perfect (considering that NATTY is originally from Thailand and hence not a native speaker in Korean).^[NATTY's birth name is Anatchaya Suputhipong. <https://en.wikipedia.org/wiki/Natty_(Thai_singer)>] On the other hand, Lee Hae In (李海印) received a score of 1 in vocal, because she unfortunately lost her voice and could barely sing at that time.   
 
 
-Dance:    
+\textcolor{red}{Dance:}    
 
 Dance has the highest median score (5.55) among the three categories because ... (elaborate on the reasons)   
 
@@ -440,7 +440,7 @@ c.f. Vocal roles are divided into main vocal, lead vocal, and sub-vocal (i.e., e
 
 Generally the most challenging lines are assigned to the main vocal and the lead vocal, while the other vocals receive easier parts. (citation needed)   
 
-Physical:    
+\textcolor{red}{Physical:}    
 
 Kim Eun Suh (金恩書) came in first and received the full mark of 10, while Song Ha Young (宋河英) got 9.8 as the second place.   
 
@@ -561,7 +561,7 @@ grid.arrange(scatter1, scatter2, scatter3, ncol=3)
 
 \textcolor{red}{Need to explain the correlation coefficients and the K-pop context.}   
 
-The training at a K-pop entertainment company in Korea usually includes vocal and dance lessons \cite{padget2017difficulties}, so it is reasonable to see a high correlation between vocal and dance scores. Theoretically dance and physical should be highly correlated \cite{dance2024strength}, but in the Idol School dataset, we observed a slightly lower correlation in dance vs physical than in dance vs vocal. Physical strength is essential to dancing, but dance also includes other critical elements such as technique and aesthetic expression \cite{geukes2023mirror}.   
+It is reasonable to see a high correlation between vocal and dance scores, because the K-pop training usually includes vocal and dance lessons \cite{padget2017difficulties}. Theoretically, dance and physical should be highly correlated \cite{dance2024strength}, but in the Idol School dataset, we observed a slightly lower correlation in dance vs physical than in dance vs vocal. Physical strength is essential to dancing, but dance also includes other critical elements such as technique and aesthetic expression \cite{geukes2023mirror}.   
 
 \textcolor{red}{Do more analysis to the Idol School data!}   
 
@@ -581,9 +581,33 @@ dance_lower = idol_school[which(idol_school$Dance < 5),]
 # sd(dance_lower$Physical) # 1.645861
 ```
 
+\textcolor{red}{Physical has median 3.25, so we use 3.0 as the separation threshold.}    
+
+Only in the physical < 3 group has a mid-level correlation with the dance scores.  
+
+However, when the physical performance is already below 3 points, ...  
+
+\textcolor{red}{How to interpret the physical-lower group's high correlation with dance scores?}   
+
+Consider: Create another scatter plot of this group.   
+
+```{r idol-dance-cond-on-physical-drafts}
+# UNFINISHED HERE
+physical_upper = idol_school[which(idol_school$Physical >= 3),]
+physical_lower = idol_school[which(idol_school$Physical < 3),]
+
+# Correlation coefficients
+# cor(physical_upper$Dance, physical_upper$Physical)  # 0.2577632
+# cor(physical_lower$Dance, physical_lower$Physical) # 0.5648321
+
+# Standard deviation
+# sd(physical_upper$Dance) # 2.000308
+# sd(physical_lower$Dance) # 1.891095
+```
+
 ## *Idol School*: Additional Resources
 
-For the contestants eliminated from the show, some continued to try in K-pop reality shows to earn another position in debut, while some others left the K-pop industry to pursue other goals.^[<https://www.ptt.cc/bbs/fromis_9/M.1555819461.A.C73.html>]   
+For the contestants eliminated from the show, some continued to try in other K-pop reality shows to earn a new position in debut, while some others left the K-pop industry to pursue other goals.^[<https://www.ptt.cc/bbs/fromis_9/M.1555819461.A.C73.html>]   
 
 In 2017, a Taiwanese blogger followed the whole *Idol School* series, and used algorithms to predict the final ranking.^[<https://shavid.pixnet.net/blog/post/331691281>] Both random forests and SVM^[SVM stands for Support Vector Machine. <https://en.wikipedia.org/wiki/Support_vector_machine>] predicted Lee Hae In (李海印) to be in the top 9 for the debut, but Hae In ended up in an unexpected 11th place.    
 

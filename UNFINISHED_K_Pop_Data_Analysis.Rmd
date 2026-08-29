@@ -64,7 +64,7 @@ Don't just use the RStudio IDE!
 
 \textcolor{red}{Briefly describe what the K-pop music is, such as songs and elements}  
 
-K-pop music (Korean popular music) is a genre of entertainment originated from South Korea \cite{lie2015k-pop}, and K-pop emphasizes on both dancing and singing components [citation needed].  
+K-pop music (Korean popular music) is a genre of entertainment originated from South Korea \cite{lie2015k-pop}, and K-pop emphasizes on both dancing and singing components \cite{leung2012catching}.  
 
 Therefore, K-pop shows are like an audio-visual treat, appealing to the general public \cite{pal2022k-pop}.  
 
@@ -770,7 +770,7 @@ table(produce_48_data$Second_Eval, dnn="Second_Eval")
 
 Cross-table: **First_Eval** as row, and **Country** as column  
 
-Let's examine how Korean and Japanese participants scored in the first evaluation. We noticed that the majority of contestants from Japan were placed in D or F (lowest grades), while very few contestants from Korea did. Although the Korean K-pop coaches criticized the Japanese contestants for their performance, we would like to emphasize that the Idol training process differs greatly in Korea and Japan.^[<https://www.adaymag.com/2020/10/22/japanese-vs-korean-idol.html>] In Korea, the primary focus is on vocal and dance techniques, while in Japan, the Idol training values artistic interpretation and individual expressiveness \cite{alice-jiye-lee-2023}.    
+Let's examine how Korean and Japanese participants scored in the first evaluation. We noticed that the majority of contestants from Japan were placed in D or F (lowest grades), while very few contestants from Korea did. Although the Korean K-pop coaches criticized the Japanese contestants for their performance, we would like to emphasize that the Idol training process differs greatly in Korea and Japan.^[<https://www.adaymag.com/2020/10/22/japanese-vs-korean-idol.html>] In Korea, the primary focus is on vocal and dance techniques \cite{sim2017hybridity}, while in Japan, the Idol training values artistic interpretation and individual expressiveness \cite{alice-jiye-lee-2023}.    
 
 In the show, many Japanese contestants bursted into tears due to the harsh feedback given by the Korean K-pop instructors.^[<https://star.ettoday.net/news/1192170>] The Japanese contestants enjoyed highly positive responses in their own country, so they thought they would receive an A in the evaluation during *Produce 48*. Instead, most of them received an F (failure). After the first evaluation, some of the Japanese contestants withdrew from the show for various reasons. Two of them did not even complete the second evaluation.^[<https://star.ettoday.net/news/1181576>]     
 

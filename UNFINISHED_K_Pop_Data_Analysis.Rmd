@@ -68,10 +68,10 @@ K-pop music (Korean popular music) is a genre of entertainment originated from S
 
 Therefore, K-pop shows are like an audio-visual treat, appealing to the general public \cite{pal2022k-pop}.  
 
-Music: K-pop groups often showcase a wide range of musical styles within a single discography, and common styles include pop, hip-hop, rock, and R&B (Rhythm and Blues) \cite{liu2024newjeans}.     
+Music: K-pop groups often showcase a wide range of musical styles within a single discography, and common styles include pop, hip-hop, rock, and R&B (Rhythm and Blues) \cite{liu2024newjeans, vogue2022best}.     
 
 Lyrics:  
-Upbeat and catchy - Many tracks are designed with high energy and memorable hooks, making them easy to listen to and popular for dancing [citation needed].  
+Upbeat and catchy - Many tracks are designed with high energy and memorable hooks, making them popular for dancing and enjoyable to listen to \cite{jo2023tracking, kim2022demystifying}.   
 
 e.g. Debut single song - "Into the New World" (再次重逢的世界)^[<https://en.wikipedia.org/wiki/Into_the_New_World>]    
 
@@ -83,11 +83,11 @@ What do you think about the lyrics in this K-pop group?
 Positive, motivational, about women's empowerment \cite{tiensha2025between}   
 
 
-Dance: Choreography, complex       
+Dance: Choreography, complex [citation needed]    
 
-Fashion: Dress, make-up, hair style, etc.   
+Fashion: Dress, make-up, hair style, etc. [citation needed]      
 
-Stage and video effects: Bright lights, video-editing for focus, etc.     
+Stage and video effects: Bright lights, video-editing for focus, etc. [citation needed]       
 
 \textcolor{red}{Important: Write about why K-pop music is so popular across the globe.}   
 

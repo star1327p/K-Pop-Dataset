@@ -565,7 +565,28 @@ It is reasonable to see a high correlation between vocal and dance scores, becau
 
 \textcolor{red}{Do more analysis to the Idol School data!}   
 
-\textcolor{red}{Idea: Check out physical vs dance -- conditional on dance < 5.0 vs dance >= 5.0}   
+Plan: Use the `ggplot` graph of dance vs physical, and enlarge the picture.  
+
+Figure \ref{fig:idol-conditional-drafts}:   
+- Add separation lines for dance = 5.0 and physical = 3.0.   
+- Add the correlation coefficients to each quadrant.   
+- Increase the font of labels and axis ticks. They are too small compared with the figure size.   
+
+```{r idol-conditional-drafts, fig.cap="Conditional scatter plot"}
+# UNFINISHED HERE
+
+cond_plot <- ggplot(data = idol_school, aes(x=Dance, y=Physical)) + 
+  geom_point() + ggtitle("Dance vs Physical")
+
+cond_plot <- scale_req(cond_plot) +
+  geom_hline(yintercept = 3) + geom_vline(xintercept = 5)
+
+cond_plot
+```
+
+\textcolor{red}{Idea: Check out physical vs dance -- conditional on dance < 5.0 vs dance >= 5.0} 
+
+Need to print and round the correlation coefficients!  
 
 ```{r idol-physical-cond-on-dance-drafts}
 # UNFINISHED HERE
@@ -591,6 +612,8 @@ However, when the physical performance is already below 3 points, ...
 
 Consider: Create another scatter plot of this group.   
 
+Need to print and round the correlation coefficients!   
+
 ```{r idol-dance-cond-on-physical-drafts}
 # UNFINISHED HERE
 physical_upper = idol_school[which(idol_school$Physical >= 3),]
@@ -607,7 +630,7 @@ physical_lower = idol_school[which(idol_school$Physical < 3),]
 
 ## *Idol School*: Additional Resources
 
-For the contestants eliminated from the show, some continued to try in other K-pop reality shows to earn a new position in debut, while some others left the K-pop industry to pursue other goals.^[<https://www.ptt.cc/bbs/fromis_9/M.1555819461.A.C73.html>]   
+For the contestants eliminated from the show, some continued to try out in other K-pop reality shows to earn a new position in debut, while some others left the K-pop industry to pursue other goals.^[<https://www.ptt.cc/bbs/fromis_9/M.1555819461.A.C73.html>]   
 
 In 2017, a Taiwanese blogger followed the whole *Idol School* series, and used algorithms to predict the final ranking.^[<https://shavid.pixnet.net/blog/post/331691281>] Both random forests and SVM^[SVM stands for Support Vector Machine. <https://en.wikipedia.org/wiki/Support_vector_machine>] predicted Lee Hae In (李海印) to be in the top 9 for the debut, but Hae In ended up in an unexpected 11th place.    
 

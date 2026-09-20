@@ -141,7 +141,7 @@ Blood and sweat ?! Also money and political capital involved. [citation needed]
 
 \textcolor{red}{A lot more content here, probably need a transition paragraph}    
 
-Survivorship bias is prevalent in the entertainment industry, and the K-pop genre is no exception \cite{lockwood2021fooled}. To become a K-pop idol in Korea, aspiring kids usually start as a trainee at an entertainment company in their early teens \cite{lee2019k-pop}. The trainees take vocal and dance lessons, and the training process is intense and extremely competitive \cite{kang2017rediscovering, lee2024establishment}. That's why most K-pop artist performances are polished and well-rehearsed \cite{kim2021success}. Nevertheless, very few trainees can eventually get selected to debut and perform on stage as the company's official group \cite{han2021k-pop}, and even fewer K-pop performers can achieve iconic status \cite{min2024competitiveness}. While a performing group enjoys the spotlight and fame, the group typically lasts only a few years before the contract ends \cite{cho2023leading}.       
+Survivorship bias is prevalent in the entertainment industry,^[<https://www.side-line.com/survivorship-bias-in-the-music-industry-an-underestimated-phenomenon/>] and the K-pop genre is no exception \cite{lockwood2021fooled}. To become a K-pop idol in Korea, aspiring kids usually start as a trainee at an entertainment company in their early teens \cite{lee2019k-pop}. The trainees take vocal and dance lessons, and the training process is intense and extremely competitive \cite{kang2017rediscovering, lee2024establishment}. That's why most K-pop artist performances are polished and well-rehearsed \cite{kim2021success}. Nevertheless, very few trainees can eventually get selected to debut and perform on stage as the company's official group \cite{han2021k-pop}, and even fewer K-pop performers can achieve iconic status \cite{min2024competitiveness}. While a performing group enjoys the spotlight and fame, the group typically lasts only a few years before the contract ends \cite{cho2023leading}.       
 
 K-pop overcrowded market \cite{liu2025overcrowded}.      
 
@@ -157,7 +157,13 @@ Finally, Mnet admitted to manipulating the votes in the *Produce 101* series^[<h
 <https://www.ptt.cc/bbs/KoreaStar/M.1624467107.A.D7F.html>  
 
 What was the penalty of these entertainment agency representatives?   
+Including jail time, monetary fines, and reputation loss.   
+
+The crimes were punished by a fine more than 10 million SKW,^[SKW stands for South Korean wons, the currency in South Korea.] which is over 7,200 US dollars.   
+
 <https://www.ptt.cc/bbs/KoreaStar/M.1680484737.A.28A.html>   
+
+<https://www.koreastardaily.com/tc/news/135965>  
 
 \textcolor{red}{Need academic citations, not just news links.}   
 
@@ -171,7 +177,12 @@ Negative impact on the K-pop industry, such as the cancel culture from K-pop fan
 Impact on the trainees who lost the chance to debut:   
 They received monetary compensation, but the debut opportunity could not be recovered. (citation needed)    
 
-After the 2019 scandal, Mnet has been under controversy but is still actively producing K-pop dance survival shows.^[<https://www.ptt.cc/bbs/KoreaStar/M.1618588754.A.7C9.html>] Recent works of Mnet include *Kingdom: Legendary War* (2021)^[<https://en.wikipedia.org/wiki/Kingdom:_Legendary_War>] and *Stage Fighter* (2024).^[<https://en.wikipedia.org/wiki/Stage_Fighter>]    
+After the 2019 scandal, Mnet has been under controversy but is still actively producing K-pop dance survival shows.^[<https://www.ptt.cc/bbs/KoreaStar/M.1618588754.A.7C9.html>]   
+
+
+K-pop fans called out on the constant mistreatment of the performers in Mnet survival shows.^[<https://emorywheel.com/article/speak-out-against-cycle-of-problematic-k-pop-survival-shows-20251105>]     
+
+Recent works of Mnet include *Kingdom: Legendary War* (2021)^[<https://en.wikipedia.org/wiki/Kingdom:_Legendary_War>] and *Stage Fighter* (2024).^[<https://en.wikipedia.org/wiki/Stage_Fighter>]    
 
 
 \textcolor{red}{As of 2025: the Deepfake and Generative AI videos pertinent to K-pop.} (citation needed)   

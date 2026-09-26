@@ -95,6 +95,16 @@ Stage and video effects: Bright lights, video-editing for focus, etc. [citation 
 
 K-pop has emerged popularity worldwide since the early 2010's \cite{khiun2013k-pop, sun2022identifying}. K-pop's international reputation stems from its versatile music, eye-catching performances, and the strategic use of social media, fostering a global community of dedicated fans who actively promote the artists and genre \cite{kim2022global, chen2023expansion}. Therefore, K-pop enjoys global fame -- not only across East Asian countries like China and Thailand \cite{malik2023korea-east-asia}, but also in the United States^[<https://bit.ly/4iIHpor>] and Western Europe^[<https://nolae.eu/blogs/news/diese-k-pop-konzerte-werden-2025-in-europa-stattfinden>] \cite{miroudot2024common}.      
 
+\textcolor{red}{Add one or more top-notch K-pop groups as examples here}    
+
+*Blackpink*^[<https://ygfamily.com/ko/artists/blackpink/concert>] is one of the most well-known K-pop groups, and it is regarded as "the biggest girl group of the world" by various magazines.^[<https://en.wikipedia.org/wiki/Blackpink>]      
+
+Thai citizen Lisa (Lalisa Manobal) was selected to be one of the four members in *Blackpink* in 2016, after spending five years as a trainee at YG Entertainment.^[<https://en.wikipedia.org/wiki/Lisa_(rapper)>]        
+
+Although it is extremely difficult, it is possible for non-Korean citizens to become a K-pop star in South Korea. [citation needed]     
+
+\textcolor{red}{Need another transition paragraph here}    
+
 In addition to the K-pop performance itself, survival reality shows have also been an emerging trend in the K-pop industry \cite{butsoontorn2023narrative, lee2020k-pop}. The main objective of such shows is to select the top contestants to form a new K-pop group. One major feature is the audience involvement -- many survival shows allow the audience to vote on contestants' performance \cite{kim2025survival}, keeping the audience engaged with the live episodes.       
 
 \textcolor{red}{Need a transition sentence here}   
@@ -111,7 +121,7 @@ Thanks to translation, K-pop shows can be enjoyed by people outside the Korean-s
 
 The author became interested in K-pop music from the debut of Tzuyu (Chou Tzu-Yu, 周子瑜).^[<https://en.wikipedia.org/wiki/Tzuyu>] Tzuyu is originally from Taiwan, the country in which the author grew up. In 2015, Tzuyu participated in the South Korean reality television show *SIXTEEN*,^[<https://en.wikipedia.org/wiki/Sixteen_(TV_program)>] and eventually got added to the newly-formed girl group *TWICE*.^[<https://en.wikipedia.org/wiki/Twice>] In early 2016, Tzuyu was forced to apologize after she raised the Taiwan flag in a Korean entertainment show \cite{ahn2019politics}.^[<https://bit.ly/3DOcNlP>] The flag controversy incident made headline news in Taiwan,^[<https://bit.ly/4k5j7ps>] and it was estimated to bring in 500,000 votes for the 2016 Taiwan presidential election.^[<https://bit.ly/3CUQWsK>]    
 
-Then in 2017, another Taiwanese girl, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] joined the Korean live reality show *Idol School* (偶像學校).^[<https://en.wikipedia.org/wiki/Idol_School_(2017_TV_series)>] At the end of the show, nine winners were selected to form the new girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This also generated much discussion in the Mandarin-speaking community.^[<https://www.epochtimes.com/b5/17/7/2/n9346573.htm>] Although Snowbaby was eliminated in the middle of the show, she still deserves praise for her courage to participate as an international contestant.^[<https://bit.ly/41p3pym>] Since Snowbaby graduated from the same high school as the author did,^[<https://bit.ly/424u3gv>] Snowbaby's experience motivated the author to learn more about K-pop.    
+Then in 2017, another Taiwanese girl, Snowbaby (蔡瑞雪),^[Snowbaby's YouTube channel: <https://www.youtube.com/@snowbaby>] joined the Korean live reality show *Idol School* (偶像學校).^[<https://en.wikipedia.org/wiki/Idol_School_(2017_TV_series)>] At the end of the show, nine winners were selected to form the new girl group *fromis_9*.^[<https://en.wikipedia.org/wiki/Fromis_9>] This also generated much discussion in the Mandarin-speaking community.^[<https://www.epochtimes.com/b5/17/7/2/n9346573.htm>] Although Snowbaby was eliminated in the middle of the show, she still deserves praise for her courage to participate as an international contestant.^[<https://bit.ly/41p3pym>] Since Snowbaby graduated from the same high school^[This high school is Taipei First Girls High School (北一女中). <https://www.fg.tp.edu.tw/>] as the author did,^[<https://bit.ly/424u3gv>] Snowbaby's experience motivated the author to learn more about K-pop.    
 
 The author also followed other K-pop reality shows such as *Produce 48* in 2018.   
 

@@ -673,15 +673,16 @@ In the final episode of *Idol School*, Lee Hae In (李海印) actually came in f
 
 \textcolor{red}{Consider creating a table to document the number of votes manipulated}   
 
+\textcolor{red}{Is it possible to create a table caption like \texttt{fig.cap} for Figures?}    
+
 Columns:  
 
 - Episodes 1, 2, ..., 11
 - Number of participants
 - Number of rankings that were fabricated
 
-```{r idol-school-fabricated-drafts}
-# UNFINISHED HERE
-# Consider: Hide the code and only show the table itself
+```{r idol-school-fabricated-votes, echo=FALSE}
+# Hide the code and only show the table itself
 # Use: echo=FALSE
 
 episode = c("1st","2nd","3rd","4th","5th",
@@ -715,9 +716,9 @@ evidence_df = rbind(evidence_df, final_row)
 evidence_df
 ```
 
-Nearly 70% of the rankings were artificially modified by the show organizers.   
+Nearly 70% of the rankings were artificially modified by the show organizers. The fabrication was even worse in the later espisodes -- all but 1-2 participants' published rankings differed from the actual votes they received. In other words, the results were pre-determined before the survival show had even started!   
 
-In other words, the results were pre-determined before the survival show had even started!   
+\textcolor{red}{Need to add citations to provide the fabrication evidence found by the court}     
 
 Due to the manipulation of votes, it is meaningless to predict the final rankings in the *Idol School* survival show. That's why we decided to analyze only the contestant scores given by the professional instructors. These scores are a relatively good benchmark of raw performance, especially that they were not artificially changed to favor any particular contestant.    
 

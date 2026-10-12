@@ -101,7 +101,7 @@ K-pop has emerged popularity worldwide since the early 2010's \cite{khiun2013k-p
 
 Thai citizen Lisa (Lalisa Manobal) was selected to be one of the four members in *Blackpink* in 2016, after spending five years as a trainee at YG Entertainment.^[<https://en.wikipedia.org/wiki/Lisa_(rapper)>]        
 
-Although it is extremely difficult, it is possible for non-Korean citizens to become a K-pop star in South Korea. [citation needed]     
+Although extremely difficult, it is possible for non-Korean citizens to become a K-pop star in South Korea \cite{rattanaphansri2023thailand, lee2024transnational}. There are some Taiwanese people who succeeded in the debut as a K-pop idol in South Korea,^[<https://bit.ly/4ykPdnp>] but the survivorship bias cannot be overemphasized.^[<https://www.twreporter.org/a/those-returning-k-pop-idol-trainees>]    
 
 \textcolor{red}{Need another transition paragraph here}    
 
